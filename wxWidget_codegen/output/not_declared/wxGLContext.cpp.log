@@ -1,0 +1,11 @@
+g++ -g  -Wall  -c -o wxGLContext.o `wx-config  --cxxflags`    -Wno-write-strings   wxGLContext.cpp
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:67: error: 'wxGLCanvasName' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:73: error: 'wxGLCanvasName' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:81: error: 'wxGLCanvasName' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:89: error: 'wxGLCanvasName' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:100: error: 'wxGLCanvasName' was not declared in this scope
+wxGLContext.cpp: In function 'int main(int, char**)':
+wxGLContext.cpp:32: error: no matching function for call to 'wxGLContext::wxGLContext()'
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:38: note: candidates are: wxGLContext::wxGLContext(wxWindow*, const wxGLContext*)
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:36: note:                 wxGLContext::wxGLContext(const wxGLContext&)
+make: *** [wxGLContext.o] Error 1

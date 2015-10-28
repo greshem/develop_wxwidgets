@@ -1,0 +1,12 @@
+g++ -g  -Wall  -c -o wxTextBuffer.o `wx-config  --cxxflags`    -Wno-write-strings   wxTextBuffer.cpp
+/usr/include/wx-2.8/wx/textbuf.h: In function 'int main(int, char**)':
+/usr/include/wx-2.8/wx/textbuf.h:175: error: 'wxTextBuffer::wxTextBuffer()' is protected
+wxTextBuffer.cpp:41: error: within this context
+wxTextBuffer.cpp:41: error: cannot declare variable 'a' to be of abstract type 'wxTextBuffer'
+/usr/include/wx-2.8/wx/textbuf.h:50: note:   because the following virtual functions are pure within 'wxTextBuffer':
+/usr/include/wx-2.8/wx/textbuf.h:183: note: 	virtual bool wxTextBuffer::OnExists() const
+/usr/include/wx-2.8/wx/textbuf.h:185: note: 	virtual bool wxTextBuffer::OnOpen(const wxString&, wxTextBuffer::wxTextBufferOpenMode)
+/usr/include/wx-2.8/wx/textbuf.h:186: note: 	virtual bool wxTextBuffer::OnClose()
+/usr/include/wx-2.8/wx/textbuf.h:187: note: 	virtual bool wxTextBuffer::OnRead(const wxMBConv&)
+/usr/include/wx-2.8/wx/textbuf.h:188: note: 	virtual bool wxTextBuffer::OnWrite(wxTextFileType, const wxMBConv&)
+make: *** [wxTextBuffer.o] Error 1

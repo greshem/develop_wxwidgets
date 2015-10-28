@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSoundCleanupModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxSoundCleanupModule.cpp
+wxSoundCleanupModule.cpp: In function 'int main(int, char**)':
+wxSoundCleanupModule.cpp:29: error: 'wxSoundCleanupModule' was not declared in this scope
+wxSoundCleanupModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxSoundCleanupModule.o] Error 1

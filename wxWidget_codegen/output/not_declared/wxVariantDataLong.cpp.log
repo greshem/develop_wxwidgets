@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxVariantDataLong.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantDataLong.cpp
+wxVariantDataLong.cpp: In function 'int main(int, char**)':
+wxVariantDataLong.cpp:36: error: 'wxVariantDataLong' was not declared in this scope
+wxVariantDataLong.cpp:36: error: expected `;' before 'a'
+make: *** [wxVariantDataLong.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxVariantDoubleData.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantDoubleData.cpp
+wxVariantDoubleData.cpp: In function 'int main(int, char**)':
+wxVariantDoubleData.cpp:36: error: 'wxVariantDoubleData' was not declared in this scope
+wxVariantDoubleData.cpp:36: error: expected `;' before 'a'
+make: *** [wxVariantDoubleData.o] Error 1

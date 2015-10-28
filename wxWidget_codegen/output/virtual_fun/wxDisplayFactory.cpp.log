@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxDisplayFactory.o `wx-config  --cxxflags`    -Wno-write-strings   wxDisplayFactory.cpp
+wxDisplayFactory.cpp: In function 'int main(int, char**)':
+wxDisplayFactory.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxDisplayFactory'
+/usr/include/wx-2.8/wx/display_impl.h:21: note:   because the following virtual functions are pure within 'wxDisplayFactory':
+/usr/include/wx-2.8/wx/display_impl.h:29: note: 	virtual wxDisplayImpl* wxDisplayFactory::CreateDisplay(unsigned int)
+/usr/include/wx-2.8/wx/display_impl.h:32: note: 	virtual unsigned int wxDisplayFactory::GetCount()
+/usr/include/wx-2.8/wx/display_impl.h:35: note: 	virtual int wxDisplayFactory::GetFromPoint(const wxPoint&)
+make: *** [wxDisplayFactory.o] Error 1

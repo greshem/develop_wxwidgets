@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGenericComboCtrl.o `wx-config  --cxxflags`    -Wno-write-strings   wxGenericComboCtrl.cpp
+wxGenericComboCtrl.cpp: In function 'int main(int, char**)':
+wxGenericComboCtrl.cpp:39: error: 'wxGenericComboCtrl' was not declared in this scope
+wxGenericComboCtrl.cpp:39: error: expected `;' before 'a'
+make: *** [wxGenericComboCtrl.o] Error 1

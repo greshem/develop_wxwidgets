@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxZipHeader.o `wx-config  --cxxflags`    -Wno-write-strings   wxZipHeader.cpp
+wxZipHeader.cpp: In function 'int main(int, char**)':
+wxZipHeader.cpp:28: error: 'wxZipHeader' was not declared in this scope
+wxZipHeader.cpp:28: error: expected `;' before 'a'
+make: *** [wxZipHeader.o] Error 1

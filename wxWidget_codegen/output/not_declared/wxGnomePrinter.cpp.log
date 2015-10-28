@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGnomePrinter.o `wx-config  --cxxflags`    -Wno-write-strings   wxGnomePrinter.cpp
+wxGnomePrinter.cpp: In function 'int main(int, char**)':
+wxGnomePrinter.cpp:33: error: 'wxGnomePrinter' was not declared in this scope
+wxGnomePrinter.cpp:33: error: expected `;' before 'a'
+make: *** [wxGnomePrinter.o] Error 1

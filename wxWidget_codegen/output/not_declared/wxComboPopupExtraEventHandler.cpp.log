@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxComboPopupExtraEventHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxComboPopupExtraEventHandler.cpp
+wxComboPopupExtraEventHandler.cpp: In function 'int main(int, char**)':
+wxComboPopupExtraEventHandler.cpp:30: error: 'wxComboPopupExtraEventHandler' was not declared in this scope
+wxComboPopupExtraEventHandler.cpp:30: error: expected `;' before 'a'
+make: *** [wxComboPopupExtraEventHandler.o] Error 1

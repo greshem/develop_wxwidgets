@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTextWrapper.o `wx-config  --cxxflags`    -Wno-write-strings   wxTextWrapper.cpp
+wxTextWrapper.cpp: In function 'int main(int, char**)':
+wxTextWrapper.cpp:28: error: 'wxTextWrapper' was not declared in this scope
+wxTextWrapper.cpp:28: error: expected `;' before 'a'
+make: *** [wxTextWrapper.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxLogWindow.o `wx-config  --cxxflags`    -Wno-write-strings   wxLogWindow.cpp
+wxLogWindow.cpp: In function 'int main(int, char**)':
+wxLogWindow.cpp:36: error: no matching function for call to 'wxLogWindow::wxLogWindow()'
+/usr/include/wx-2.8/wx/generic/logg.h:121: note: candidates are: wxLogWindow::wxLogWindow(const wxLogWindow&)
+/usr/include/wx-2.8/wx/generic/logg.h:91: note:                 wxLogWindow::wxLogWindow(wxWindow*, const wxChar*, bool, bool)
+make: *** [wxLogWindow.o] Error 1

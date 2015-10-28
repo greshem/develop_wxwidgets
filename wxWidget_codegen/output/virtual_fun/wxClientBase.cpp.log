@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxClientBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxClientBase.cpp
+wxClientBase.cpp: In function 'int main(int, char**)':
+wxClientBase.cpp:29: error: cannot declare variable 'a' to be of abstract type 'wxClientBase'
+/usr/include/wx-2.8/wx/ipcbase.h:144: note:   because the following virtual functions are pure within 'wxClientBase':
+/usr/include/wx-2.8/wx/ipcbase.h:151: note: 	virtual bool wxClientBase::ValidHost(const wxString&)
+/usr/include/wx-2.8/wx/ipcbase.h:156: note: 	virtual wxConnectionBase* wxClientBase::MakeConnection(const wxString&, const wxString&, const wxString&)
+/usr/include/wx-2.8/wx/ipcbase.h:159: note: 	virtual wxConnectionBase* wxClientBase::OnMakeConnection()
+make: *** [wxClientBase.o] Error 1

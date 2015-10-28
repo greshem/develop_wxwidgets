@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlWinModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlWinModule.cpp
+wxHtmlWinModule.cpp: In function 'int main(int, char**)':
+wxHtmlWinModule.cpp:29: error: 'wxHtmlWinModule' was not declared in this scope
+wxHtmlWinModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxHtmlWinModule.o] Error 1

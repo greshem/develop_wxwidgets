@@ -1,0 +1,17 @@
+g++ -g  -Wall  -c -o wxIPaddress.o `wx-config  --cxxflags`    -Wno-write-strings   wxIPaddress.cpp
+wxIPaddress.cpp: In function 'int main(int, char**)':
+wxIPaddress.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxIPaddress'
+/usr/include/wx-2.8/wx/sckaddr.h:52: note:   because the following virtual functions are pure within 'wxIPaddress':
+/usr/include/wx-2.8/wx/sckaddr.h:35: note: 	virtual int wxSockAddress::Type()
+/usr/include/wx-2.8/wx/sckaddr.h:42: note: 	virtual wxSockAddress* wxSockAddress::Clone() const
+/usr/include/wx-2.8/wx/sckaddr.h:59: note: 	virtual bool wxIPaddress::Hostname(const wxString&)
+/usr/include/wx-2.8/wx/sckaddr.h:60: note: 	virtual bool wxIPaddress::Service(const wxString&)
+/usr/include/wx-2.8/wx/sckaddr.h:61: note: 	virtual bool wxIPaddress::Service(short unsigned int)
+/usr/include/wx-2.8/wx/sckaddr.h:63: note: 	virtual bool wxIPaddress::LocalHost()
+/usr/include/wx-2.8/wx/sckaddr.h:64: note: 	virtual bool wxIPaddress::IsLocalHost() const
+/usr/include/wx-2.8/wx/sckaddr.h:66: note: 	virtual bool wxIPaddress::AnyAddress()
+/usr/include/wx-2.8/wx/sckaddr.h:67: note: 	virtual bool wxIPaddress::BroadcastAddress()
+/usr/include/wx-2.8/wx/sckaddr.h:69: note: 	virtual wxString wxIPaddress::IPAddress() const
+/usr/include/wx-2.8/wx/sckaddr.h:71: note: 	virtual wxString wxIPaddress::Hostname() const
+/usr/include/wx-2.8/wx/sckaddr.h:72: note: 	virtual short unsigned int wxIPaddress::Service() const
+make: *** [wxIPaddress.o] Error 1

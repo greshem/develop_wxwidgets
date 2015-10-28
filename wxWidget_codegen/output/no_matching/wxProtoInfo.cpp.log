@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxProtoInfo.o `wx-config  --cxxflags`    -Wno-write-strings   wxProtoInfo.cpp
+wxProtoInfo.cpp: In function 'int main(int, char**)':
+wxProtoInfo.cpp:30: error: no matching function for call to 'wxProtoInfo::wxProtoInfo()'
+/usr/include/wx-2.8/wx/protocol/protocol.h:126: note: candidates are: wxProtoInfo::wxProtoInfo(const wxProtoInfo&)
+/usr/include/wx-2.8/wx/protocol/protocol.h:113: note:                 wxProtoInfo::wxProtoInfo(const wxChar*, const wxChar*, bool, wxClassInfo*)
+make: *** [wxProtoInfo.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxMutexInternal.o `wx-config  --cxxflags`    -Wno-write-strings   wxMutexInternal.cpp
+wxMutexInternal.cpp: In function 'int main(int, char**)':
+wxMutexInternal.cpp:33: error: aggregate 'wxMutexInternal a' has incomplete type and cannot be defined
+wxMutexInternal.cpp:33: warning: unused variable 'a'
+make: *** [wxMutexInternal.o] Error 1

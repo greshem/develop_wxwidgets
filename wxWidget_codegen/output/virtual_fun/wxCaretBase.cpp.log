@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxCaretBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxCaretBase.cpp
+wxCaretBase.cpp: In function 'int main(int, char**)':
+wxCaretBase.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxCaretBase'
+/usr/include/wx-2.8/wx/caret.h:38: note:   because the following virtual functions are pure within 'wxCaretBase':
+/usr/include/wx-2.8/wx/caret.h:162: note: 	virtual void wxCaretBase::DoShow()
+/usr/include/wx-2.8/wx/caret.h:163: note: 	virtual void wxCaretBase::DoHide()
+/usr/include/wx-2.8/wx/caret.h:164: note: 	virtual void wxCaretBase::DoMove()
+make: *** [wxCaretBase.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSoundSyncOnlyAdaptor.o `wx-config  --cxxflags`    -Wno-write-strings   wxSoundSyncOnlyAdaptor.cpp
+wxSoundSyncOnlyAdaptor.cpp: In function 'int main(int, char**)':
+wxSoundSyncOnlyAdaptor.cpp:30: error: 'wxSoundSyncOnlyAdaptor' was not declared in this scope
+wxSoundSyncOnlyAdaptor.cpp:30: error: expected `;' before 'a'
+make: *** [wxSoundSyncOnlyAdaptor.o] Error 1

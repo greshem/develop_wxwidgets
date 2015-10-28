@@ -1,0 +1,13 @@
+g++ -g  -Wall  -c -o wxToolBarBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxToolBarBase.cpp
+wxToolBarBase.cpp: In function 'int main(int, char**)':
+wxToolBarBase.cpp:68: error: cannot declare variable 'a' to be of abstract type 'wxToolBarBase'
+/usr/include/wx-2.8/wx/tbarbase.h:238: note:   because the following virtual functions are pure within 'wxToolBarBase':
+/usr/include/wx-2.8/wx/tbarbase.h:417: note: 	virtual wxToolBarToolBase* wxToolBarBase::FindToolForPosition(wxCoord, wxCoord) const
+/usr/include/wx-2.8/wx/tbarbase.h:537: note: 	virtual bool wxToolBarBase::DoInsertTool(size_t, wxToolBarToolBase*)
+/usr/include/wx-2.8/wx/tbarbase.h:541: note: 	virtual bool wxToolBarBase::DoDeleteTool(size_t, wxToolBarToolBase*)
+/usr/include/wx-2.8/wx/tbarbase.h:544: note: 	virtual void wxToolBarBase::DoEnableTool(wxToolBarToolBase*, bool)
+/usr/include/wx-2.8/wx/tbarbase.h:547: note: 	virtual void wxToolBarBase::DoToggleTool(wxToolBarToolBase*, bool)
+/usr/include/wx-2.8/wx/tbarbase.h:550: note: 	virtual void wxToolBarBase::DoSetToggle(wxToolBarToolBase*, bool)
+/usr/include/wx-2.8/wx/tbarbase.h:560: note: 	virtual wxToolBarToolBase* wxToolBarBase::CreateTool(int, const wxString&, const wxBitmap&, const wxBitmap&, wxItemKind, wxObject*, const wxString&, const wxString&)
+/usr/include/wx-2.8/wx/tbarbase.h:562: note: 	virtual wxToolBarToolBase* wxToolBarBase::CreateTool(wxControl*)
+make: *** [wxToolBarBase.o] Error 1

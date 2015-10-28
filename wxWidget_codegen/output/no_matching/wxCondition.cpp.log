@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxCondition.o `wx-config  --cxxflags`    -Wno-write-strings   wxCondition.cpp
+wxCondition.cpp: In function 'int main(int, char**)':
+wxCondition.cpp:35: error: no matching function for call to 'wxCondition::wxCondition()'
+/usr/include/wx-2.8/wx/thread.h:360: note: candidates are: wxCondition::wxCondition(const wxCondition&)
+/usr/include/wx-2.8/wx/thread.h:310: note:                 wxCondition::wxCondition(wxMutex&)
+make: *** [wxCondition.o] Error 1

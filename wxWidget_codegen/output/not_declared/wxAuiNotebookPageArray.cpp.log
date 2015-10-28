@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxAuiNotebookPageArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxAuiNotebookPageArray.cpp
+wxAuiNotebookPageArray.cpp: In function 'int main(int, char**)':
+wxAuiNotebookPageArray.cpp:36: error: 'wxAuiNotebookPageArray' was not declared in this scope
+wxAuiNotebookPageArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxAuiNotebookPageArray.o] Error 1

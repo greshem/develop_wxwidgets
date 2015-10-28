@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxMimeTypeCmnModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxMimeTypeCmnModule.cpp
+wxMimeTypeCmnModule.cpp: In function 'int main(int, char**)':
+wxMimeTypeCmnModule.cpp:29: error: 'wxMimeTypeCmnModule' was not declared in this scope
+wxMimeTypeCmnModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxMimeTypeCmnModule.o] Error 1

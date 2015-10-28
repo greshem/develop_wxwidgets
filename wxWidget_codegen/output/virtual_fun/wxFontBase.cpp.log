@@ -1,0 +1,19 @@
+g++ -g  -Wall  -c -o wxFontBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxFontBase.cpp
+wxFontBase.cpp: In function 'int main(int, char**)':
+wxFontBase.cpp:51: error: cannot declare variable 'a' to be of abstract type 'wxFontBase'
+/usr/include/wx-2.8/wx/font.h:111: note:   because the following virtual functions are pure within 'wxFontBase':
+/usr/include/wx-2.8/wx/font.h:167: note: 	virtual int wxFontBase::GetPointSize() const
+/usr/include/wx-2.8/wx/font.h:170: note: 	virtual int wxFontBase::GetFamily() const
+/usr/include/wx-2.8/wx/font.h:171: note: 	virtual int wxFontBase::GetStyle() const
+/usr/include/wx-2.8/wx/font.h:172: note: 	virtual int wxFontBase::GetWeight() const
+/usr/include/wx-2.8/wx/font.h:173: note: 	virtual bool wxFontBase::GetUnderlined() const
+/usr/include/wx-2.8/wx/font.h:174: note: 	virtual wxString wxFontBase::GetFaceName() const
+/usr/include/wx-2.8/wx/font.h:175: note: 	virtual wxFontEncoding wxFontBase::GetEncoding() const
+/usr/include/wx-2.8/wx/font.h:176: note: 	virtual const wxNativeFontInfo* wxFontBase::GetNativeFontInfo() const
+/usr/include/wx-2.8/wx/font.h:184: note: 	virtual void wxFontBase::SetPointSize(int)
+/usr/include/wx-2.8/wx/font.h:186: note: 	virtual void wxFontBase::SetFamily(int)
+/usr/include/wx-2.8/wx/font.h:187: note: 	virtual void wxFontBase::SetStyle(int)
+/usr/include/wx-2.8/wx/font.h:188: note: 	virtual void wxFontBase::SetWeight(int)
+/usr/include/wx-2.8/wx/font.h:189: note: 	virtual void wxFontBase::SetUnderlined(bool)
+/usr/include/wx-2.8/wx/font.h:190: note: 	virtual void wxFontBase::SetEncoding(wxFontEncoding)
+make: *** [wxFontBase.o] Error 1

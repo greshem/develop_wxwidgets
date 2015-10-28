@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxXmlResourceModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxXmlResourceModule.cpp
+wxXmlResourceModule.cpp: In function 'int main(int, char**)':
+wxXmlResourceModule.cpp:29: error: 'wxXmlResourceModule' was not declared in this scope
+wxXmlResourceModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxXmlResourceModule.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o CoordArray.o `wx-config  --cxxflags`    -Wno-write-strings   CoordArray.cpp
+CoordArray.cpp: In function 'int main(int, char**)':
+CoordArray.cpp:36: error: 'CoordArray' was not declared in this scope
+CoordArray.cpp:36: error: expected `;' before 'a'
+make: *** [CoordArray.o] Error 1

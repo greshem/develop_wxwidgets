@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFileIconsTableModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileIconsTableModule.cpp
+wxFileIconsTableModule.cpp: In function 'int main(int, char**)':
+wxFileIconsTableModule.cpp:29: error: 'wxFileIconsTableModule' was not declared in this scope
+wxFileIconsTableModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxFileIconsTableModule.o] Error 1

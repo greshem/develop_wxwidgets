@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxVariantDataWxObjectPtr.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantDataWxObjectPtr.cpp
+wxVariantDataWxObjectPtr.cpp: In function 'int main(int, char**)':
+wxVariantDataWxObjectPtr.cpp:36: error: 'wxVariantDataWxObjectPtr' was not declared in this scope
+wxVariantDataWxObjectPtr.cpp:36: error: expected `;' before 'a'
+make: *** [wxVariantDataWxObjectPtr.o] Error 1

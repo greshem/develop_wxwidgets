@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxAppBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxAppBase.cpp
+wxAppBase.cpp: In function 'int main(int, char**)':
+wxAppBase.cpp:52: error: cannot declare variable 'a' to be of abstract type 'wxAppBase'
+/usr/include/wx-2.8/wx/app.h:330: note:   because the following virtual functions are pure within 'wxAppBase':
+/usr/include/wx-2.8/wx/app.h:406: note: 	virtual bool wxAppBase::Yield(bool)
+make: *** [wxAppBase.o] Error 1

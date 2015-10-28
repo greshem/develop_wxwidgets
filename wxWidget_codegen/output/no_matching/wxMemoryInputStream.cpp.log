@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxMemoryInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxMemoryInputStream.cpp
+wxMemoryInputStream.cpp: In function 'int main(int, char**)':
+wxMemoryInputStream.cpp:35: error: no matching function for call to 'wxMemoryInputStream::wxMemoryInputStream()'
+/usr/include/wx-2.8/wx/mstream.h:51: note: candidates are: wxMemoryInputStream::wxMemoryInputStream(const wxMemoryInputStream&)
+/usr/include/wx-2.8/wx/mstream.h:27: note:                 wxMemoryInputStream::wxMemoryInputStream(const wxMemoryOutputStream&)
+/usr/include/wx-2.8/wx/mstream.h:26: note:                 wxMemoryInputStream::wxMemoryInputStream(const void*, size_t)
+make: *** [wxMemoryInputStream.o] Error 1

@@ -1,0 +1,16 @@
+g++ -g  -Wall  -c -o wxAuiFloatingFrame.o `wx-config  --cxxflags`    -Wno-write-strings   wxAuiFloatingFrame.cpp
+/usr/include/wx-2.8/wx/aui/floatpane.h:36: error: 'wxAuiManager' has not been declared
+/usr/include/wx-2.8/wx/aui/floatpane.h:37: error: expected ',' or '...' before '&' token
+/usr/include/wx-2.8/wx/aui/floatpane.h:42: error: ISO C++ forbids declaration of 'wxAuiPaneInfo' with no type
+/usr/include/wx-2.8/wx/aui/floatpane.h:44: error: expected ',' or '...' before '&' token
+/usr/include/wx-2.8/wx/aui/floatpane.h:44: error: ISO C++ forbids declaration of 'wxAuiPaneInfo' with no type
+/usr/include/wx-2.8/wx/aui/floatpane.h:45: error: ISO C++ forbids declaration of 'wxAuiManager' with no type
+/usr/include/wx-2.8/wx/aui/floatpane.h:45: error: expected ';' before '*' token
+/usr/include/wx-2.8/wx/aui/floatpane.h:70: error: ISO C++ forbids declaration of 'wxAuiManager' with no type
+/usr/include/wx-2.8/wx/aui/floatpane.h:70: error: expected ';' before '*' token
+/usr/include/wx-2.8/wx/aui/floatpane.h:71: error: 'wxAuiManager' does not name a type
+wxAuiFloatingFrame.cpp: In function 'int main(int, char**)':
+wxAuiFloatingFrame.cpp:45: error: no matching function for call to 'wxAuiFloatingFrame::wxAuiFloatingFrame()'
+/usr/include/wx-2.8/wx/aui/floatpane.h:42: note: candidates are: wxAuiFloatingFrame::wxAuiFloatingFrame(wxWindow*, int*, int)
+/usr/include/wx-2.8/wx/aui/floatpane.h:33: note:                 wxAuiFloatingFrame::wxAuiFloatingFrame(const wxAuiFloatingFrame&)
+make: *** [wxAuiFloatingFrame.o] Error 1

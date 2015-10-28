@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHelpProviderModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxHelpProviderModule.cpp
+wxHelpProviderModule.cpp: In function 'int main(int, char**)':
+wxHelpProviderModule.cpp:31: error: 'wxHelpProviderModule' was not declared in this scope
+wxHelpProviderModule.cpp:31: error: expected `;' before 'a'
+make: *** [wxHelpProviderModule.o] Error 1

@@ -1,0 +1,12 @@
+g++ -g  -Wall  -c -o wxAnimationBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxAnimationBase.cpp
+wxAnimationBase.cpp: In function 'int main(int, char**)':
+wxAnimationBase.cpp:29: error: cannot declare variable 'a' to be of abstract type 'wxAnimationBase'
+/usr/include/wx-2.8/wx/animate.h:35: note:   because the following virtual functions are pure within 'wxAnimationBase':
+/usr/include/wx-2.8/wx/animate.h:39: note: 	virtual bool wxAnimationBase::IsOk() const
+/usr/include/wx-2.8/wx/animate.h:42: note: 	virtual int wxAnimationBase::GetDelay(unsigned int) const
+/usr/include/wx-2.8/wx/animate.h:44: note: 	virtual unsigned int wxAnimationBase::GetFrameCount() const
+/usr/include/wx-2.8/wx/animate.h:45: note: 	virtual wxImage wxAnimationBase::GetFrame(unsigned int) const
+/usr/include/wx-2.8/wx/animate.h:46: note: 	virtual wxSize wxAnimationBase::GetSize() const
+/usr/include/wx-2.8/wx/animate.h:49: note: 	virtual bool wxAnimationBase::LoadFile(const wxString&, wxAnimationType)
+/usr/include/wx-2.8/wx/animate.h:51: note: 	virtual bool wxAnimationBase::Load(wxInputStream&, wxAnimationType)
+make: *** [wxAnimationBase.o] Error 1

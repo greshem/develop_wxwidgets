@@ -1,0 +1,11 @@
+g++ -g  -Wall  -c -o wxStatusBarBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxStatusBarBase.cpp
+wxStatusBarBase.cpp: In function 'int main(int, char**)':
+wxStatusBarBase.cpp:44: error: cannot declare variable 'a' to be of abstract type 'wxStatusBarBase'
+/usr/include/wx-2.8/wx/statusbr.h:41: note:   because the following virtual functions are pure within 'wxStatusBarBase':
+/usr/include/wx-2.8/wx/statusbr.h:58: note: 	virtual void wxStatusBarBase::SetStatusText(const wxString&, int)
+/usr/include/wx-2.8/wx/statusbr.h:59: note: 	virtual wxString wxStatusBarBase::GetStatusText(int) const
+/usr/include/wx-2.8/wx/statusbr.h:88: note: 	virtual bool wxStatusBarBase::GetFieldRect(int, wxRect&) const
+/usr/include/wx-2.8/wx/statusbr.h:91: note: 	virtual void wxStatusBarBase::SetMinHeight(int)
+/usr/include/wx-2.8/wx/statusbr.h:94: note: 	virtual int wxStatusBarBase::GetBorderX() const
+/usr/include/wx-2.8/wx/statusbr.h:95: note: 	virtual int wxStatusBarBase::GetBorderY() const
+make: *** [wxStatusBarBase.o] Error 1

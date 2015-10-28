@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxSocketServer.o `wx-config  --cxxflags`    -Wno-write-strings   wxSocketServer.cpp
+wxSocketServer.cpp: In function 'int main(int, char**)':
+wxSocketServer.cpp:33: error: no matching function for call to 'wxSocketServer::wxSocketServer()'
+/usr/include/wx-2.8/wx/socket.h:245: note: candidates are: wxSocketServer::wxSocketServer(const wxSocketServer&)
+/usr/include/wx-2.8/wx/socket.h:238: note:                 wxSocketServer::wxSocketServer(const wxSockAddress&, wxSocketFlags)
+make: *** [wxSocketServer.o] Error 1

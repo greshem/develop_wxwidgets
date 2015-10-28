@@ -1,0 +1,10 @@
+g++ -g  -Wall  -c -o wxColourBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxColourBase.cpp
+wxColourBase.cpp: In function 'int main(int, char**)':
+wxColourBase.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxColourBase'
+/usr/include/wx-2.8/wx/colour.h:58: note:   because the following virtual functions are pure within 'wxColourBase':
+/usr/include/wx-2.8/wx/colour.h:98: note: 	virtual bool wxColourBase::IsOk() const
+/usr/include/wx-2.8/wx/colour.h:100: note: 	virtual unsigned char wxColourBase::Red() const
+/usr/include/wx-2.8/wx/colour.h:101: note: 	virtual unsigned char wxColourBase::Green() const
+/usr/include/wx-2.8/wx/colour.h:102: note: 	virtual unsigned char wxColourBase::Blue() const
+/usr/include/wx-2.8/wx/colour.h:121: note: 	virtual void wxColourBase::InitRGBA(unsigned char, unsigned char, unsigned char, unsigned char)
+make: *** [wxColourBase.o] Error 1

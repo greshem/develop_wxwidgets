@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTreeTextCtrl.o `wx-config  --cxxflags`    -Wno-write-strings   wxTreeTextCtrl.cpp
+wxTreeTextCtrl.cpp: In function 'int main(int, char**)':
+wxTreeTextCtrl.cpp:35: error: 'wxTreeTextCtrl' was not declared in this scope
+wxTreeTextCtrl.cpp:35: error: expected `;' before 'a'
+make: *** [wxTreeTextCtrl.o] Error 1

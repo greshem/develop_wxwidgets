@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxConvBrokenFileNames.o `wx-config  --cxxflags`    -Wno-write-strings   wxConvBrokenFileNames.cpp
+wxConvBrokenFileNames.cpp: In function 'int main(int, char**)':
+wxConvBrokenFileNames.cpp:29: error: no matching function for call to 'wxConvBrokenFileNames::wxConvBrokenFileNames()'
+/usr/include/wx-2.8/wx/strconv.h:193: note: candidates are: wxConvBrokenFileNames::wxConvBrokenFileNames(const wxConvBrokenFileNames&)
+/usr/include/wx-2.8/wx/strconv.h:192: note:                 wxConvBrokenFileNames::wxConvBrokenFileNames(const wxChar*)
+make: *** [wxConvBrokenFileNames.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlTag.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlTag.cpp
+wxHtmlTag.cpp: In function 'int main(int, char**)':
+wxHtmlTag.cpp:40: error: no matching function for call to 'wxHtmlTag::wxHtmlTag()'
+/usr/include/wx-2.8/wx/html/htmltag.h:138: note: candidates are: wxHtmlTag::wxHtmlTag(const wxHtmlTag&)
+/usr/include/wx-2.8/wx/html/htmltag.h:68: note:                 wxHtmlTag::wxHtmlTag(wxHtmlTag*, const wxString&, int, int, wxHtmlTagsCache*, wxHtmlEntitiesParser*)
+make: *** [wxHtmlTag.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSplitterWindow.o `wx-config  --cxxflags`    -Wno-write-strings   wxSplitterWindow.cpp
+wxSplitterWindow.cpp: In function 'int main(int, char**)':
+wxSplitterWindow.cpp:74: error: 'wxSplitterWindow' was not declared in this scope
+wxSplitterWindow.cpp:74: error: expected `;' before 'a'
+make: *** [wxSplitterWindow.o] Error 1

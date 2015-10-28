@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlBookRecArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlBookRecArray.cpp
+wxHtmlBookRecArray.cpp: In function 'int main(int, char**)':
+wxHtmlBookRecArray.cpp:36: error: 'wxHtmlBookRecArray' was not declared in this scope
+wxHtmlBookRecArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxHtmlBookRecArray.o] Error 1

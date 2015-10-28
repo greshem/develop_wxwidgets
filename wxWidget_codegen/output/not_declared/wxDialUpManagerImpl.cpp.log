@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDialUpManagerImpl.o `wx-config  --cxxflags`    -Wno-write-strings   wxDialUpManagerImpl.cpp
+wxDialUpManagerImpl.cpp: In function 'int main(int, char**)':
+wxDialUpManagerImpl.cpp:43: error: 'wxDialUpManagerImpl' was not declared in this scope
+wxDialUpManagerImpl.cpp:43: error: expected `;' before 'a'
+make: *** [wxDialUpManagerImpl.o] Error 1

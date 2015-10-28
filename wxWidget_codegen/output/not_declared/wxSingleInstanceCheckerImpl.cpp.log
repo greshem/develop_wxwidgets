@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSingleInstanceCheckerImpl.o `wx-config  --cxxflags`    -Wno-write-strings   wxSingleInstanceCheckerImpl.cpp
+wxSingleInstanceCheckerImpl.cpp: In function 'int main(int, char**)':
+wxSingleInstanceCheckerImpl.cpp:30: error: 'wxSingleInstanceCheckerImpl' was not declared in this scope
+wxSingleInstanceCheckerImpl.cpp:30: error: expected `;' before 'a'
+make: *** [wxSingleInstanceCheckerImpl.o] Error 1

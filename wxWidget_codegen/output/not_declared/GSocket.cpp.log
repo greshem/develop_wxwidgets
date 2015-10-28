@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o GSocket.o `wx-config  --cxxflags`    -Wno-write-strings   GSocket.cpp
+GSocket.cpp: In function 'int main(int, char**)':
+GSocket.cpp:62: error: 'GSocket' was not declared in this scope
+GSocket.cpp:62: error: expected `;' before 'a'
+make: *** [GSocket.o] Error 1

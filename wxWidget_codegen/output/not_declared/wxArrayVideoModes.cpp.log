@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxArrayVideoModes.o `wx-config  --cxxflags`    -Wno-write-strings   wxArrayVideoModes.cpp
+wxArrayVideoModes.cpp: In function 'int main(int, char**)':
+wxArrayVideoModes.cpp:36: error: 'wxArrayVideoModes' was not declared in this scope
+wxArrayVideoModes.cpp:36: error: expected `;' before 'a'
+make: *** [wxArrayVideoModes.o] Error 1

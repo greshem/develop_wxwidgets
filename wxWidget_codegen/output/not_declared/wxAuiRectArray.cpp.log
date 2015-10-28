@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxAuiRectArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxAuiRectArray.cpp
+wxAuiRectArray.cpp: In function 'int main(int, char**)':
+wxAuiRectArray.cpp:36: error: 'wxAuiRectArray' was not declared in this scope
+wxAuiRectArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxAuiRectArray.o] Error 1

@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxStaticBitmapBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxStaticBitmapBase.cpp
+wxStaticBitmapBase.cpp: In function 'int main(int, char**)':
+wxStaticBitmapBase.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxStaticBitmapBase'
+/usr/include/wx-2.8/wx/statbmp.h:27: note:   because the following virtual functions are pure within 'wxStaticBitmapBase':
+/usr/include/wx-2.8/wx/statbmp.h:33: note: 	virtual void wxStaticBitmapBase::SetIcon(const wxIcon&)
+/usr/include/wx-2.8/wx/statbmp.h:34: note: 	virtual void wxStaticBitmapBase::SetBitmap(const wxBitmap&)
+/usr/include/wx-2.8/wx/statbmp.h:35: note: 	virtual wxBitmap wxStaticBitmapBase::GetBitmap() const
+make: *** [wxStaticBitmapBase.o] Error 1

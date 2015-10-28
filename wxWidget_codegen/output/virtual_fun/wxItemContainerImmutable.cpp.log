@@ -1,0 +1,10 @@
+g++ -g  -Wall  -c -o wxItemContainerImmutable.o `wx-config  --cxxflags`    -Wno-write-strings   wxItemContainerImmutable.cpp
+wxItemContainerImmutable.cpp: In function 'int main(int, char**)':
+wxItemContainerImmutable.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxItemContainerImmutable'
+/usr/include/wx-2.8/wx/ctrlsub.h:33: note:   because the following virtual functions are pure within 'wxItemContainerImmutable':
+/usr/include/wx-2.8/wx/ctrlsub.h:41: note: 	virtual unsigned int wxItemContainerImmutable::GetCount() const
+/usr/include/wx-2.8/wx/ctrlsub.h:44: note: 	virtual wxString wxItemContainerImmutable::GetString(unsigned int) const
+/usr/include/wx-2.8/wx/ctrlsub.h:46: note: 	virtual void wxItemContainerImmutable::SetString(unsigned int, const wxString&)
+/usr/include/wx-2.8/wx/ctrlsub.h:68: note: 	virtual void wxItemContainerImmutable::SetSelection(int)
+/usr/include/wx-2.8/wx/ctrlsub.h:69: note: 	virtual int wxItemContainerImmutable::GetSelection() const
+make: *** [wxItemContainerImmutable.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxZipEndRec.o `wx-config  --cxxflags`    -Wno-write-strings   wxZipEndRec.cpp
+wxZipEndRec.cpp: In function 'int main(int, char**)':
+wxZipEndRec.cpp:30: error: 'wxZipEndRec' was not declared in this scope
+wxZipEndRec.cpp:30: error: expected `;' before 'a'
+make: *** [wxZipEndRec.o] Error 1

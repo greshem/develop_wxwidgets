@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxHtmlTagHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlTagHandler.cpp
+wxHtmlTagHandler.cpp: In function 'int main(int, char**)':
+wxHtmlTagHandler.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxHtmlTagHandler'
+/usr/include/wx-2.8/wx/html/htmlpars.h:200: note:   because the following virtual functions are pure within 'wxHtmlTagHandler':
+/usr/include/wx-2.8/wx/html/htmlpars.h:217: note: 	virtual wxString wxHtmlTagHandler::GetSupportedTags()
+/usr/include/wx-2.8/wx/html/htmlpars.h:223: note: 	virtual bool wxHtmlTagHandler::HandleTag(const wxHtmlTag&)
+make: *** [wxHtmlTagHandler.o] Error 1

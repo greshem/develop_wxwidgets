@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridSelection.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridSelection.cpp
+wxGridSelection.cpp: In function 'int main(int, char**)':
+wxGridSelection.cpp:40: error: 'wxGridSelection' was not declared in this scope
+wxGridSelection.cpp:40: error: expected `;' before 'a'
+make: *** [wxGridSelection.o] Error 1

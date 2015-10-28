@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRichTextListStylePage.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextListStylePage.cpp
+wxRichTextListStylePage.cpp: In function 'int main(int, char**)':
+wxRichTextListStylePage.cpp:86: error: 'wxRichTextListStylePage' was not declared in this scope
+wxRichTextListStylePage.cpp:86: error: expected `;' before 'a'
+make: *** [wxRichTextListStylePage.o] Error 1

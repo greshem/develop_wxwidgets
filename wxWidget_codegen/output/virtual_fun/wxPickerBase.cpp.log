@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxPickerBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxPickerBase.cpp
+wxPickerBase.cpp: In function 'int main(int, char**)':
+wxPickerBase.cpp:45: error: cannot declare variable 'a' to be of abstract type 'wxPickerBase'
+/usr/include/wx-2.8/wx/pickerbase.h:36: note:   because the following virtual functions are pure within 'wxPickerBase':
+/usr/include/wx-2.8/wx/pickerbase.h:109: note: 	virtual void wxPickerBase::UpdatePickerFromTextCtrl()
+/usr/include/wx-2.8/wx/pickerbase.h:110: note: 	virtual void wxPickerBase::UpdateTextCtrlFromPicker()
+make: *** [wxPickerBase.o] Error 1

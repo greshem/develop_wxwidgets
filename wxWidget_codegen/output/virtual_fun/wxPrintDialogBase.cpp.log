@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxPrintDialogBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxPrintDialogBase.cpp
+wxPrintDialogBase.cpp: In function 'int main(int, char**)':
+wxPrintDialogBase.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxPrintDialogBase'
+/usr/include/wx-2.8/wx/printdlg.h:30: note:   because the following virtual functions are pure within 'wxPrintDialogBase':
+/usr/include/wx-2.8/wx/printdlg.h:40: note: 	virtual wxPrintDialogData& wxPrintDialogBase::GetPrintDialogData()
+/usr/include/wx-2.8/wx/printdlg.h:41: note: 	virtual wxPrintData& wxPrintDialogBase::GetPrintData()
+/usr/include/wx-2.8/wx/printdlg.h:42: note: 	virtual wxDC* wxPrintDialogBase::GetPrintDC()
+make: *** [wxPrintDialogBase.o] Error 1

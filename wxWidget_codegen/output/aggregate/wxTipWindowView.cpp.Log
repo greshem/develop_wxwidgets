@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTipWindowView.o `wx-config  --cxxflags`    -Wno-write-strings   wxTipWindowView.cpp
+wxTipWindowView.cpp: In function 'int main(int, char**)':
+wxTipWindowView.cpp:35: error: aggregate 'wxTipWindowView a' has incomplete type and cannot be defined
+wxTipWindowView.cpp:35: warning: unused variable 'a'
+make: *** [wxTipWindowView.o] Error 1

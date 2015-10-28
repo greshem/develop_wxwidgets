@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFileConfigEntry.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileConfigEntry.cpp
+wxFileConfigEntry.cpp: In function 'int main(int, char**)':
+wxFileConfigEntry.cpp:31: error: aggregate 'wxFileConfigEntry a' has incomplete type and cannot be defined
+wxFileConfigEntry.cpp:31: warning: unused variable 'a'
+make: *** [wxFileConfigEntry.o] Error 1

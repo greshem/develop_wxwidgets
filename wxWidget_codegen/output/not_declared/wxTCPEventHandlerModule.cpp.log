@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTCPEventHandlerModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxTCPEventHandlerModule.cpp
+wxTCPEventHandlerModule.cpp: In function 'int main(int, char**)':
+wxTCPEventHandlerModule.cpp:29: error: 'wxTCPEventHandlerModule' was not declared in this scope
+wxTCPEventHandlerModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxTCPEventHandlerModule.o] Error 1

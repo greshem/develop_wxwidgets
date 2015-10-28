@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSearchButton.o `wx-config  --cxxflags`    -Wno-write-strings   wxSearchButton.cpp
+wxSearchButton.cpp: In function 'int main(int, char**)':
+wxSearchButton.cpp:29: error: 'wxSearchButton' was not declared in this scope
+wxSearchButton.cpp:29: error: expected `;' before 'a'
+make: *** [wxSearchButton.o] Error 1

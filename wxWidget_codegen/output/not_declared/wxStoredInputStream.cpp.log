@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxStoredInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxStoredInputStream.cpp
+wxStoredInputStream.cpp: In function 'int main(int, char**)':
+wxStoredInputStream.cpp:29: error: 'wxStoredInputStream' was not declared in this scope
+wxStoredInputStream.cpp:29: error: expected `;' before 'a'
+make: *** [wxStoredInputStream.o] Error 1

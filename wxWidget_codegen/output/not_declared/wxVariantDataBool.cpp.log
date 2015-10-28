@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxVariantDataBool.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantDataBool.cpp
+wxVariantDataBool.cpp: In function 'int main(int, char**)':
+wxVariantDataBool.cpp:36: error: 'wxVariantDataBool' was not declared in this scope
+wxVariantDataBool.cpp:36: error: expected `;' before 'a'
+make: *** [wxVariantDataBool.o] Error 1

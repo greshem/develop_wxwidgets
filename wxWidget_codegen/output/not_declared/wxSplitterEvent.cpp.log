@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSplitterEvent.o `wx-config  --cxxflags`    -Wno-write-strings   wxSplitterEvent.cpp
+wxSplitterEvent.cpp: In function 'int main(int, char**)':
+wxSplitterEvent.cpp:29: error: 'wxSplitterEvent' was not declared in this scope
+wxSplitterEvent.cpp:29: error: expected `;' before 'a'
+make: *** [wxSplitterEvent.o] Error 1

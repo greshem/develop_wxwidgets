@@ -1,0 +1,46 @@
+g++ -g  -Wall  -c -o wxDCBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxDCBase.cpp
+wxDCBase.cpp: In function 'int main(int, char**)':
+wxDCBase.cpp:43: error: cannot declare variable 'a' to be of abstract type 'wxDCBase'
+/usr/include/wx-2.8/wx/dc.h:102: note:   because the following virtual functions are pure within 'wxDCBase':
+/usr/include/wx-2.8/wx/dc.h:383: note: 	virtual void wxDCBase::Clear()
+/usr/include/wx-2.8/wx/dc.h:400: note: 	virtual void wxDCBase::SetFont(const wxFont&)
+/usr/include/wx-2.8/wx/dc.h:401: note: 	virtual void wxDCBase::SetPen(const wxPen&)
+/usr/include/wx-2.8/wx/dc.h:402: note: 	virtual void wxDCBase::SetBrush(const wxBrush&)
+/usr/include/wx-2.8/wx/dc.h:403: note: 	virtual void wxDCBase::SetBackground(const wxBrush&)
+/usr/include/wx-2.8/wx/dc.h:404: note: 	virtual void wxDCBase::SetBackgroundMode(int)
+/usr/include/wx-2.8/wx/dc.h:406: note: 	virtual void wxDCBase::SetPalette(const wxPalette&)
+/usr/include/wx-2.8/wx/dc.h:433: note: 	virtual wxCoord wxDCBase::GetCharHeight() const
+/usr/include/wx-2.8/wx/dc.h:434: note: 	virtual wxCoord wxDCBase::GetCharWidth() const
+/usr/include/wx-2.8/wx/dc.h:512: note: 	virtual bool wxDCBase::CanDrawBitmap() const
+/usr/include/wx-2.8/wx/dc.h:513: note: 	virtual bool wxDCBase::CanGetTextExtent() const
+/usr/include/wx-2.8/wx/dc.h:516: note: 	virtual int wxDCBase::GetDepth() const
+/usr/include/wx-2.8/wx/dc.h:519: note: 	virtual wxSize wxDCBase::GetPPI() const
+/usr/include/wx-2.8/wx/dc.h:541: note: 	virtual void wxDCBase::SetMapMode(int)
+/usr/include/wx-2.8/wx/dc.h:548: note: 	virtual void wxDCBase::SetUserScale(double, double)
+/usr/include/wx-2.8/wx/dc.h:565: note: 	virtual void wxDCBase::SetLogicalOrigin(wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:571: note: 	virtual void wxDCBase::SetDeviceOrigin(wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:575: note: 	virtual void wxDCBase::SetAxisOrientation(bool, bool)
+/usr/include/wx-2.8/wx/dc.h:578: note: 	virtual void wxDCBase::SetLogicalFunction(int)
+/usr/include/wx-2.8/wx/dc.h:687: note: 	virtual bool wxDCBase::DoFloodFill(wxCoord, wxCoord, const wxColour&, int)
+/usr/include/wx-2.8/wx/dc.h:699: note: 	virtual bool wxDCBase::DoGetPixel(wxCoord, wxCoord, wxColour*) const
+/usr/include/wx-2.8/wx/dc.h:701: note: 	virtual void wxDCBase::DoDrawPoint(wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:702: note: 	virtual void wxDCBase::DoDrawLine(wxCoord, wxCoord, wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:706: note: 	virtual void wxDCBase::DoDrawArc(wxCoord, wxCoord, wxCoord, wxCoord, wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:710: note: 	virtual void wxDCBase::DoDrawEllipticArc(wxCoord, wxCoord, wxCoord, wxCoord, double, double)
+/usr/include/wx-2.8/wx/dc.h:712: note: 	virtual void wxDCBase::DoDrawRectangle(wxCoord, wxCoord, wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:715: note: 	virtual void wxDCBase::DoDrawRoundedRectangle(wxCoord, wxCoord, wxCoord, wxCoord, double)
+/usr/include/wx-2.8/wx/dc.h:717: note: 	virtual void wxDCBase::DoDrawEllipse(wxCoord, wxCoord, wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:719: note: 	virtual void wxDCBase::DoCrossHair(wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:721: note: 	virtual void wxDCBase::DoDrawIcon(const wxIcon&, wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:723: note: 	virtual void wxDCBase::DoDrawBitmap(const wxBitmap&, wxCoord, wxCoord, bool)
+/usr/include/wx-2.8/wx/dc.h:725: note: 	virtual void wxDCBase::DoDrawText(const wxString&, wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:727: note: 	virtual void wxDCBase::DoDrawRotatedText(const wxString&, wxCoord, wxCoord, double)
+/usr/include/wx-2.8/wx/dc.h:732: note: 	virtual bool wxDCBase::DoBlit(wxCoord, wxCoord, wxCoord, wxCoord, wxDC*, wxCoord, wxCoord, int, bool, wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:736: note: 	virtual void wxDCBase::DoGetSize(int*, int*) const
+/usr/include/wx-2.8/wx/dc.h:737: note: 	virtual void wxDCBase::DoGetSizeMM(int*, int*) const
+/usr/include/wx-2.8/wx/dc.h:740: note: 	virtual void wxDCBase::DoDrawLines(int, wxPoint*, wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:743: note: 	virtual void wxDCBase::DoDrawPolygon(int, wxPoint*, wxCoord, wxCoord, int)
+/usr/include/wx-2.8/wx/dc.h:748: note: 	virtual void wxDCBase::DoSetClippingRegionAsRegion(const wxRegion&)
+/usr/include/wx-2.8/wx/dc.h:750: note: 	virtual void wxDCBase::DoSetClippingRegion(wxCoord, wxCoord, wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/dc.h:788: note: 	virtual void wxDCBase::DoGetTextExtent(const wxString&, wxCoord*, wxCoord*, wxCoord*, wxCoord*, wxFont*) const
+make: *** [wxDCBase.o] Error 1

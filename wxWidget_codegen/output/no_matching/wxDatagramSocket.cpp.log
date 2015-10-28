@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxDatagramSocket.o `wx-config  --cxxflags`    -Wno-write-strings   wxDatagramSocket.cpp
+wxDatagramSocket.cpp: In function 'int main(int, char**)':
+wxDatagramSocket.cpp:32: error: no matching function for call to 'wxDatagramSocket::wxDatagramSocket()'
+/usr/include/wx-2.8/wx/socket.h:296: note: candidates are: wxDatagramSocket::wxDatagramSocket(const wxDatagramSocket&)
+/usr/include/wx-2.8/wx/socket.h:284: note:                 wxDatagramSocket::wxDatagramSocket(const wxSockAddress&, wxSocketFlags)
+make: *** [wxDatagramSocket.o] Error 1

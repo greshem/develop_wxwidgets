@@ -1,0 +1,13 @@
+g++ -g  -Wall  -c -o wxClipboardBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxClipboardBase.cpp
+wxClipboardBase.cpp: In function 'int main(int, char**)':
+wxClipboardBase.cpp:29: error: cannot declare variable 'a' to be of abstract type 'wxClipboardBase'
+/usr/include/wx-2.8/wx/clipbrd.h:36: note:   because the following virtual functions are pure within 'wxClipboardBase':
+/usr/include/wx-2.8/wx/clipbrd.h:41: note: 	virtual bool wxClipboardBase::Open()
+/usr/include/wx-2.8/wx/clipbrd.h:44: note: 	virtual void wxClipboardBase::Close()
+/usr/include/wx-2.8/wx/clipbrd.h:47: note: 	virtual bool wxClipboardBase::IsOpened() const
+/usr/include/wx-2.8/wx/clipbrd.h:53: note: 	virtual bool wxClipboardBase::AddData(wxDataObject*)
+/usr/include/wx-2.8/wx/clipbrd.h:57: note: 	virtual bool wxClipboardBase::SetData(wxDataObject*)
+/usr/include/wx-2.8/wx/clipbrd.h:60: note: 	virtual bool wxClipboardBase::IsSupported(const wxDataFormat&)
+/usr/include/wx-2.8/wx/clipbrd.h:63: note: 	virtual bool wxClipboardBase::GetData(wxDataObject&)
+/usr/include/wx-2.8/wx/clipbrd.h:66: note: 	virtual void wxClipboardBase::Clear()
+make: *** [wxClipboardBase.o] Error 1

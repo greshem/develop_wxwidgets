@@ -1,0 +1,18 @@
+g++ -g  -Wall  -c -o wxDialUpManager.o `wx-config  --cxxflags`    -Wno-write-strings   wxDialUpManager.cpp
+wxDialUpManager.cpp: In function 'int main(int, char**)':
+wxDialUpManager.cpp:29: error: cannot declare variable 'a' to be of abstract type 'wxDialUpManager'
+/usr/include/wx-2.8/wx/dialup.h:47: note:   because the following virtual functions are pure within 'wxDialUpManager':
+/usr/include/wx-2.8/wx/dialup.h:58: note: 	virtual bool wxDialUpManager::IsOk() const
+/usr/include/wx-2.8/wx/dialup.h:68: note: 	virtual size_t wxDialUpManager::GetISPNames(wxArrayString&) const
+/usr/include/wx-2.8/wx/dialup.h:85: note: 	virtual bool wxDialUpManager::Dial(const wxString&, const wxString&, const wxString&, bool)
+/usr/include/wx-2.8/wx/dialup.h:88: note: 	virtual bool wxDialUpManager::IsDialing() const
+/usr/include/wx-2.8/wx/dialup.h:92: note: 	virtual bool wxDialUpManager::CancelDialing()
+/usr/include/wx-2.8/wx/dialup.h:95: note: 	virtual bool wxDialUpManager::HangUp()
+/usr/include/wx-2.8/wx/dialup.h:106: note: 	virtual bool wxDialUpManager::IsAlwaysOnline() const
+/usr/include/wx-2.8/wx/dialup.h:111: note: 	virtual bool wxDialUpManager::IsOnline() const
+/usr/include/wx-2.8/wx/dialup.h:117: note: 	virtual void wxDialUpManager::SetOnlineStatus(bool)
+/usr/include/wx-2.8/wx/dialup.h:129: note: 	virtual bool wxDialUpManager::EnableAutoCheckOnlineStatus(size_t)
+/usr/include/wx-2.8/wx/dialup.h:133: note: 	virtual void wxDialUpManager::DisableAutoCheckOnlineStatus()
+/usr/include/wx-2.8/wx/dialup.h:142: note: 	virtual void wxDialUpManager::SetWellKnownHost(const wxString&, int)
+/usr/include/wx-2.8/wx/dialup.h:148: note: 	virtual void wxDialUpManager::SetConnectCommand(const wxString&, const wxString&)
+make: *** [wxDialUpManager.o] Error 1

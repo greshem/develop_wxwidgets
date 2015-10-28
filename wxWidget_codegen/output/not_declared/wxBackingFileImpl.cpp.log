@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxBackingFileImpl.o `wx-config  --cxxflags`    -Wno-write-strings   wxBackingFileImpl.cpp
+wxBackingFileImpl.cpp: In function 'int main(int, char**)':
+wxBackingFileImpl.cpp:31: error: 'wxBackingFileImpl' was not declared in this scope
+wxBackingFileImpl.cpp:31: error: expected `;' before 'a'
+make: *** [wxBackingFileImpl.o] Error 1

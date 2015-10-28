@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxPageSetupDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxPageSetupDialog.cpp
+wxPageSetupDialog.cpp: In function 'int main(int, char**)':
+wxPageSetupDialog.cpp:35: error: no matching function for call to 'wxPageSetupDialog::wxPageSetupDialog()'
+/usr/include/wx-2.8/wx/printdlg.h:116: note: candidates are: wxPageSetupDialog::wxPageSetupDialog(const wxPageSetupDialog&)
+/usr/include/wx-2.8/wx/printdlg.h:103: note:                 wxPageSetupDialog::wxPageSetupDialog(wxWindow*, wxPageSetupDialogData*)
+make: *** [wxPageSetupDialog.o] Error 1

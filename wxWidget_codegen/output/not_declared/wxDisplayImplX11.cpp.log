@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDisplayImplX11.o `wx-config  --cxxflags`    -Wno-write-strings   wxDisplayImplX11.cpp
+wxDisplayImplX11.cpp: In function 'int main(int, char**)':
+wxDisplayImplX11.cpp:30: error: 'wxDisplayImplX11' was not declared in this scope
+wxDisplayImplX11.cpp:30: error: expected `;' before 'a'
+make: *** [wxDisplayImplX11.o] Error 1

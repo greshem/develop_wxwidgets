@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPostScriptPrintPreview.o `wx-config  --cxxflags`    -Wno-write-strings   wxPostScriptPrintPreview.cpp
+wxPostScriptPrintPreview.cpp: In function 'int main(int, char**)':
+wxPostScriptPrintPreview.cpp:34: error: 'wxPostScriptPrintPreview' was not declared in this scope
+wxPostScriptPrintPreview.cpp:34: error: expected `;' before 'a'
+make: *** [wxPostScriptPrintPreview.o] Error 1

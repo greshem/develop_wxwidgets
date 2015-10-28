@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxStaticBoxSizer.o `wx-config  --cxxflags`    -Wno-write-strings   wxStaticBoxSizer.cpp
+wxStaticBoxSizer.cpp: In function 'int main(int, char**)':
+wxStaticBoxSizer.cpp:36: error: no matching function for call to 'wxStaticBoxSizer::wxStaticBoxSizer()'
+/usr/include/wx-2.8/wx/sizer.h:796: note: candidates are: wxStaticBoxSizer::wxStaticBoxSizer(const wxStaticBoxSizer&)
+/usr/include/wx-2.8/wx/sizer.h:775: note:                 wxStaticBoxSizer::wxStaticBoxSizer(int, wxWindow*, const wxString&)
+/usr/include/wx-2.8/wx/sizer.h:774: note:                 wxStaticBoxSizer::wxStaticBoxSizer(wxStaticBox*, int)
+make: *** [wxStaticBoxSizer.o] Error 1

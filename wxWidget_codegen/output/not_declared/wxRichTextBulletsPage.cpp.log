@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRichTextBulletsPage.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextBulletsPage.cpp
+wxRichTextBulletsPage.cpp: In function 'int main(int, char**)':
+wxRichTextBulletsPage.cpp:73: error: 'wxRichTextBulletsPage' was not declared in this scope
+wxRichTextBulletsPage.cpp:73: error: expected `;' before 'a'
+make: *** [wxRichTextBulletsPage.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxArtProviderModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxArtProviderModule.cpp
+wxArtProviderModule.cpp: In function 'int main(int, char**)':
+wxArtProviderModule.cpp:29: error: 'wxArtProviderModule' was not declared in this scope
+wxArtProviderModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxArtProviderModule.o] Error 1

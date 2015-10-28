@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTML_ModuleFonts.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTML_ModuleFonts.cpp
+wxHTML_ModuleFonts.cpp: In function 'int main(int, char**)':
+wxHTML_ModuleFonts.cpp:29: error: 'wxHTML_ModuleFonts' was not declared in this scope
+wxHTML_ModuleFonts.cpp:29: error: expected `;' before 'a'
+make: *** [wxHTML_ModuleFonts.o] Error 1

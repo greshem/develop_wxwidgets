@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlHelpHtmlWindow.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlHelpHtmlWindow.cpp
+wxHtmlHelpHtmlWindow.cpp: In function 'int main(int, char**)':
+wxHtmlHelpHtmlWindow.cpp:29: error: 'wxHtmlHelpHtmlWindow' was not declared in this scope
+wxHtmlHelpHtmlWindow.cpp:29: error: expected `;' before 'a'
+make: *** [wxHtmlHelpHtmlWindow.o] Error 1

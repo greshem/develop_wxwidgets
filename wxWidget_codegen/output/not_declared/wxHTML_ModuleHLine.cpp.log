@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTML_ModuleHLine.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTML_ModuleHLine.cpp
+wxHTML_ModuleHLine.cpp: In function 'int main(int, char**)':
+wxHTML_ModuleHLine.cpp:29: error: 'wxHTML_ModuleHLine' was not declared in this scope
+wxHTML_ModuleHLine.cpp:29: error: expected `;' before 'a'
+make: *** [wxHTML_ModuleHLine.o] Error 1

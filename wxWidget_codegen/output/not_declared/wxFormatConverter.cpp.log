@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFormatConverter.o `wx-config  --cxxflags`    -Wno-write-strings   wxFormatConverter.cpp
+wxFormatConverter.cpp: In function 'int main(int, char**)':
+wxFormatConverter.cpp:28: error: 'wxFormatConverter' was not declared in this scope
+wxFormatConverter.cpp:28: error: expected `;' before 'a'
+make: *** [wxFormatConverter.o] Error 1

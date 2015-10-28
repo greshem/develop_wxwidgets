@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSocketModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxSocketModule.cpp
+wxSocketModule.cpp: In function 'int main(int, char**)':
+wxSocketModule.cpp:29: error: 'wxSocketModule' was not declared in this scope
+wxSocketModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxSocketModule.o] Error 1

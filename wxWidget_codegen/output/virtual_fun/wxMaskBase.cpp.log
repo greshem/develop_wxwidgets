@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxMaskBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxMaskBase.cpp
+wxMaskBase.cpp: In function 'int main(int, char**)':
+wxMaskBase.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxMaskBase'
+/usr/include/wx-2.8/wx/bitmap.h:44: note:   because the following virtual functions are pure within 'wxMaskBase':
+/usr/include/wx-2.8/wx/bitmap.h:59: note: 	virtual void wxMaskBase::FreeData()
+/usr/include/wx-2.8/wx/bitmap.h:65: note: 	virtual bool wxMaskBase::InitFromColour(const wxBitmap&, const wxColour&)
+/usr/include/wx-2.8/wx/bitmap.h:66: note: 	virtual bool wxMaskBase::InitFromMonoBitmap(const wxBitmap&)
+make: *** [wxMaskBase.o] Error 1

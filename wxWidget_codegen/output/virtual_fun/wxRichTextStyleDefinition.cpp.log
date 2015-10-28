@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxRichTextStyleDefinition.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextStyleDefinition.cpp
+wxRichTextStyleDefinition.cpp: In function 'int main(int, char**)':
+wxRichTextStyleDefinition.cpp:33: error: cannot declare variable 'a' to be of abstract type 'wxRichTextStyleDefinition'
+/usr/include/wx-2.8/wx/richtext/richtextstyles.h:48: note:   because the following virtual functions are pure within 'wxRichTextStyleDefinition':
+/usr/include/wx-2.8/wx/richtext/richtextstyles.h:82: note: 	virtual wxRichTextStyleDefinition* wxRichTextStyleDefinition::Clone() const
+make: *** [wxRichTextStyleDefinition.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlModalHelp.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlModalHelp.cpp
+wxHtmlModalHelp.cpp: In function 'int main(int, char**)':
+wxHtmlModalHelp.cpp:29: error: no matching function for call to 'wxHtmlModalHelp::wxHtmlModalHelp()'
+/usr/include/wx-2.8/wx/html/helpctrl.h:148: note: candidates are: wxHtmlModalHelp::wxHtmlModalHelp(wxWindow*, const wxString&, const wxString&, int)
+/usr/include/wx-2.8/wx/html/helpctrl.h:145: note:                 wxHtmlModalHelp::wxHtmlModalHelp(const wxHtmlModalHelp&)
+make: *** [wxHtmlModalHelp.o] Error 1

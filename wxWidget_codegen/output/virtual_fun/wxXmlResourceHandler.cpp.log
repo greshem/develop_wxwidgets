@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxXmlResourceHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxXmlResourceHandler.cpp
+wxXmlResourceHandler.cpp: In function 'int main(int, char**)':
+wxXmlResourceHandler.cpp:56: error: cannot declare variable 'a' to be of abstract type 'wxXmlResourceHandler'
+/usr/include/wx-2.8/wx/xrc/xmlres.h:338: note:   because the following virtual functions are pure within 'wxXmlResourceHandler':
+/usr/include/wx-2.8/wx/xrc/xmlres.h:358: note: 	virtual wxObject* wxXmlResourceHandler::DoCreateResource()
+/usr/include/wx-2.8/wx/xrc/xmlres.h:362: note: 	virtual bool wxXmlResourceHandler::CanHandle(wxXmlNode*)
+make: *** [wxXmlResourceHandler.o] Error 1

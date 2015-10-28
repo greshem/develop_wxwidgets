@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRegExImpl.o `wx-config  --cxxflags`    -Wno-write-strings   wxRegExImpl.cpp
+wxRegExImpl.cpp: In function 'int main(int, char**)':
+wxRegExImpl.cpp:36: error: aggregate 'wxRegExImpl a' has incomplete type and cannot be defined
+wxRegExImpl.cpp:36: warning: unused variable 'a'
+make: *** [wxRegExImpl.o] Error 1

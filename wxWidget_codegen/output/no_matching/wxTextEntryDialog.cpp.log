@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxTextEntryDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxTextEntryDialog.cpp
+wxTextEntryDialog.cpp: In function 'int main(int, char**)':
+wxTextEntryDialog.cpp:35: error: no matching function for call to 'wxTextEntryDialog::wxTextEntryDialog()'
+/usr/include/wx-2.8/wx/generic/textdlgg.h:67: note: candidates are: wxTextEntryDialog::wxTextEntryDialog(const wxTextEntryDialog&)
+/usr/include/wx-2.8/wx/generic/textdlgg.h:44: note:                 wxTextEntryDialog::wxTextEntryDialog(wxWindow*, const wxString&, const wxString&, const wxString&, long int, const wxPoint&)
+make: *** [wxTextEntryDialog.o] Error 1

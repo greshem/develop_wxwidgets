@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDebugReportDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxDebugReportDialog.cpp
+wxDebugReportDialog.cpp: In function 'int main(int, char**)':
+wxDebugReportDialog.cpp:35: error: 'wxDebugReportDialog' was not declared in this scope
+wxDebugReportDialog.cpp:35: error: expected `;' before 'a'
+make: *** [wxDebugReportDialog.o] Error 1

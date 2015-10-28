@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxBufferedPaintDC.o `wx-config  --cxxflags`    -Wno-write-strings   wxBufferedPaintDC.cpp
+wxBufferedPaintDC.cpp: In function 'int main(int, char**)':
+wxBufferedPaintDC.cpp:29: error: no matching function for call to 'wxBufferedPaintDC::wxBufferedPaintDC()'
+/usr/include/wx-2.8/wx/dcbuffer.h:212: note: candidates are: wxBufferedPaintDC::wxBufferedPaintDC(const wxBufferedPaintDC&)
+/usr/include/wx-2.8/wx/dcbuffer.h:180: note:                 wxBufferedPaintDC::wxBufferedPaintDC(wxWindow*, int)
+/usr/include/wx-2.8/wx/dcbuffer.h:166: note:                 wxBufferedPaintDC::wxBufferedPaintDC(wxWindow*, wxBitmap&, int)
+make: *** [wxBufferedPaintDC.o] Error 1

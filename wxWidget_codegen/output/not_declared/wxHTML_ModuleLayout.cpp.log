@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTML_ModuleLayout.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTML_ModuleLayout.cpp
+wxHTML_ModuleLayout.cpp: In function 'int main(int, char**)':
+wxHTML_ModuleLayout.cpp:29: error: 'wxHTML_ModuleLayout' was not declared in this scope
+wxHTML_ModuleLayout.cpp:29: error: expected `;' before 'a'
+make: *** [wxHTML_ModuleLayout.o] Error 1

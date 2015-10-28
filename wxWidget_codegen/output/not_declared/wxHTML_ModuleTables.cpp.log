@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTML_ModuleTables.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTML_ModuleTables.cpp
+wxHTML_ModuleTables.cpp: In function 'int main(int, char**)':
+wxHTML_ModuleTables.cpp:29: error: 'wxHTML_ModuleTables' was not declared in this scope
+wxHTML_ModuleTables.cpp:29: error: expected `;' before 'a'
+make: *** [wxHTML_ModuleTables.o] Error 1

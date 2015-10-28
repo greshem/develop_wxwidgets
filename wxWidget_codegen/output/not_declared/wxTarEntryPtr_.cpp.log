@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTarEntryPtr_.o `wx-config  --cxxflags`    -Wno-write-strings   wxTarEntryPtr_.cpp
+wxTarEntryPtr_.cpp: In function 'int main(int, char**)':
+wxTarEntryPtr_.cpp:28: error: 'wxTarEntryPtr_' was not declared in this scope
+wxTarEntryPtr_.cpp:28: error: expected `;' before 'a'
+make: *** [wxTarEntryPtr_.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlSearchStatus.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlSearchStatus.cpp
+wxHtmlSearchStatus.cpp: In function 'int main(int, char**)':
+wxHtmlSearchStatus.cpp:30: error: no matching function for call to 'wxHtmlSearchStatus::wxHtmlSearchStatus()'
+/usr/include/wx-2.8/wx/html/helpdata.h:186: note: candidates are: wxHtmlSearchStatus::wxHtmlSearchStatus(const wxHtmlSearchStatus&)
+/usr/include/wx-2.8/wx/html/helpdata.h:163: note:                 wxHtmlSearchStatus::wxHtmlSearchStatus(wxHtmlHelpData*, const wxString&, bool, bool, const wxString&)
+make: *** [wxHtmlSearchStatus.o] Error 1

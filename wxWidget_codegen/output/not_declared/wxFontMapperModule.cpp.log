@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFontMapperModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxFontMapperModule.cpp
+wxFontMapperModule.cpp: In function 'int main(int, char**)':
+wxFontMapperModule.cpp:29: error: 'wxFontMapperModule' was not declared in this scope
+wxFontMapperModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxFontMapperModule.o] Error 1

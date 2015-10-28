@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlListBox.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlListBox.cpp
+wxHtmlListBox.cpp: In function 'int main(int, char**)':
+wxHtmlListBox.cpp:65: error: cannot declare variable 'a' to be of abstract type 'wxHtmlListBox'
+/usr/include/wx-2.8/wx/htmllbox.h:38: note:   because the following virtual functions are pure within 'wxHtmlListBox':
+/usr/include/wx-2.8/wx/htmllbox.h:89: note: 	virtual wxString wxHtmlListBox::OnGetItem(size_t) const
+make: *** [wxHtmlListBox.o] Error 1

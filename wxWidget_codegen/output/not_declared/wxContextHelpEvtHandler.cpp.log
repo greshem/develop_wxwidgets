@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxContextHelpEvtHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxContextHelpEvtHandler.cpp
+wxContextHelpEvtHandler.cpp: In function 'int main(int, char**)':
+wxContextHelpEvtHandler.cpp:28: error: 'wxContextHelpEvtHandler' was not declared in this scope
+wxContextHelpEvtHandler.cpp:28: error: expected `;' before 'a'
+make: *** [wxContextHelpEvtHandler.o] Error 1

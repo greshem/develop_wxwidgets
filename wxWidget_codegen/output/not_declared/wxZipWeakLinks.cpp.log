@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxZipWeakLinks.o `wx-config  --cxxflags`    -Wno-write-strings   wxZipWeakLinks.cpp
+wxZipWeakLinks.cpp: In function 'int main(int, char**)':
+wxZipWeakLinks.cpp:29: error: 'wxZipWeakLinks' was not declared in this scope
+wxZipWeakLinks.cpp:29: error: expected `;' before 'a'
+make: *** [wxZipWeakLinks.o] Error 1

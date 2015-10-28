@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPrintFactoryModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxPrintFactoryModule.cpp
+wxPrintFactoryModule.cpp: In function 'int main(int, char**)':
+wxPrintFactoryModule.cpp:29: error: 'wxPrintFactoryModule' was not declared in this scope
+wxPrintFactoryModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxPrintFactoryModule.o] Error 1

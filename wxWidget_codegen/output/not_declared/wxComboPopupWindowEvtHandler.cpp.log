@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxComboPopupWindowEvtHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxComboPopupWindowEvtHandler.cpp
+wxComboPopupWindowEvtHandler.cpp: In function 'int main(int, char**)':
+wxComboPopupWindowEvtHandler.cpp:31: error: 'wxComboPopupWindowEvtHandler' was not declared in this scope
+wxComboPopupWindowEvtHandler.cpp:31: error: expected `;' before 'a'
+make: *** [wxComboPopupWindowEvtHandler.o] Error 1

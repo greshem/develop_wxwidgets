@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wx_class_statics.pl.o `wx-config  --cxxflags`    -Wno-write-strings   wx_class_statics.pl.cpp
+wx_class_statics.pl.cpp: In function 'int main(int, char**)':
+wx_class_statics.pl.cpp:27: error: 'wx_class_statics' was not declared in this scope
+wx_class_statics.pl.cpp:27: error: expected `;' before 'a'
+make: *** [wx_class_statics.pl.o] Error 1

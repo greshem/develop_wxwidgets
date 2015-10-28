@@ -1,0 +1,36 @@
+g++ -g  -Wall  -c -o wxTextCtrlBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxTextCtrlBase.cpp
+wxTextCtrlBase.cpp: In function 'int main(int, char**)':
+wxTextCtrlBase.cpp:54: error: cannot declare variable 'a' to be of abstract type 'wxTextCtrlBase'
+/usr/include/wx-2.8/wx/textctrl.h:289: note:   because the following virtual functions are pure within 'wxTextCtrlBase':
+/usr/include/wx-2.8/wx/textctrl.h:300: note: 	virtual wxString wxTextCtrlBase::GetValue() const
+/usr/include/wx-2.8/wx/textctrl.h:310: note: 	virtual int wxTextCtrlBase::GetLineLength(long int) const
+/usr/include/wx-2.8/wx/textctrl.h:311: note: 	virtual wxString wxTextCtrlBase::GetLineText(long int) const
+/usr/include/wx-2.8/wx/textctrl.h:312: note: 	virtual int wxTextCtrlBase::GetNumberOfLines() const
+/usr/include/wx-2.8/wx/textctrl.h:314: note: 	virtual bool wxTextCtrlBase::IsModified() const
+/usr/include/wx-2.8/wx/textctrl.h:315: note: 	virtual bool wxTextCtrlBase::IsEditable() const
+/usr/include/wx-2.8/wx/textctrl.h:322: note: 	virtual void wxTextCtrlBase::GetSelection(long int*, long int*) const
+/usr/include/wx-2.8/wx/textctrl.h:330: note: 	virtual void wxTextCtrlBase::Clear()
+/usr/include/wx-2.8/wx/textctrl.h:331: note: 	virtual void wxTextCtrlBase::Replace(long int, long int, const wxString&)
+/usr/include/wx-2.8/wx/textctrl.h:332: note: 	virtual void wxTextCtrlBase::Remove(long int, long int)
+/usr/include/wx-2.8/wx/textctrl.h:343: note: 	virtual void wxTextCtrlBase::MarkDirty()
+/usr/include/wx-2.8/wx/textctrl.h:344: note: 	virtual void wxTextCtrlBase::DiscardEdits()
+/usr/include/wx-2.8/wx/textctrl.h:359: note: 	virtual void wxTextCtrlBase::WriteText(const wxString&)
+/usr/include/wx-2.8/wx/textctrl.h:360: note: 	virtual void wxTextCtrlBase::AppendText(const wxString&)
+/usr/include/wx-2.8/wx/textctrl.h:377: note: 	virtual long int wxTextCtrlBase::XYToPosition(long int, long int) const
+/usr/include/wx-2.8/wx/textctrl.h:378: note: 	virtual bool wxTextCtrlBase::PositionToXY(long int, long int*, long int*) const
+/usr/include/wx-2.8/wx/textctrl.h:380: note: 	virtual void wxTextCtrlBase::ShowPosition(long int)
+/usr/include/wx-2.8/wx/textctrl.h:392: note: 	virtual void wxTextCtrlBase::Copy()
+/usr/include/wx-2.8/wx/textctrl.h:393: note: 	virtual void wxTextCtrlBase::Cut()
+/usr/include/wx-2.8/wx/textctrl.h:394: note: 	virtual void wxTextCtrlBase::Paste()
+/usr/include/wx-2.8/wx/textctrl.h:401: note: 	virtual void wxTextCtrlBase::Undo()
+/usr/include/wx-2.8/wx/textctrl.h:402: note: 	virtual void wxTextCtrlBase::Redo()
+/usr/include/wx-2.8/wx/textctrl.h:404: note: 	virtual bool wxTextCtrlBase::CanUndo() const
+/usr/include/wx-2.8/wx/textctrl.h:405: note: 	virtual bool wxTextCtrlBase::CanRedo() const
+/usr/include/wx-2.8/wx/textctrl.h:408: note: 	virtual void wxTextCtrlBase::SetInsertionPoint(long int)
+/usr/include/wx-2.8/wx/textctrl.h:409: note: 	virtual void wxTextCtrlBase::SetInsertionPointEnd()
+/usr/include/wx-2.8/wx/textctrl.h:410: note: 	virtual long int wxTextCtrlBase::GetInsertionPoint() const
+/usr/include/wx-2.8/wx/textctrl.h:411: note: 	virtual wxTextPos wxTextCtrlBase::GetLastPosition() const
+/usr/include/wx-2.8/wx/textctrl.h:413: note: 	virtual void wxTextCtrlBase::SetSelection(long int, long int)
+/usr/include/wx-2.8/wx/textctrl.h:415: note: 	virtual void wxTextCtrlBase::SetEditable(bool)
+/usr/include/wx-2.8/wx/textctrl.h:448: note: 	virtual void wxTextCtrlBase::DoSetValue(const wxString&, int)
+make: *** [wxTextCtrlBase.o] Error 1

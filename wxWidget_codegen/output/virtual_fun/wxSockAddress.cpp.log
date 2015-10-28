@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxSockAddress.o `wx-config  --cxxflags`    -Wno-write-strings   wxSockAddress.cpp
+wxSockAddress.cpp: In function 'int main(int, char**)':
+wxSockAddress.cpp:36: error: cannot declare variable 'a' to be of abstract type 'wxSockAddress'
+/usr/include/wx-2.8/wx/sckaddr.h:23: note:   because the following virtual functions are pure within 'wxSockAddress':
+/usr/include/wx-2.8/wx/sckaddr.h:35: note: 	virtual int wxSockAddress::Type()
+/usr/include/wx-2.8/wx/sckaddr.h:42: note: 	virtual wxSockAddress* wxSockAddress::Clone() const
+make: *** [wxSockAddress.o] Error 1

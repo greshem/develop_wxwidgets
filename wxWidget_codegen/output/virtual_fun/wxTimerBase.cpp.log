@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxTimerBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxTimerBase.cpp
+wxTimerBase.cpp: In function 'int main(int, char**)':
+wxTimerBase.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxTimerBase'
+/usr/include/wx-2.8/wx/timer.h:37: note:   because the following virtual functions are pure within 'wxTimerBase':
+/usr/include/wx-2.8/wx/timer.h:75: note: 	virtual void wxTimerBase::Stop()
+/usr/include/wx-2.8/wx/timer.h:85: note: 	virtual bool wxTimerBase::IsRunning() const
+make: *** [wxTimerBase.o] Error 1

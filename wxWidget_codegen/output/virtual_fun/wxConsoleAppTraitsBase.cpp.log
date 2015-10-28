@@ -1,0 +1,9 @@
+g++ -g  -Wall  -c -o wxConsoleAppTraitsBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxConsoleAppTraitsBase.cpp
+wxConsoleAppTraitsBase.cpp: In function 'int main(int, char**)':
+wxConsoleAppTraitsBase.cpp:37: error: cannot declare variable 'a' to be of abstract type 'wxConsoleAppTraitsBase'
+/usr/include/wx-2.8/wx/apptrait.h:166: note:   because the following virtual functions are pure within 'wxConsoleAppTraitsBase':
+/usr/include/wx-2.8/wx/unix/apptbase.h:33: note: 	virtual bool wxAppTraits::CreateEndProcessPipe(wxExecuteData&)
+/usr/include/wx-2.8/wx/unix/apptbase.h:37: note: 	virtual bool wxAppTraits::IsWriteFDOfEndProcessPipe(wxExecuteData&, int)
+/usr/include/wx-2.8/wx/unix/apptbase.h:40: note: 	virtual void wxAppTraits::DetachWriteFDOfEndProcessPipe(wxExecuteData&)
+/usr/include/wx-2.8/wx/unix/apptbase.h:44: note: 	virtual int wxAppTraits::WaitForChild(wxExecuteData&)
+make: *** [wxConsoleAppTraitsBase.o] Error 1

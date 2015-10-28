@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlProcessor.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlProcessor.cpp
+wxHtmlProcessor.cpp: In function 'int main(int, char**)':
+wxHtmlProcessor.cpp:29: error: cannot declare variable 'a' to be of abstract type 'wxHtmlProcessor'
+/usr/include/wx-2.8/wx/html/htmlproc.h:33: note:   because the following virtual functions are pure within 'wxHtmlProcessor':
+/usr/include/wx-2.8/wx/html/htmlproc.h:41: note: 	virtual wxString wxHtmlProcessor::Process(const wxString&) const
+make: *** [wxHtmlProcessor.o] Error 1

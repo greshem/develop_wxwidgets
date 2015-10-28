@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxCalendarComboPopup.o `wx-config  --cxxflags`    -Wno-write-strings   wxCalendarComboPopup.cpp
+wxCalendarComboPopup.cpp: In function 'int main(int, char**)':
+wxCalendarComboPopup.cpp:29: error: 'wxCalendarComboPopup' was not declared in this scope
+wxCalendarComboPopup.cpp:29: error: expected `;' before 'a'
+make: *** [wxCalendarComboPopup.o] Error 1

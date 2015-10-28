@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxDateTimeHolidayAuthority.o `wx-config  --cxxflags`    -Wno-write-strings   wxDateTimeHolidayAuthority.cpp
+wxDateTimeHolidayAuthority.cpp: In function 'int main(int, char**)':
+wxDateTimeHolidayAuthority.cpp:33: error: cannot declare variable 'a' to be of abstract type 'wxDateTimeHolidayAuthority'
+/usr/include/wx-2.8/wx/datetime.h:1504: note:   because the following virtual functions are pure within 'wxDateTimeHolidayAuthority':
+/usr/include/wx-2.8/wx/datetime.h:1528: note: 	virtual bool wxDateTimeHolidayAuthority::DoIsHoliday(const wxDateTime&) const
+/usr/include/wx-2.8/wx/datetime.h:1540: note: 	virtual size_t wxDateTimeHolidayAuthority::DoGetHolidaysInRange(const wxDateTime&, const wxDateTime&, wxDateTimeArray&) const
+make: *** [wxDateTimeHolidayAuthority.o] Error 1

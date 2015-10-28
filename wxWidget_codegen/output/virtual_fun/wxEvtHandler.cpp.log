@@ -1,0 +1,48 @@
+g++ -g  -Wall  -c -o wxEvtHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxEvtHandler.cpp
+In file included from wxEvtHandler.cpp:20:
+/usr/include/wx-2.8/wx/xti.h:37:22: error: wx/flags.h: No such file or directory
+/usr/include/wx-2.8/wx/xti.h:1912:1: warning: "DECLARE_DYNAMIC_CLASS" redefined
+In file included from /usr/include/wx-2.8/wx/wx.h:16,
+                 from wxEvtHandler.cpp:14:
+/usr/include/wx-2.8/wx/object.h:160:1: warning: this is the location of the previous definition
+In file included from wxEvtHandler.cpp:20:
+/usr/include/wx-2.8/wx/xti.h:1926:1: warning: "DECLARE_ABSTRACT_CLASS" redefined
+In file included from /usr/include/wx-2.8/wx/wx.h:16,
+                 from wxEvtHandler.cpp:14:
+/usr/include/wx-2.8/wx/object.h:147:1: warning: this is the location of the previous definition
+In file included from wxEvtHandler.cpp:20:
+/usr/include/wx-2.8/wx/xti.h:1971:1: warning: "IMPLEMENT_DYNAMIC_CLASS" redefined
+In file included from /usr/include/wx-2.8/wx/wx.h:16,
+                 from wxEvtHandler.cpp:14:
+/usr/include/wx-2.8/wx/object.h:189:1: warning: this is the location of the previous definition
+In file included from wxEvtHandler.cpp:20:
+/usr/include/wx-2.8/wx/xti.h:2031:1: warning: "IMPLEMENT_DYNAMIC_CLASS2" redefined
+In file included from /usr/include/wx-2.8/wx/wx.h:16,
+                 from wxEvtHandler.cpp:14:
+/usr/include/wx-2.8/wx/object.h:195:1: warning: this is the location of the previous definition
+In file included from wxEvtHandler.cpp:20:
+/usr/include/wx-2.8/wx/xti.h:2061:1: warning: "IMPLEMENT_ABSTRACT_CLASS" redefined
+In file included from /usr/include/wx-2.8/wx/wx.h:16,
+                 from wxEvtHandler.cpp:14:
+/usr/include/wx-2.8/wx/object.h:207:1: warning: this is the location of the previous definition
+In file included from wxEvtHandler.cpp:20:
+/usr/include/wx-2.8/wx/xti.h:2068:1: warning: "IMPLEMENT_ABSTRACT_CLASS2" redefined
+In file included from /usr/include/wx-2.8/wx/wx.h:16,
+                 from wxEvtHandler.cpp:14:
+/usr/include/wx-2.8/wx/object.h:212:1: warning: this is the location of the previous definition
+/usr/include/wx-2.8/wx/xti.h:211: error: 'wxBitset' has not been declared
+/usr/include/wx-2.8/wx/xti.h:211: error: expected ',' or '...' before '<' token
+/usr/include/wx-2.8/wx/xti.h: In function 'void wxSetFromString(const wxString&, int)':
+/usr/include/wx-2.8/wx/xti.h:214: error: 'data' was not declared in this scope
+/usr/include/wx-2.8/wx/xti.h: At global scope:
+/usr/include/wx-2.8/wx/xti.h:231: error: expected ',' or '...' before '<' token
+/usr/include/wx-2.8/wx/xti.h:231: error: ISO C++ forbids declaration of 'wxBitset' with no type
+/usr/include/wx-2.8/wx/xti.h: In function 'void wxSetToString(wxString&, int)':
+/usr/include/wx-2.8/wx/xti.h:240: error: 'data' was not declared in this scope
+/usr/include/wx-2.8/wx/xti.h: At global scope:
+/usr/include/wx-2.8/wx/xti.h:1268: warning: 'class wxConstructorBridge' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/xti.h:1277: warning: 'class wxDirectConstructorBrigde' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/xti.h:1297: warning: 'struct wxConstructorBridge_Dummy' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/xti.h:1591: error: redefinition of 'class wxClassInfo'
+/usr/include/wx-2.8/wx/object.h:47: error: previous definition of 'class wxClassInfo'
+make: *** [wxEvtHandler.o] Error 1

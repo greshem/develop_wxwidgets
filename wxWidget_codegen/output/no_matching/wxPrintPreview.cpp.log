@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxPrintPreview.o `wx-config  --cxxflags`    -Wno-write-strings   wxPrintPreview.cpp
+wxPrintPreview.cpp: In function 'int main(int, char**)':
+wxPrintPreview.cpp:54: error: no matching function for call to 'wxPrintPreview::wxPrintPreview()'
+/usr/include/wx-2.8/wx/prntbase.h:631: note: candidates are: wxPrintPreview::wxPrintPreview(const wxPrintPreview&)
+/usr/include/wx-2.8/wx/prntbase.h:594: note:                 wxPrintPreview::wxPrintPreview(wxPrintout*, wxPrintout*, wxPrintData*)
+/usr/include/wx-2.8/wx/prntbase.h:591: note:                 wxPrintPreview::wxPrintPreview(wxPrintout*, wxPrintout*, wxPrintDialogData*)
+make: *** [wxPrintPreview.o] Error 1

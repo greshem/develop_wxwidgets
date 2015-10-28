@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTreeRenameTimer.o `wx-config  --cxxflags`    -Wno-write-strings   wxTreeRenameTimer.cpp
+wxTreeRenameTimer.cpp: In function 'int main(int, char**)':
+wxTreeRenameTimer.cpp:29: error: 'wxTreeRenameTimer' was not declared in this scope
+wxTreeRenameTimer.cpp:29: error: expected `;' before 'a'
+make: *** [wxTreeRenameTimer.o] Error 1

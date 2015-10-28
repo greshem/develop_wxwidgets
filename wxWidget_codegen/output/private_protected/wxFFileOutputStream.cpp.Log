@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFFileOutputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxFFileOutputStream.cpp
+/usr/include/wx-2.8/wx/wfstream.h: In function 'int main(int, char**)':
+/usr/include/wx-2.8/wx/wfstream.h:177: error: 'wxFFileOutputStream::wxFFileOutputStream()' is protected
+wxFFileOutputStream.cpp:39: error: within this context
+make: *** [wxFFileOutputStream.o] Error 1

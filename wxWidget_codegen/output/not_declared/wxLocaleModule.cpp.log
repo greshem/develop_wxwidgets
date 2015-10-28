@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxLocaleModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxLocaleModule.cpp
+wxLocaleModule.cpp: In function 'int main(int, char**)':
+wxLocaleModule.cpp:29: error: 'wxLocaleModule' was not declared in this scope
+wxLocaleModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxLocaleModule.o] Error 1

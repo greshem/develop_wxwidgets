@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxZipMemory.o `wx-config  --cxxflags`    -Wno-write-strings   wxZipMemory.cpp
+wxZipMemory.cpp: In function 'int main(int, char**)':
+wxZipMemory.cpp:28: error: 'wxZipMemory' was not declared in this scope
+wxZipMemory.cpp:28: error: expected `;' before 'a'
+make: *** [wxZipMemory.o] Error 1

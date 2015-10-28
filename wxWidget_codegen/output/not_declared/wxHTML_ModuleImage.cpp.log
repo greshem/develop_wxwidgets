@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTML_ModuleImage.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTML_ModuleImage.cpp
+wxHTML_ModuleImage.cpp: In function 'int main(int, char**)':
+wxHTML_ModuleImage.cpp:29: error: 'wxHTML_ModuleImage' was not declared in this scope
+wxHTML_ModuleImage.cpp:29: error: expected `;' before 'a'
+make: *** [wxHTML_ModuleImage.o] Error 1

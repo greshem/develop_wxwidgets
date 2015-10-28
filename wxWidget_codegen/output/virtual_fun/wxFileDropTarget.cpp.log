@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxFileDropTarget.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileDropTarget.cpp
+wxFileDropTarget.cpp: In function 'int main(int, char**)':
+wxFileDropTarget.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxFileDropTarget'
+/usr/include/wx-2.8/wx/dnd.h:251: note:   because the following virtual functions are pure within 'wxFileDropTarget':
+/usr/include/wx-2.8/wx/dnd.h:257: note: 	virtual bool wxFileDropTarget::OnDropFiles(wxCoord, wxCoord, const wxArrayString&)
+make: *** [wxFileDropTarget.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxURLModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxURLModule.cpp
+wxURLModule.cpp: In function 'int main(int, char**)':
+wxURLModule.cpp:32: error: 'wxURLModule' was not declared in this scope
+wxURLModule.cpp:32: error: expected `;' before 'a'
+make: *** [wxURLModule.o] Error 1

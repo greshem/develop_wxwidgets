@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTeeInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxTeeInputStream.cpp
+wxTeeInputStream.cpp: In function 'int main(int, char**)':
+wxTeeInputStream.cpp:33: error: 'wxTeeInputStream' was not declared in this scope
+wxTeeInputStream.cpp:33: error: expected `;' before 'a'
+make: *** [wxTeeInputStream.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxFilterClassFactoryBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxFilterClassFactoryBase.cpp
+wxFilterClassFactoryBase.cpp: In function 'int main(int, char**)':
+wxFilterClassFactoryBase.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxFilterClassFactoryBase'
+/usr/include/wx-2.8/wx/stream.h:341: note:   because the following virtual functions are pure within 'wxFilterClassFactoryBase':
+/usr/include/wx-2.8/wx/stream.h:349: note: 	virtual const wxChar* const* wxFilterClassFactoryBase::GetProtocols(wxStreamProtocolType) const
+make: *** [wxFilterClassFactoryBase.o] Error 1

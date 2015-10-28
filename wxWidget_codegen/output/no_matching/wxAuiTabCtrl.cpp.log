@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxAuiTabCtrl.o `wx-config  --cxxflags`    -Wno-write-strings   wxAuiTabCtrl.cpp
+wxAuiTabCtrl.cpp: In function 'int main(int, char**)':
+wxAuiTabCtrl.cpp:49: error: no matching function for call to 'wxAuiTabCtrl::wxAuiTabCtrl()'
+/usr/include/wx-2.8/wx/aui/auibook.h:451: note: candidates are: wxAuiTabCtrl::wxAuiTabCtrl(wxWindow*, wxWindowID, const wxPoint&, const wxSize&, long int)
+/usr/include/wx-2.8/wx/aui/auibook.h:444: note:                 wxAuiTabCtrl::wxAuiTabCtrl(const wxAuiTabCtrl&)
+make: *** [wxAuiTabCtrl.o] Error 1

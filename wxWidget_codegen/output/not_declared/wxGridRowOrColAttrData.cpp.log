@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridRowOrColAttrData.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridRowOrColAttrData.cpp
+wxGridRowOrColAttrData.cpp: In function 'int main(int, char**)':
+wxGridRowOrColAttrData.cpp:31: error: 'wxGridRowOrColAttrData' was not declared in this scope
+wxGridRowOrColAttrData.cpp:31: error: expected `;' before 'a'
+make: *** [wxGridRowOrColAttrData.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTML_ModuleDefinitionList.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTML_ModuleDefinitionList.cpp
+wxHTML_ModuleDefinitionList.cpp: In function 'int main(int, char**)':
+wxHTML_ModuleDefinitionList.cpp:29: error: 'wxHTML_ModuleDefinitionList' was not declared in this scope
+wxHTML_ModuleDefinitionList.cpp:29: error: expected `;' before 'a'
+make: *** [wxHTML_ModuleDefinitionList.o] Error 1

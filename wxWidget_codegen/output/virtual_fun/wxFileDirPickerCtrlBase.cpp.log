@@ -1,0 +1,10 @@
+g++ -g  -Wall  -c -o wxFileDirPickerCtrlBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileDirPickerCtrlBase.cpp
+wxFileDirPickerCtrlBase.cpp: In function 'int main(int, char**)':
+wxFileDirPickerCtrlBase.cpp:34: error: cannot declare variable 'a' to be of abstract type 'wxFileDirPickerCtrlBase'
+/usr/include/wx-2.8/wx/filepicker.h:99: note:   because the following virtual functions are pure within 'wxFileDirPickerCtrlBase':
+/usr/include/wx-2.8/wx/filepicker.h:133: note: 	virtual bool wxFileDirPickerCtrlBase::CheckPath(const wxString&) const
+/usr/include/wx-2.8/wx/filepicker.h:136: note: 	virtual bool wxFileDirPickerCtrlBase::IsCwdToUpdate() const
+/usr/include/wx-2.8/wx/filepicker.h:139: note: 	virtual wxEventType wxFileDirPickerCtrlBase::GetEventType() const
+/usr/include/wx-2.8/wx/filepicker.h:142: note: 	virtual wxString wxFileDirPickerCtrlBase::GetTextCtrlValue() const
+/usr/include/wx-2.8/wx/filepicker.h:150: note: 	virtual wxFileDirPickerWidgetBase* wxFileDirPickerCtrlBase::CreatePicker(wxWindow*, const wxString&, const wxString&, const wxString&)
+make: *** [wxFileDirPickerCtrlBase.o] Error 1

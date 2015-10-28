@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxMBConvUTF32Base.o `wx-config  --cxxflags`    -Wno-write-strings   wxMBConvUTF32Base.cpp
+wxMBConvUTF32Base.cpp: In function 'int main(int, char**)':
+wxMBConvUTF32Base.cpp:29: error: cannot declare variable 'a' to be of abstract type 'wxMBConvUTF32Base'
+/usr/include/wx-2.8/wx/strconv.h:316: note:   because the following virtual functions are pure within 'wxMBConvUTF32Base':
+/usr/include/wx-2.8/wx/strconv.h:160: note: 	virtual wxMBConv* wxMBConv::Clone() const
+make: *** [wxMBConvUTF32Base.o] Error 1

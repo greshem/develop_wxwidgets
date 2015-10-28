@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSemaphoreInternal.o `wx-config  --cxxflags`    -Wno-write-strings   wxSemaphoreInternal.cpp
+wxSemaphoreInternal.cpp: In function 'int main(int, char**)':
+wxSemaphoreInternal.cpp:33: error: aggregate 'wxSemaphoreInternal a' has incomplete type and cannot be defined
+wxSemaphoreInternal.cpp:33: warning: unused variable 'a'
+make: *** [wxSemaphoreInternal.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHashTableBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxHashTableBase.cpp
+wxHashTableBase.cpp: In function 'int main(int, char**)':
+wxHashTableBase.cpp:43: error: cannot declare variable 'a' to be of abstract type 'wxHashTableBase'
+/usr/include/wx-2.8/wx/hash.h:156: note:   because the following virtual functions are pure within 'wxHashTableBase':
+/usr/include/wx-2.8/wx/hash.h:204: note: 	virtual void wxHashTableBase::DoDeleteContents(wxHashTableBase_Node*)
+make: *** [wxHashTableBase.o] Error 1

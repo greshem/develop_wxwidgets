@@ -1,0 +1,12 @@
+g++ -g  -Wall  -c -o wxFilterClassFactory.o `wx-config  --cxxflags`    -Wno-write-strings   wxFilterClassFactory.cpp
+/usr/include/wx-2.8/wx/stream.h: In function 'int main(int, char**)':
+/usr/include/wx-2.8/wx/stream.h:382: error: 'wxFilterClassFactory::wxFilterClassFactory()' is protected
+wxFilterClassFactory.cpp:32: error: within this context
+wxFilterClassFactory.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxFilterClassFactory'
+/usr/include/wx-2.8/wx/stream.h:362: note:   because the following virtual functions are pure within 'wxFilterClassFactory':
+/usr/include/wx-2.8/wx/stream.h:349: note: 	virtual const wxChar* const* wxFilterClassFactoryBase::GetProtocols(wxStreamProtocolType) const
+/usr/include/wx-2.8/wx/stream.h:366: note: 	virtual wxFilterInputStream* wxFilterClassFactory::NewStream(wxInputStream&) const
+/usr/include/wx-2.8/wx/stream.h:367: note: 	virtual wxFilterOutputStream* wxFilterClassFactory::NewStream(wxOutputStream&) const
+/usr/include/wx-2.8/wx/stream.h:368: note: 	virtual wxFilterInputStream* wxFilterClassFactory::NewStream(wxInputStream*) const
+/usr/include/wx-2.8/wx/stream.h:369: note: 	virtual wxFilterOutputStream* wxFilterClassFactory::NewStream(wxOutputStream*) const
+make: *** [wxFilterClassFactory.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxToolBarTool.o `wx-config  --cxxflags`    -Wno-write-strings   wxToolBarTool.cpp
+wxToolBarTool.cpp: In function 'int main(int, char**)':
+wxToolBarTool.cpp:28: error: 'wxToolBarTool' was not declared in this scope
+wxToolBarTool.cpp:28: error: expected `;' before 'a'
+make: *** [wxToolBarTool.o] Error 1

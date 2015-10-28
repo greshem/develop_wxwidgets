@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxVariantDataChar.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantDataChar.cpp
+wxVariantDataChar.cpp: In function 'int main(int, char**)':
+wxVariantDataChar.cpp:36: error: 'wxVariantDataChar' was not declared in this scope
+wxVariantDataChar.cpp:36: error: expected `;' before 'a'
+make: *** [wxVariantDataChar.o] Error 1

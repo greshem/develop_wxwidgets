@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxMsgCatalogFile.o `wx-config  --cxxflags`    -Wno-write-strings   wxMsgCatalogFile.cpp
+wxMsgCatalogFile.cpp: In function 'int main(int, char**)':
+wxMsgCatalogFile.cpp:31: error: 'wxMsgCatalogFile' was not declared in this scope
+wxMsgCatalogFile.cpp:31: error: expected `;' before 'a'
+make: *** [wxMsgCatalogFile.o] Error 1

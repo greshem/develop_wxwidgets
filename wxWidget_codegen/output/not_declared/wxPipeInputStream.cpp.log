@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPipeInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxPipeInputStream.cpp
+wxPipeInputStream.cpp: In function 'int main(int, char**)':
+wxPipeInputStream.cpp:28: error: 'wxPipeInputStream' was not declared in this scope
+wxPipeInputStream.cpp:28: error: expected `;' before 'a'
+make: *** [wxPipeInputStream.o] Error 1

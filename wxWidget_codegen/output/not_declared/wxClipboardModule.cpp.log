@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxClipboardModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxClipboardModule.cpp
+wxClipboardModule.cpp: In function 'int main(int, char**)':
+wxClipboardModule.cpp:29: error: 'wxClipboardModule' was not declared in this scope
+wxClipboardModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxClipboardModule.o] Error 1

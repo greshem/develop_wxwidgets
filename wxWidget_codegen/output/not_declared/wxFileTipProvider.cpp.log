@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFileTipProvider.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileTipProvider.cpp
+wxFileTipProvider.cpp: In function 'int main(int, char**)':
+wxFileTipProvider.cpp:29: error: 'wxFileTipProvider' was not declared in this scope
+wxFileTipProvider.cpp:29: error: expected `;' before 'a'
+make: *** [wxFileTipProvider.o] Error 1

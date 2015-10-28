@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxMessageOutput.o `wx-config  --cxxflags`    -Wno-write-strings   wxMessageOutput.cpp
+wxMessageOutput.cpp: In function 'int main(int, char**)':
+wxMessageOutput.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxMessageOutput'
+/usr/include/wx-2.8/wx/msgout.h:28: note:   because the following virtual functions are pure within 'wxMessageOutput':
+/usr/include/wx-2.8/wx/msgout.h:33: note: 	virtual void wxMessageOutput::Printf(const wxChar*, ...)
+make: *** [wxMessageOutput.o] Error 1

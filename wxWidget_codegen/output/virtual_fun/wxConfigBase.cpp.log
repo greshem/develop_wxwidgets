@@ -1,0 +1,25 @@
+g++ -g  -Wall  -c -o wxConfigBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxConfigBase.cpp
+wxConfigBase.cpp: In function 'int main(int, char**)':
+wxConfigBase.cpp:51: error: cannot declare variable 'a' to be of abstract type 'wxConfigBase'
+/usr/include/wx-2.8/wx/confbase.h:76: note:   because the following virtual functions are pure within 'wxConfigBase':
+/usr/include/wx-2.8/wx/confbase.h:123: note: 	virtual void wxConfigBase::SetPath(const wxString&)
+/usr/include/wx-2.8/wx/confbase.h:125: note: 	virtual const wxString& wxConfigBase::GetPath() const
+/usr/include/wx-2.8/wx/confbase.h:130: note: 	virtual bool wxConfigBase::GetFirstGroup(wxString&, long int&) const
+/usr/include/wx-2.8/wx/confbase.h:131: note: 	virtual bool wxConfigBase::GetNextGroup(wxString&, long int&) const
+/usr/include/wx-2.8/wx/confbase.h:133: note: 	virtual bool wxConfigBase::GetFirstEntry(wxString&, long int&) const
+/usr/include/wx-2.8/wx/confbase.h:134: note: 	virtual bool wxConfigBase::GetNextEntry(wxString&, long int&) const
+/usr/include/wx-2.8/wx/confbase.h:137: note: 	virtual size_t wxConfigBase::GetNumberOfEntries(bool) const
+/usr/include/wx-2.8/wx/confbase.h:138: note: 	virtual size_t wxConfigBase::GetNumberOfGroups(bool) const
+/usr/include/wx-2.8/wx/confbase.h:142: note: 	virtual bool wxConfigBase::HasGroup(const wxString&) const
+/usr/include/wx-2.8/wx/confbase.h:144: note: 	virtual bool wxConfigBase::HasEntry(const wxString&) const
+/usr/include/wx-2.8/wx/confbase.h:210: note: 	virtual bool wxConfigBase::Flush(bool)
+/usr/include/wx-2.8/wx/confbase.h:216: note: 	virtual bool wxConfigBase::RenameEntry(const wxString&, const wxString&)
+/usr/include/wx-2.8/wx/confbase.h:219: note: 	virtual bool wxConfigBase::RenameGroup(const wxString&, const wxString&)
+/usr/include/wx-2.8/wx/confbase.h:225: note: 	virtual bool wxConfigBase::DeleteEntry(const wxString&, bool)
+/usr/include/wx-2.8/wx/confbase.h:227: note: 	virtual bool wxConfigBase::DeleteGroup(const wxString&)
+/usr/include/wx-2.8/wx/confbase.h:230: note: 	virtual bool wxConfigBase::DeleteAll()
+/usr/include/wx-2.8/wx/confbase.h:266: note: 	virtual bool wxConfigBase::DoReadString(const wxString&, wxString*) const
+/usr/include/wx-2.8/wx/confbase.h:267: note: 	virtual bool wxConfigBase::DoReadLong(const wxString&, long int*) const
+/usr/include/wx-2.8/wx/confbase.h:272: note: 	virtual bool wxConfigBase::DoWriteString(const wxString&, const wxString&)
+/usr/include/wx-2.8/wx/confbase.h:273: note: 	virtual bool wxConfigBase::DoWriteLong(const wxString&, long int)
+make: *** [wxConfigBase.o] Error 1

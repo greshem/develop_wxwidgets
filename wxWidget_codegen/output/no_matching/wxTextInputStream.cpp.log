@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxTextInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxTextInputStream.cpp
+wxTextInputStream.cpp:19:41: error: wx/longlong.hWXDLLIMPEXP_BASE: No such file or directory
+wxTextInputStream.cpp: In function 'int main(int, char**)':
+wxTextInputStream.cpp:54: error: no matching function for call to 'wxTextInputStream::wxTextInputStream()'
+/usr/include/wx-2.8/wx/txtstrm.h:96: note: candidates are: wxTextInputStream::wxTextInputStream(const wxTextInputStream&)
+/usr/include/wx-2.8/wx/txtstrm.h:42: note:                 wxTextInputStream::wxTextInputStream(wxInputStream&, const wxString&, const wxMBConv&)
+make: *** [wxTextInputStream.o] Error 1

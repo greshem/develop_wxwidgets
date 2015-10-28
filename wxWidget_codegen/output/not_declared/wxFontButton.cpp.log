@@ -1,0 +1,17 @@
+g++ -g  -Wall  -c -o wxFontButton.o `wx-config  --cxxflags`    -Wno-write-strings   wxFontButton.cpp
+/usr/include/wx-2.8/wx/generic/fontpickerg.h:27: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/generic/fontpickerg.h:35: error: 'wxFNTP_FONTDESC_AS_LABEL' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/fontpickerg.h:35: error: 'wxFNTP_USEFONT_FOR_LABEL' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/fontpickerg.h:37: error: 'wxFontPickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/fontpickerg.h:61: error: 'wxFNTP_FONTDESC_AS_LABEL' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/fontpickerg.h:61: error: 'wxFNTP_USEFONT_FOR_LABEL' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/fontpickerg.h:63: error: 'wxFontPickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/fontpicker.h:33: error: 'wxFNTP_FONTDESC_AS_LABEL' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/fontpicker.h:33: error: 'wxFNTP_USEFONT_FOR_LABEL' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/fontpicker.h:35: error: 'wxFontPickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/fontpicker.h:50: error: 'wxFNTP_FONTDESC_AS_LABEL' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/fontpicker.h:50: error: 'wxFNTP_USEFONT_FOR_LABEL' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/fontpicker.h:52: error: 'wxFontPickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/fontpicker.h: In member function 'void wxFontButton::SetNativeFontInfo(const gchar*)':
+/usr/include/wx-2.8/wx/gtk/fontpicker.h:61: error: 'm_selectedFont' was not declared in this scope
+make: *** [wxFontButton.o] Error 1

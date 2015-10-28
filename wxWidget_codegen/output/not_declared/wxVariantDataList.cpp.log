@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxVariantDataList.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantDataList.cpp
+wxVariantDataList.cpp: In function 'int main(int, char**)':
+wxVariantDataList.cpp:38: error: 'wxVariantDataList' was not declared in this scope
+wxVariantDataList.cpp:38: error: expected `;' before 'a'
+make: *** [wxVariantDataList.o] Error 1

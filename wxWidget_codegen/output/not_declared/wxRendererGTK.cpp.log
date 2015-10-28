@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRendererGTK.o `wx-config  --cxxflags`    -Wno-write-strings   wxRendererGTK.cpp
+wxRendererGTK.cpp: In function 'int main(int, char**)':
+wxRendererGTK.cpp:41: error: 'wxRendererGTK' was not declared in this scope
+wxRendererGTK.cpp:41: error: expected `;' before 'a'
+make: *** [wxRendererGTK.o] Error 1

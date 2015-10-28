@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxBufferedInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxBufferedInputStream.cpp
+wxBufferedInputStream.cpp: In function 'int main(int, char**)':
+wxBufferedInputStream.cpp:38: error: no matching function for call to 'wxBufferedInputStream::wxBufferedInputStream()'
+/usr/include/wx-2.8/wx/stream.h:555: note: candidates are: wxBufferedInputStream::wxBufferedInputStream(const wxBufferedInputStream&)
+/usr/include/wx-2.8/wx/stream.h:528: note:                 wxBufferedInputStream::wxBufferedInputStream(wxInputStream&, wxStreamBuffer*)
+make: *** [wxBufferedInputStream.o] Error 1

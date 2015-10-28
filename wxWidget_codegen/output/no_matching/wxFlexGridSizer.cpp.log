@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxFlexGridSizer.o `wx-config  --cxxflags`    -Wno-write-strings   wxFlexGridSizer.cpp
+wxFlexGridSizer.cpp: In function 'int main(int, char**)':
+wxFlexGridSizer.cpp:40: error: no matching function for call to 'wxFlexGridSizer::wxFlexGridSizer()'
+/usr/include/wx-2.8/wx/sizer.h:730: note: candidates are: wxFlexGridSizer::wxFlexGridSizer(const wxFlexGridSizer&)
+/usr/include/wx-2.8/wx/sizer.h:671: note:                 wxFlexGridSizer::wxFlexGridSizer(int, int, int)
+/usr/include/wx-2.8/wx/sizer.h:670: note:                 wxFlexGridSizer::wxFlexGridSizer(int, int, int, int)
+make: *** [wxFlexGridSizer.o] Error 1

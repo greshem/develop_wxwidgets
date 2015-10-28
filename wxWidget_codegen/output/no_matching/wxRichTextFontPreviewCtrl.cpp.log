@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxRichTextFontPreviewCtrl.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextFontPreviewCtrl.cpp
+wxRichTextFontPreviewCtrl.cpp: In function 'int main(int, char**)':
+wxRichTextFontPreviewCtrl.cpp:31: error: no matching function for call to 'wxRichTextFontPreviewCtrl::wxRichTextFontPreviewCtrl()'
+/usr/include/wx-2.8/wx/richtext/richtextformatdlg.h:221: note: candidates are: wxRichTextFontPreviewCtrl::wxRichTextFontPreviewCtrl(wxWindow*, wxWindowID, const wxPoint&, const wxSize&, long int)
+/usr/include/wx-2.8/wx/richtext/richtextformatdlg.h:219: note:                 wxRichTextFontPreviewCtrl::wxRichTextFontPreviewCtrl(const wxRichTextFontPreviewCtrl&)
+make: *** [wxRichTextFontPreviewCtrl.o] Error 1

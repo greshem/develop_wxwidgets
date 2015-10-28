@@ -1,0 +1,11 @@
+g++ -g  -Wall  -c -o wxHelpControllerBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxHelpControllerBase.cpp
+wxHelpControllerBase.cpp: In function 'int main(int, char**)':
+wxHelpControllerBase.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxHelpControllerBase'
+/usr/include/wx-2.8/wx/helpbase.h:36: note:   because the following virtual functions are pure within 'wxHelpControllerBase':
+/usr/include/wx-2.8/wx/helpbase.h:51: note: 	virtual bool wxHelpControllerBase::LoadFile(const wxString&)
+/usr/include/wx-2.8/wx/helpbase.h:54: note: 	virtual bool wxHelpControllerBase::DisplayContents()
+/usr/include/wx-2.8/wx/helpbase.h:57: note: 	virtual bool wxHelpControllerBase::DisplaySection(int)
+/usr/include/wx-2.8/wx/helpbase.h:68: note: 	virtual bool wxHelpControllerBase::DisplayBlock(long int)
+/usr/include/wx-2.8/wx/helpbase.h:70: note: 	virtual bool wxHelpControllerBase::KeywordSearch(const wxString&, wxHelpSearchMode)
+/usr/include/wx-2.8/wx/helpbase.h:88: note: 	virtual bool wxHelpControllerBase::Quit()
+make: *** [wxHelpControllerBase.o] Error 1

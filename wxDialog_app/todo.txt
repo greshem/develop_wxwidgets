@@ -1,0 +1,14 @@
+
+#2011_05_18_08:34:21   星期三   add by greshem
+1. wxBitmap 一个例子 可以参考  xpm_show/ 但是把 没用代码都去掉. 
+	xpm 的图片的选择,  
+	选择一个xpm 图片并显示, 
+
+#2. wxSplash 基本 解决掉, 
+	wxSplashScreen/  有个BUG,  待解决.
+	wxSplashScreen_2/  点击之后 会出现段错误.  待解决. 
+
+#3. wxHyperlinkCtrl  写一个例子.  添加对应的url.
+4. dialog 添加菜单, 如何添加菜单? 
+5.  wxMenu 也可以参考 root/samples/splash/splash.cpp
+6. onTimer

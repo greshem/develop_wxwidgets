@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPluralFormsParser.o `wx-config  --cxxflags`    -Wno-write-strings   wxPluralFormsParser.cpp
+wxPluralFormsParser.cpp: In function 'int main(int, char**)':
+wxPluralFormsParser.cpp:38: error: 'wxPluralFormsParser' was not declared in this scope
+wxPluralFormsParser.cpp:38: error: expected `;' before 'a'
+make: *** [wxPluralFormsParser.o] Error 1

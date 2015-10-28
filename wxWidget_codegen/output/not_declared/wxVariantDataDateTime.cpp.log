@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxVariantDataDateTime.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantDataDateTime.cpp
+wxVariantDataDateTime.cpp: In function 'int main(int, char**)':
+wxVariantDataDateTime.cpp:34: error: 'wxVariantDataDateTime' was not declared in this scope
+wxVariantDataDateTime.cpp:34: error: expected `;' before 'a'
+make: *** [wxVariantDataDateTime.o] Error 1

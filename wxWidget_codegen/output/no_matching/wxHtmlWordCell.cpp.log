@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlWordCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlWordCell.cpp
+wxHtmlWordCell.cpp: In function 'int main(int, char**)':
+wxHtmlWordCell.cpp:36: error: no matching function for call to 'wxHtmlWordCell::wxHtmlWordCell()'
+/usr/include/wx-2.8/wx/html/htmlcell.h:393: note: candidates are: wxHtmlWordCell::wxHtmlWordCell(const wxHtmlWordCell&)
+/usr/include/wx-2.8/wx/html/htmlcell.h:374: note:                 wxHtmlWordCell::wxHtmlWordCell(const wxString&, const wxDC&)
+make: *** [wxHtmlWordCell.o] Error 1

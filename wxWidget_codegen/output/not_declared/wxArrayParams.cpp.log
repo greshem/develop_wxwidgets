@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxArrayParams.o `wx-config  --cxxflags`    -Wno-write-strings   wxArrayParams.cpp
+wxArrayParams.cpp: In function 'int main(int, char**)':
+wxArrayParams.cpp:36: error: 'wxArrayParams' was not declared in this scope
+wxArrayParams.cpp:36: error: expected `;' before 'a'
+make: *** [wxArrayParams.o] Error 1

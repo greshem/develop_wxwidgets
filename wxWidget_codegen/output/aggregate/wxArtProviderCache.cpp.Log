@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxArtProviderCache.o `wx-config  --cxxflags`    -Wno-write-strings   wxArtProviderCache.cpp
+wxArtProviderCache.cpp: In function 'int main(int, char**)':
+wxArtProviderCache.cpp:31: error: aggregate 'wxArtProviderCache a' has incomplete type and cannot be defined
+wxArtProviderCache.cpp:31: warning: unused variable 'a'
+make: *** [wxArtProviderCache.o] Error 1

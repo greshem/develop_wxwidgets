@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlListmarkCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlListmarkCell.cpp
+wxHtmlListmarkCell.cpp: In function 'int main(int, char**)':
+wxHtmlListmarkCell.cpp:29: error: 'wxHtmlListmarkCell' was not declared in this scope
+wxHtmlListmarkCell.cpp:29: error: expected `;' before 'a'
+make: *** [wxHtmlListmarkCell.o] Error 1

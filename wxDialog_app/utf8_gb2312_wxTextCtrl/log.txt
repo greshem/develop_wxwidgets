@@ -1,0 +1,27 @@
+再查wxString.Replace() 在替换时，其会多次地遍历整个字符串里的"char"数组，要替换多少次,便会遍历(整个字符串移位)多少次,一看,才发现其会多么地影响效率的...
+blog.163.com/boluns/blog/static/698459682 ... 2011-4-10 - 百度快照
+ 
+
+Convert from wxString to std::string - modingfa_002的日志 - ... 
+Convert from wxString to std::string,modingfa_002的网易博客,勇往向前！,
+blog.163.com/modingfa_002/blog/static/110 ... 2011-4-17 - 百度快照
+ 
+
+Convert from wxString to std::string_cyclone_新浪博客 
+* 2 char* to wxString * 3 wxString to char* * 4 int to wxString * 5 float to wxString * 6 wxString to integer number * 7 wxString to floating...
+blog.sina.com.cn/s/blog_60ffc4670100mrcs.html 2011-4-20 - 百度快照
+ 
+
+使用wxWidgets库链接wxString出错的问题 - 我的地盘 - CSDN博客 
+原创 使用wxWidgets库链接wxString出错的问题 收藏 wxWidgets是一个跨平台的代码库。今天由于一个示例代码需要用到，所以下载编译了。下载合适版本的wxWidgets，然后在...
+blog.csdn.net/sing_sing/archive/2011/01/2 ... 2011-5-28 - 百度快照
+ 
+
+wxString类与char,wchar的相互转换（转）_学习空间 
+wxString转换 wxString logBuf; wxLogMessage( wxT("%s"), logBuf.c_str() ); wxString->char* wxString wx_string=_T("hello"); char ansi_string[30]; ...
+hi.baidu.com/253209529/blog/item/1b40c9f3 ... 2009-6-23 - 百度快照
+ 
+
+转贴：wxWidgets 中各字符串格式转换 百度空间_应用平台 
+二、wxdatetime 与wxstring转换 2.1 wxdatetime to wxstring :wxDateTime dt = CalendarCtrl1->GetDate(); wxString msg = dt.Format(wxT("%Y-%m-%d"),...
+apps.hi.baidu.com/share/detail/30151730 2011-3-6 - 百度快照

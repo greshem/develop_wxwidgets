@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDCModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxDCModule.cpp
+wxDCModule.cpp: In function 'int main(int, char**)':
+wxDCModule.cpp:31: error: 'wxDCModule' was not declared in this scope
+wxDCModule.cpp:31: error: expected `;' before 'a'
+make: *** [wxDCModule.o] Error 1

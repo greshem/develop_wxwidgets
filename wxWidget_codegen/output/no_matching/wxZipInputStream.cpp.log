@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxZipInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxZipInputStream.cpp
+wxZipInputStream.cpp: In function 'int main(int, char**)':
+wxZipInputStream.cpp:51: error: no matching function for call to 'wxZipInputStream::wxZipInputStream()'
+/usr/include/wx-2.8/wx/zipstrm.h:448: note: candidates are: wxZipInputStream::wxZipInputStream(const wxZipInputStream&)
+/usr/include/wx-2.8/wx/zipstrm.h:366: note:                 wxZipInputStream::wxZipInputStream(const wxString&, const wxString&)
+/usr/include/wx-2.8/wx/zipstrm.h:363: note:                 wxZipInputStream::wxZipInputStream(wxInputStream*, wxMBConv&)
+/usr/include/wx-2.8/wx/zipstrm.h:362: note:                 wxZipInputStream::wxZipInputStream(wxInputStream&, wxMBConv&)
+make: *** [wxZipInputStream.o] Error 1

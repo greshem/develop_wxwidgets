@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxMessageDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxMessageDialog.cpp
+wxMessageDialog.cpp: In function 'int main(int, char**)':
+wxMessageDialog.cpp:32: error: no matching function for call to 'wxMessageDialog::wxMessageDialog()'
+/usr/include/wx-2.8/wx/gtk/msgdlg.h:29: note: candidates are: wxMessageDialog::wxMessageDialog(wxWindow*, const wxString&, const wxString&, long int, const wxPoint&)
+/usr/include/wx-2.8/wx/gtk/msgdlg.h:24: note:                 wxMessageDialog::wxMessageDialog(const wxMessageDialog&)
+make: *** [wxMessageDialog.o] Error 1

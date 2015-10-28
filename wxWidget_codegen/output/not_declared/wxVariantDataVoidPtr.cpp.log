@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxVariantDataVoidPtr.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantDataVoidPtr.cpp
+wxVariantDataVoidPtr.cpp: In function 'int main(int, char**)':
+wxVariantDataVoidPtr.cpp:34: error: 'wxVariantDataVoidPtr' was not declared in this scope
+wxVariantDataVoidPtr.cpp:34: error: expected `;' before 'a'
+make: *** [wxVariantDataVoidPtr.o] Error 1

@@ -1,0 +1,16 @@
+g++ -g  -Wall  -c -o wxRadioBoxBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxRadioBoxBase.cpp
+/usr/include/wx-2.8/wx/radiobox.h: In function 'int main(int, char**)':
+/usr/include/wx-2.8/wx/radiobox.h:96: error: 'wxRadioBoxBase::wxRadioBoxBase()' is protected
+wxRadioBoxBase.cpp:36: error: within this context
+wxRadioBoxBase.cpp:36: error: cannot declare variable 'a' to be of abstract type 'wxRadioBoxBase'
+/usr/include/wx-2.8/wx/radiobox.h:38: note:   because the following virtual functions are pure within 'wxRadioBoxBase':
+/usr/include/wx-2.8/wx/ctrlsub.h:41: note: 	virtual unsigned int wxItemContainerImmutable::GetCount() const
+/usr/include/wx-2.8/wx/ctrlsub.h:44: note: 	virtual wxString wxItemContainerImmutable::GetString(unsigned int) const
+/usr/include/wx-2.8/wx/ctrlsub.h:46: note: 	virtual void wxItemContainerImmutable::SetString(unsigned int, const wxString&)
+/usr/include/wx-2.8/wx/ctrlsub.h:68: note: 	virtual void wxItemContainerImmutable::SetSelection(int)
+/usr/include/wx-2.8/wx/ctrlsub.h:69: note: 	virtual int wxItemContainerImmutable::GetSelection() const
+/usr/include/wx-2.8/wx/radiobox.h:43: note: 	virtual bool wxRadioBoxBase::Enable(unsigned int, bool)
+/usr/include/wx-2.8/wx/radiobox.h:44: note: 	virtual bool wxRadioBoxBase::Show(unsigned int, bool)
+/usr/include/wx-2.8/wx/radiobox.h:45: note: 	virtual bool wxRadioBoxBase::IsItemEnabled(unsigned int) const
+/usr/include/wx-2.8/wx/radiobox.h:46: note: 	virtual bool wxRadioBoxBase::IsItemShown(unsigned int) const
+make: *** [wxRadioBoxBase.o] Error 1

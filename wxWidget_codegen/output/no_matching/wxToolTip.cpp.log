@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxToolTip.o `wx-config  --cxxflags`    -Wno-write-strings   wxToolTip.cpp
+wxToolTip.cpp: In function 'int main(int, char**)':
+wxToolTip.cpp:38: error: no matching function for call to 'wxToolTip::wxToolTip()'
+/usr/include/wx-2.8/wx/gtk/tooltip.h:31: note: candidates are: wxToolTip::wxToolTip(const wxString&)
+/usr/include/wx-2.8/wx/gtk/tooltip.h:29: note:                 wxToolTip::wxToolTip(const wxToolTip&)
+make: *** [wxToolTip.o] Error 1

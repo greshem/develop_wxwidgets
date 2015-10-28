@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxCSConv.o `wx-config  --cxxflags`    -Wno-write-strings   wxCSConv.cpp
+wxCSConv.cpp: In function 'int main(int, char**)':
+wxCSConv.cpp:44: error: no matching function for call to 'wxCSConv::wxCSConv()'
+/usr/include/wx-2.8/wx/strconv.h:371: note: candidates are: wxCSConv::wxCSConv(const wxCSConv&)
+/usr/include/wx-2.8/wx/strconv.h:369: note:                 wxCSConv::wxCSConv(wxFontEncoding)
+/usr/include/wx-2.8/wx/strconv.h:368: note:                 wxCSConv::wxCSConv(const wxChar*)
+make: *** [wxCSConv.o] Error 1

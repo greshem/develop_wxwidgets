@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlLineCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlLineCell.cpp
+wxHtmlLineCell.cpp: In function 'int main(int, char**)':
+wxHtmlLineCell.cpp:28: error: 'wxHtmlLineCell' was not declared in this scope
+wxHtmlLineCell.cpp:28: error: expected `;' before 'a'
+make: *** [wxHtmlLineCell.o] Error 1

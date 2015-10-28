@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxRichTextObject.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextObject.cpp
+wxRichTextObject.cpp: In function 'int main(int, char**)':
+wxRichTextObject.cpp:39: error: cannot declare variable 'a' to be of abstract type 'wxRichTextObject'
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:669: note:   because the following virtual functions are pure within 'wxRichTextObject':
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:681: note: 	virtual bool wxRichTextObject::Draw(wxDC&, const wxRichTextRange&, const wxRichTextRange&, const wxRect&, int, int)
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:685: note: 	virtual bool wxRichTextObject::Layout(wxDC&, const wxRect&, int)
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:701: note: 	virtual bool wxRichTextObject::GetRangeSize(const wxRichTextRange&, wxSize&, int&, wxDC&, int, wxPoint) const
+make: *** [wxRichTextObject.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxAuiDockUIPartArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxAuiDockUIPartArray.cpp
+wxAuiDockUIPartArray.cpp: In function 'int main(int, char**)':
+wxAuiDockUIPartArray.cpp:36: error: 'wxAuiDockUIPartArray' was not declared in this scope
+wxAuiDockUIPartArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxAuiDockUIPartArray.o] Error 1

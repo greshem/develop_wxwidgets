@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPaletteRefData.o `wx-config  --cxxflags`    -Wno-write-strings   wxPaletteRefData.cpp
+wxPaletteRefData.cpp: In function 'int main(int, char**)':
+wxPaletteRefData.cpp:29: error: 'wxPaletteRefData' was not declared in this scope
+wxPaletteRefData.cpp:29: error: expected `;' before 'a'
+make: *** [wxPaletteRefData.o] Error 1

@@ -1,0 +1,13 @@
+g++ -g  -Wall  -c -o wxArchiveInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxArchiveInputStream.cpp
+wxArchiveInputStream.cpp: In function 'int main(int, char**)':
+wxArchiveInputStream.cpp:30: error: no matching function for call to 'wxArchiveInputStream::wxArchiveInputStream()'
+/usr/include/wx-2.8/wx/archive.h:107: note: candidates are: wxArchiveInputStream::wxArchiveInputStream(wxInputStream*, wxMBConv&)
+/usr/include/wx-2.8/wx/archive.h:106: note:                 wxArchiveInputStream::wxArchiveInputStream(wxInputStream&, wxMBConv&)
+/usr/include/wx-2.8/wx/archive.h:92: note:                 wxArchiveInputStream::wxArchiveInputStream(const wxArchiveInputStream&)
+wxArchiveInputStream.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxArchiveInputStream'
+/usr/include/wx-2.8/wx/archive.h:92: note:   because the following virtual functions are pure within 'wxArchiveInputStream':
+/usr/include/wx-2.8/wx/stream.h:196: note: 	virtual size_t wxInputStream::OnSysRead(void*, size_t)
+/usr/include/wx-2.8/wx/archive.h:98: note: 	virtual bool wxArchiveInputStream::OpenEntry(wxArchiveEntry&)
+/usr/include/wx-2.8/wx/archive.h:99: note: 	virtual bool wxArchiveInputStream::CloseEntry()
+/usr/include/wx-2.8/wx/archive.h:109: note: 	virtual wxArchiveEntry* wxArchiveInputStream::DoGetNextEntry()
+make: *** [wxArchiveInputStream.o] Error 1

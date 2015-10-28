@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxBitmapComboBox.o `wx-config  --cxxflags`    -Wno-write-strings   wxBitmapComboBox.cpp
+wxBitmapComboBox.cpp: In function 'int main(int, char**)':
+wxBitmapComboBox.cpp:58: error: aggregate 'wxBitmapComboBox a' has incomplete type and cannot be defined
+wxBitmapComboBox.cpp:58: warning: unused variable 'a'
+make: *** [wxBitmapComboBox.o] Error 1

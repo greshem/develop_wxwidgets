@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o XmlStackWalker.o `wx-config  --cxxflags`    -Wno-write-strings   XmlStackWalker.cpp
+XmlStackWalker.cpp: In function 'int main(int, char**)':
+XmlStackWalker.cpp:28: error: 'XmlStackWalker' was not declared in this scope
+XmlStackWalker.cpp:28: error: expected `;' before 'a'
+make: *** [XmlStackWalker.o] Error 1

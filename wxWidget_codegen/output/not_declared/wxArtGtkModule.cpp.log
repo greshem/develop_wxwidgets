@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxArtGtkModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxArtGtkModule.cpp
+wxArtGtkModule.cpp: In function 'int main(int, char**)':
+wxArtGtkModule.cpp:29: error: 'wxArtGtkModule' was not declared in this scope
+wxArtGtkModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxArtGtkModule.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxTaskBarIconArea.o `wx-config  --cxxflags`    -Wno-write-strings   wxTaskBarIconArea.cpp
+/usr/include/wx-2.8/wx/unix/taskbarx11.h:22: error: expected class-name before '{' token
+wxTaskBarIconArea.cpp: In function 'int main(int, char**)':
+wxTaskBarIconArea.cpp:37: error: aggregate 'wxTaskBarIconArea a' has incomplete type and cannot be defined
+wxTaskBarIconArea.cpp:37: warning: unused variable 'a'
+make: *** [wxTaskBarIconArea.o] Error 1

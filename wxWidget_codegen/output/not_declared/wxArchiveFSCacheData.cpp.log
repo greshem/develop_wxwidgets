@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxArchiveFSCacheData.o `wx-config  --cxxflags`    -Wno-write-strings   wxArchiveFSCacheData.cpp
+wxArchiveFSCacheData.cpp: In function 'int main(int, char**)':
+wxArchiveFSCacheData.cpp:31: error: 'wxArchiveFSCacheData' was not declared in this scope
+wxArchiveFSCacheData.cpp:31: error: expected `;' before 'a'
+make: *** [wxArchiveFSCacheData.o] Error 1

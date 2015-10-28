@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTML_ModuleStyleTag.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTML_ModuleStyleTag.cpp
+wxHTML_ModuleStyleTag.cpp: In function 'int main(int, char**)':
+wxHTML_ModuleStyleTag.cpp:29: error: 'wxHTML_ModuleStyleTag' was not declared in this scope
+wxHTML_ModuleStyleTag.cpp:29: error: expected `;' before 'a'
+make: *** [wxHTML_ModuleStyleTag.o] Error 1

@@ -1,0 +1,9 @@
+g++ -g  -Wall  -c -o wxCollapsiblePane.o `wx-config  --cxxflags`    -Wno-write-strings   wxCollapsiblePane.cpp
+/usr/include/wx-2.8/wx/generic/collpaneg.h:27: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/generic/collpaneg.h:27: warning: 'class wxGenericCollapsiblePane' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/generic/collpaneg.h:36: error: 'wxCP_DEFAULT_STYLE' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/collpaneg.h:60: error: 'wxCP_DEFAULT_STYLE' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/collpane.h:22: warning: 'class wxCollapsiblePane' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/gtk/collpane.h:31: error: 'wxCP_DEFAULT_STYLE' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/collpane.h:50: error: 'wxCP_DEFAULT_STYLE' was not declared in this scope
+make: *** [wxCollapsiblePane.o] Error 1

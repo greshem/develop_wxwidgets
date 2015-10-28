@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlContainerCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlContainerCell.cpp
+wxHtmlContainerCell.cpp: In function 'int main(int, char**)':
+wxHtmlContainerCell.cpp:52: error: no matching function for call to 'wxHtmlContainerCell::wxHtmlContainerCell()'
+/usr/include/wx-2.8/wx/html/htmlcell.h:519: note: candidates are: wxHtmlContainerCell::wxHtmlContainerCell(const wxHtmlContainerCell&)
+/usr/include/wx-2.8/wx/html/htmlcell.h:405: note:                 wxHtmlContainerCell::wxHtmlContainerCell(wxHtmlContainerCell*)
+make: *** [wxHtmlContainerCell.o] Error 1

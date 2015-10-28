@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxBusyInfo.o `wx-config  --cxxflags`    -Wno-write-strings   wxBusyInfo.cpp
+wxBusyInfo.cpp: In function 'int main(int, char**)':
+wxBusyInfo.cpp:29: error: 'wxBusyInfo' was not declared in this scope
+wxBusyInfo.cpp:29: error: expected `;' before 'a'
+make: *** [wxBusyInfo.o] Error 1

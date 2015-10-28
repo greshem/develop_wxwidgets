@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxArrayOptions.o `wx-config  --cxxflags`    -Wno-write-strings   wxArrayOptions.cpp
+wxArrayOptions.cpp: In function 'int main(int, char**)':
+wxArrayOptions.cpp:36: error: 'wxArrayOptions' was not declared in this scope
+wxArrayOptions.cpp:36: error: expected `;' before 'a'
+make: *** [wxArrayOptions.o] Error 1

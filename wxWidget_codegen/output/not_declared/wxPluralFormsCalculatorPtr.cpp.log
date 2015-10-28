@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPluralFormsCalculatorPtr.o `wx-config  --cxxflags`    -Wno-write-strings   wxPluralFormsCalculatorPtr.cpp
+wxPluralFormsCalculatorPtr.cpp: In function 'int main(int, char**)':
+wxPluralFormsCalculatorPtr.cpp:28: error: 'wxPluralFormsCalculatorPtr' was not declared in this scope
+wxPluralFormsCalculatorPtr.cpp:28: error: expected `;' before 'a'
+make: *** [wxPluralFormsCalculatorPtr.o] Error 1

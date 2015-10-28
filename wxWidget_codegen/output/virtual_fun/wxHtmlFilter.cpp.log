@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxHtmlFilter.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlFilter.cpp
+wxHtmlFilter.cpp: In function 'int main(int, char**)':
+wxHtmlFilter.cpp:29: error: cannot declare variable 'a' to be of abstract type 'wxHtmlFilter'
+/usr/include/wx-2.8/wx/html/htmlfilt.h:29: note:   because the following virtual functions are pure within 'wxHtmlFilter':
+/usr/include/wx-2.8/wx/html/htmlfilt.h:37: note: 	virtual bool wxHtmlFilter::CanRead(const wxFSFile&) const
+/usr/include/wx-2.8/wx/html/htmlfilt.h:41: note: 	virtual wxString wxHtmlFilter::ReadFile(const wxFSFile&) const
+make: *** [wxHtmlFilter.o] Error 1

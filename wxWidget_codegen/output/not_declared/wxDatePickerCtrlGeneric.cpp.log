@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDatePickerCtrlGeneric.o `wx-config  --cxxflags`    -Wno-write-strings   wxDatePickerCtrlGeneric.cpp
+wxDatePickerCtrlGeneric.cpp: In function 'int main(int, char**)':
+wxDatePickerCtrlGeneric.cpp:42: error: 'wxDatePickerCtrlGeneric' was not declared in this scope
+wxDatePickerCtrlGeneric.cpp:42: error: expected `;' before 'a'
+make: *** [wxDatePickerCtrlGeneric.o] Error 1

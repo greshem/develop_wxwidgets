@@ -1,0 +1,20 @@
+g++ -g  -Wall  -c -o wxAnimationCtrl.o `wx-config  --cxxflags`    -Wno-write-strings   wxAnimationCtrl.cpp
+/usr/include/wx-2.8/wx/gtk/animate.h:28: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/gtk/animate.h:51: error: 'wxAnimationType' has not been declared
+/usr/include/wx-2.8/wx/gtk/animate.h:52: error: 'wxAnimationType' has not been declared
+/usr/include/wx-2.8/wx/gtk/animate.h:67: error: 'wxAnimationBase' does not name a type
+/usr/include/wx-2.8/wx/gtk/animate.h:28: warning: 'class wxAnimation' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/gtk/animate.h:51: error: 'wxANIMATION_TYPE_ANY' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/animate.h:52: error: 'wxANIMATION_TYPE_ANY' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/animate.h:80: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/gtk/animate.h:113: error: 'wxAnimationType' has not been declared
+/usr/include/wx-2.8/wx/gtk/animate.h:145: error: 'wxAnimationCtrlBase' does not name a type
+/usr/include/wx-2.8/wx/gtk/animate.h:80: warning: 'class wxAnimationCtrl' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/gtk/animate.h:85: error: 'wxNullAnimation' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/animate.h:88: error: 'wxAC_DEFAULT_STYLE' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/animate.h:89: error: 'wxAnimationCtrlNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/animate.h:99: error: 'wxNullAnimation' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/animate.h:102: error: 'wxAC_DEFAULT_STYLE' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/animate.h:103: error: 'wxAnimationCtrlNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/animate.h:113: error: 'wxANIMATION_TYPE_ANY' was not declared in this scope
+make: *** [wxAnimationCtrl.o] Error 1

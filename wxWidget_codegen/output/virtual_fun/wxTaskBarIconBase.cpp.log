@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxTaskBarIconBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxTaskBarIconBase.cpp
+wxTaskBarIconBase.cpp: In function 'int main(int, char**)':
+wxTaskBarIconBase.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxTaskBarIconBase'
+/usr/include/wx-2.8/wx/taskbar.h:28: note:   because the following virtual functions are pure within 'wxTaskBarIconBase':
+/usr/include/wx-2.8/wx/taskbar.h:34: note: 	virtual bool wxTaskBarIconBase::SetIcon(const wxIcon&, const wxString&)
+/usr/include/wx-2.8/wx/taskbar.h:35: note: 	virtual bool wxTaskBarIconBase::RemoveIcon()
+/usr/include/wx-2.8/wx/taskbar.h:36: note: 	virtual bool wxTaskBarIconBase::PopupMenu(wxMenu*)
+make: *** [wxTaskBarIconBase.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGenericFileButton.o `wx-config  --cxxflags`    -Wno-write-strings   wxGenericFileButton.cpp
+wxGenericFileButton.cpp: In function 'int main(int, char**)':
+wxGenericFileButton.cpp:29: error: 'wxGenericFileButton' was not declared in this scope
+wxGenericFileButton.cpp:29: error: expected `;' before 'a'
+make: *** [wxGenericFileButton.o] Error 1

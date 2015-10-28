@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxFileSystemHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileSystemHandler.cpp
+wxFileSystemHandler.cpp: In function 'int main(int, char**)':
+wxFileSystemHandler.cpp:36: error: cannot declare variable 'a' to be of abstract type 'wxFileSystemHandler'
+/usr/include/wx-2.8/wx/filesys.h:117: note:   because the following virtual functions are pure within 'wxFileSystemHandler':
+/usr/include/wx-2.8/wx/filesys.h:122: note: 	virtual bool wxFileSystemHandler::CanOpen(const wxString&)
+/usr/include/wx-2.8/wx/filesys.h:127: note: 	virtual wxFSFile* wxFileSystemHandler::OpenFile(wxFileSystem&, const wxString&)
+make: *** [wxFileSystemHandler.o] Error 1

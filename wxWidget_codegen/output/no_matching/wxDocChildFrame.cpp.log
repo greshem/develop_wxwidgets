@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxDocChildFrame.o `wx-config  --cxxflags`    -Wno-write-strings   wxDocChildFrame.cpp
+wxDocChildFrame.cpp: In function 'int main(int, char**)':
+wxDocChildFrame.cpp:35: error: no matching function for call to 'wxDocChildFrame::wxDocChildFrame()'
+/usr/include/wx-2.8/wx/docview.h:505: note: candidates are: wxDocChildFrame::wxDocChildFrame(const wxDocChildFrame&)
+/usr/include/wx-2.8/wx/docview.h:483: note:                 wxDocChildFrame::wxDocChildFrame(wxDocument*, wxView*, wxFrame*, wxWindowID, const wxString&, const wxPoint&, const wxSize&, long int, const wxString&)
+make: *** [wxDocChildFrame.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlPageBreakCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlPageBreakCell.cpp
+wxHtmlPageBreakCell.cpp: In function 'int main(int, char**)':
+wxHtmlPageBreakCell.cpp:28: error: 'wxHtmlPageBreakCell' was not declared in this scope
+wxHtmlPageBreakCell.cpp:28: error: expected `;' before 'a'
+make: *** [wxHtmlPageBreakCell.o] Error 1

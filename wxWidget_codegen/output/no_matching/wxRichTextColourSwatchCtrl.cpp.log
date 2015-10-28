@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxRichTextColourSwatchCtrl.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextColourSwatchCtrl.cpp
+wxRichTextColourSwatchCtrl.cpp: In function 'int main(int, char**)':
+wxRichTextColourSwatchCtrl.cpp:34: error: no matching function for call to 'wxRichTextColourSwatchCtrl::wxRichTextColourSwatchCtrl()'
+/usr/include/wx-2.8/wx/richtext/richtextformatdlg.h:253: note: candidates are: wxRichTextColourSwatchCtrl::wxRichTextColourSwatchCtrl(wxWindow*, wxWindowID, const wxPoint&, const wxSize&, long int)
+/usr/include/wx-2.8/wx/richtext/richtextformatdlg.h:250: note:                 wxRichTextColourSwatchCtrl::wxRichTextColourSwatchCtrl(const wxRichTextColourSwatchCtrl&)
+make: *** [wxRichTextColourSwatchCtrl.o] Error 1

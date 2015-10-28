@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxProtocol.o `wx-config  --cxxflags`    -Wno-write-strings   wxProtocol.cpp
+wxProtocol.cpp: In function 'int main(int, char**)':
+wxProtocol.cpp:33: error: cannot declare variable 'a' to be of abstract type 'wxProtocol'
+/usr/include/wx-2.8/wx/protocol/protocol.h:55: note:   because the following virtual functions are pure within 'wxProtocol':
+/usr/include/wx-2.8/wx/protocol/protocol.h:73: note: 	virtual bool wxProtocol::Abort()
+/usr/include/wx-2.8/wx/protocol/protocol.h:74: note: 	virtual wxInputStream* wxProtocol::GetInputStream(const wxString&)
+/usr/include/wx-2.8/wx/protocol/protocol.h:75: note: 	virtual wxProtocolError wxProtocol::GetError()
+make: *** [wxProtocol.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTML_ModulePre.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTML_ModulePre.cpp
+wxHTML_ModulePre.cpp: In function 'int main(int, char**)':
+wxHTML_ModulePre.cpp:29: error: 'wxHTML_ModulePre' was not declared in this scope
+wxHTML_ModulePre.cpp:29: error: expected `;' before 'a'
+make: *** [wxHTML_ModulePre.o] Error 1

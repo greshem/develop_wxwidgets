@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxContextHelpButton.o `wx-config  --cxxflags`    -Wno-write-strings   wxContextHelpButton.cpp
+wxContextHelpButton.cpp: In function 'int main(int, char**)':
+wxContextHelpButton.cpp:33: error: no matching function for call to 'wxContextHelpButton::wxContextHelpButton()'
+/usr/include/wx-2.8/wx/cshelp.h:80: note: candidates are: wxContextHelpButton::wxContextHelpButton(const wxContextHelpButton&)
+/usr/include/wx-2.8/wx/cshelp.h:75: note:                 wxContextHelpButton::wxContextHelpButton(wxWindow*, wxWindowID, const wxPoint&, const wxSize&, long int)
+make: *** [wxContextHelpButton.o] Error 1

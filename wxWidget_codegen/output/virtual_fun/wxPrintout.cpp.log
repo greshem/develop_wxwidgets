@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxPrintout.o `wx-config  --cxxflags`    -Wno-write-strings   wxPrintout.cpp
+wxPrintout.cpp: In function 'int main(int, char**)':
+wxPrintout.cpp:49: error: cannot declare variable 'a' to be of abstract type 'wxPrintout'
+/usr/include/wx-2.8/wx/prntbase.h:243: note:   because the following virtual functions are pure within 'wxPrintout':
+/usr/include/wx-2.8/wx/prntbase.h:257: note: 	virtual bool wxPrintout::OnPrintPage(int)
+make: *** [wxPrintout.o] Error 1

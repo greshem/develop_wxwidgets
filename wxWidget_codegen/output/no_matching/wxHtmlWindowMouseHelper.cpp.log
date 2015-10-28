@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxHtmlWindowMouseHelper.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlWindowMouseHelper.cpp
+wxHtmlWindowMouseHelper.cpp: In function 'int main(int, char**)':
+wxHtmlWindowMouseHelper.cpp:34: error: no matching function for call to 'wxHtmlWindowMouseHelper::wxHtmlWindowMouseHelper()'
+/usr/include/wx-2.8/wx/html/htmlwin.h:145: note: candidates are: wxHtmlWindowMouseHelper::wxHtmlWindowMouseHelper(wxHtmlWindowInterface*)
+/usr/include/wx-2.8/wx/html/htmlwin.h:138: note:                 wxHtmlWindowMouseHelper::wxHtmlWindowMouseHelper(const wxHtmlWindowMouseHelper&)
+/usr/include/wx-2.8/wx/html/htmlwin.h:153: error: 'virtual wxHtmlWindowMouseHelper::~wxHtmlWindowMouseHelper()' is protected
+wxHtmlWindowMouseHelper.cpp:34: error: within this context
+make: *** [wxHtmlWindowMouseHelper.o] Error 1

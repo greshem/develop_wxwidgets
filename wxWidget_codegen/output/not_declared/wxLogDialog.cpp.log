@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxLogDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxLogDialog.cpp
+wxLogDialog.cpp: In function 'int main(int, char**)':
+wxLogDialog.cpp:36: error: 'wxLogDialog' was not declared in this scope
+wxLogDialog.cpp:36: error: expected `;' before 'a'
+make: *** [wxLogDialog.o] Error 1

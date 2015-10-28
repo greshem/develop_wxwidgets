@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxListHeaderWindow.o `wx-config  --cxxflags`    -Wno-write-strings   wxListHeaderWindow.cpp
+wxListHeaderWindow.cpp: In function 'int main(int, char**)':
+wxListHeaderWindow.cpp:41: error: aggregate 'wxListHeaderWindow a' has incomplete type and cannot be defined
+wxListHeaderWindow.cpp:41: warning: unused variable 'a'
+make: *** [wxListHeaderWindow.o] Error 1

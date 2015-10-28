@@ -1,0 +1,9 @@
+g++ -g  -Wall  -c -o wxGenericValidator.o `wx-config  --cxxflags`    -Wno-write-strings   wxGenericValidator.cpp
+wxGenericValidator.cpp: In function 'int main(int, char**)':
+wxGenericValidator.cpp:38: error: no matching function for call to 'wxGenericValidator::wxGenericValidator()'
+/usr/include/wx-2.8/wx/valgen.h:27: note: candidates are: wxGenericValidator::wxGenericValidator(const wxGenericValidator&)
+/usr/include/wx-2.8/wx/valgen.h:26: note:                 wxGenericValidator::wxGenericValidator(wxArrayInt*)
+/usr/include/wx-2.8/wx/valgen.h:25: note:                 wxGenericValidator::wxGenericValidator(wxString*)
+/usr/include/wx-2.8/wx/valgen.h:24: note:                 wxGenericValidator::wxGenericValidator(int*)
+/usr/include/wx-2.8/wx/valgen.h:23: note:                 wxGenericValidator::wxGenericValidator(bool*)
+make: *** [wxGenericValidator.o] Error 1

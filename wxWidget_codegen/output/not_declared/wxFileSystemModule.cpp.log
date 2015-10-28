@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFileSystemModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileSystemModule.cpp
+wxFileSystemModule.cpp: In function 'int main(int, char**)':
+wxFileSystemModule.cpp:29: error: 'wxFileSystemModule' was not declared in this scope
+wxFileSystemModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxFileSystemModule.o] Error 1

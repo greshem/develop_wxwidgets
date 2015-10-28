@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxBitmapVariantData.o `wx-config  --cxxflags`    -Wno-write-strings   wxBitmapVariantData.cpp
+wxBitmapVariantData.cpp: In function 'int main(int, char**)':
+wxBitmapVariantData.cpp:31: error: 'wxBitmapVariantData' was not declared in this scope
+wxBitmapVariantData.cpp:31: error: expected `;' before 'a'
+make: *** [wxBitmapVariantData.o] Error 1

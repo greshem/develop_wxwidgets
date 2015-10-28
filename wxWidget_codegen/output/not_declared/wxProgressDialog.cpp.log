@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxProgressDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxProgressDialog.cpp
+wxProgressDialog.cpp: In function 'int main(int, char**)':
+wxProgressDialog.cpp:46: error: 'wxProgressDialog' was not declared in this scope
+wxProgressDialog.cpp:46: error: expected `;' before 'a'
+make: *** [wxProgressDialog.o] Error 1

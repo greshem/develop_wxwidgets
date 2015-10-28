@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxTextDropTarget.o `wx-config  --cxxflags`    -Wno-write-strings   wxTextDropTarget.cpp
+wxTextDropTarget.cpp: In function 'int main(int, char**)':
+wxTextDropTarget.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxTextDropTarget'
+/usr/include/wx-2.8/wx/dnd.h:237: note:   because the following virtual functions are pure within 'wxTextDropTarget':
+/usr/include/wx-2.8/wx/dnd.h:241: note: 	virtual bool wxTextDropTarget::OnDropText(wxCoord, wxCoord, const wxString&)
+make: *** [wxTextDropTarget.o] Error 1

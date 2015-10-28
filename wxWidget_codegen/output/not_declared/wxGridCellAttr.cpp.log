@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridCellAttr.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridCellAttr.cpp
+wxGridCellAttr.cpp: In function 'int main(int, char**)':
+wxGridCellAttr.cpp:40: error: 'wxGridCellAttr' was not declared in this scope
+wxGridCellAttr.cpp:40: error: expected `;' before 'a'
+make: *** [wxGridCellAttr.o] Error 1

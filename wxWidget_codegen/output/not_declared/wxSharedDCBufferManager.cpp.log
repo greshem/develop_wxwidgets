@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSharedDCBufferManager.o `wx-config  --cxxflags`    -Wno-write-strings   wxSharedDCBufferManager.cpp
+wxSharedDCBufferManager.cpp: In function 'int main(int, char**)':
+wxSharedDCBufferManager.cpp:29: error: 'wxSharedDCBufferManager' was not declared in this scope
+wxSharedDCBufferManager.cpp:29: error: expected `;' before 'a'
+make: *** [wxSharedDCBufferManager.o] Error 1

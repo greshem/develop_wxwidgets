@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridCellCoordsArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridCellCoordsArray.cpp
+wxGridCellCoordsArray.cpp: In function 'int main(int, char**)':
+wxGridCellCoordsArray.cpp:36: error: 'wxGridCellCoordsArray' was not declared in this scope
+wxGridCellCoordsArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxGridCellCoordsArray.o] Error 1

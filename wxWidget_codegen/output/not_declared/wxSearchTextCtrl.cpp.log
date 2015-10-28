@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSearchTextCtrl.o `wx-config  --cxxflags`    -Wno-write-strings   wxSearchTextCtrl.cpp
+wxSearchTextCtrl.cpp: In function 'int main(int, char**)':
+wxSearchTextCtrl.cpp:29: error: 'wxSearchTextCtrl' was not declared in this scope
+wxSearchTextCtrl.cpp:29: error: expected `;' before 'a'
+make: *** [wxSearchTextCtrl.o] Error 1

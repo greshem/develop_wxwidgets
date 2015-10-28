@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxOverlayImpl.o `wx-config  --cxxflags`    -Wno-write-strings   wxOverlayImpl.cpp
+wxOverlayImpl.cpp: In function 'int main(int, char**)':
+wxOverlayImpl.cpp:36: error: aggregate 'wxOverlayImpl a' has incomplete type and cannot be defined
+wxOverlayImpl.cpp:36: warning: unused variable 'a'
+make: *** [wxOverlayImpl.o] Error 1

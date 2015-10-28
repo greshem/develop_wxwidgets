@@ -1,0 +1,11 @@
+g++ -g  -Wall  -c -o wxPrintPreviewBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxPrintPreviewBase.cpp
+wxPrintPreviewBase.cpp: In function 'int main(int, char**)':
+wxPrintPreviewBase.cpp:54: error: no matching function for call to 'wxPrintPreviewBase::wxPrintPreviewBase()'
+/usr/include/wx-2.8/wx/prntbase.h:578: note: candidates are: wxPrintPreviewBase::wxPrintPreviewBase(const wxPrintPreviewBase&)
+/usr/include/wx-2.8/wx/prntbase.h:496: note:                 wxPrintPreviewBase::wxPrintPreviewBase(wxPrintout*, wxPrintout*, wxPrintData*)
+/usr/include/wx-2.8/wx/prntbase.h:493: note:                 wxPrintPreviewBase::wxPrintPreviewBase(wxPrintout*, wxPrintout*, wxPrintDialogData*)
+wxPrintPreviewBase.cpp:54: error: cannot declare variable 'a' to be of abstract type 'wxPrintPreviewBase'
+/usr/include/wx-2.8/wx/prntbase.h:489: note:   because the following virtual functions are pure within 'wxPrintPreviewBase':
+/usr/include/wx-2.8/wx/prntbase.h:547: note: 	virtual bool wxPrintPreviewBase::Print(bool)
+/usr/include/wx-2.8/wx/prntbase.h:552: note: 	virtual void wxPrintPreviewBase::DetermineScaling()
+make: *** [wxPrintPreviewBase.o] Error 1

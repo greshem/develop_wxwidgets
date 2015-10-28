@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxImageRefData.o `wx-config  --cxxflags`    -Wno-write-strings   wxImageRefData.cpp
+wxImageRefData.cpp: In function 'int main(int, char**)':
+wxImageRefData.cpp:29: error: 'wxImageRefData' was not declared in this scope
+wxImageRefData.cpp:29: error: expected `;' before 'a'
+make: *** [wxImageRefData.o] Error 1

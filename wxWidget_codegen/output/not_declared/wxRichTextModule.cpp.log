@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRichTextModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextModule.cpp
+wxRichTextModule.cpp: In function 'int main(int, char**)':
+wxRichTextModule.cpp:29: error: 'wxRichTextModule' was not declared in this scope
+wxRichTextModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxRichTextModule.o] Error 1

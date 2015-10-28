@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDirData.o `wx-config  --cxxflags`    -Wno-write-strings   wxDirData.cpp
+wxDirData.cpp: In function 'int main(int, char**)':
+wxDirData.cpp:31: error: aggregate 'wxDirData a' has incomplete type and cannot be defined
+wxDirData.cpp:31: warning: unused variable 'a'
+make: *** [wxDirData.o] Error 1

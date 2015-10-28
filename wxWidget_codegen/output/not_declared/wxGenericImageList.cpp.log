@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGenericImageList.o `wx-config  --cxxflags`    -Wno-write-strings   wxGenericImageList.cpp
+wxGenericImageList.cpp: In function 'int main(int, char**)':
+wxGenericImageList.cpp:46: error: 'wxGenericImageList' was not declared in this scope
+wxGenericImageList.cpp:46: error: expected `;' before 'a'
+make: *** [wxGenericImageList.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxPreviewControlBar.o `wx-config  --cxxflags`    -Wno-write-strings   wxPreviewControlBar.cpp
+wxPreviewControlBar.cpp: In function 'int main(int, char**)':
+wxPreviewControlBar.cpp:45: error: no matching function for call to 'wxPreviewControlBar::wxPreviewControlBar()'
+/usr/include/wx-2.8/wx/prntbase.h:477: note: candidates are: wxPreviewControlBar::wxPreviewControlBar(const wxPreviewControlBar&)
+/usr/include/wx-2.8/wx/prntbase.h:438: note:                 wxPreviewControlBar::wxPreviewControlBar(wxPrintPreviewBase*, long int, wxWindow*, const wxPoint&, const wxSize&, long int, const wxString&)
+make: *** [wxPreviewControlBar.o] Error 1

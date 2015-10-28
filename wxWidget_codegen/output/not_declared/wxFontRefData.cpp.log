@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFontRefData.o `wx-config  --cxxflags`    -Wno-write-strings   wxFontRefData.cpp
+wxFontRefData.cpp: In function 'int main(int, char**)':
+wxFontRefData.cpp:42: error: 'wxFontRefData' was not declared in this scope
+wxFontRefData.cpp:42: error: expected `;' before 'a'
+make: *** [wxFontRefData.o] Error 1

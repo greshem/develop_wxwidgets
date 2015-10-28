@@ -1,0 +1,10 @@
+g++ -g  -Wall  -c -o wxDataObject.o `wx-config  --cxxflags`    -Wno-write-strings   wxDataObject.cpp
+wxDataObject.cpp: In function 'int main(int, char**)':
+wxDataObject.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxDataObject'
+/usr/include/wx-2.8/wx/gtk/dataobj.h:18: note:   because the following virtual functions are pure within 'wxDataObject':
+/usr/include/wx-2.8/wx/dataobj.h:131: note: 	virtual wxDataFormat wxDataObjectBase::GetPreferredFormat(wxDataObjectBase::Direction) const
+/usr/include/wx-2.8/wx/dataobj.h:134: note: 	virtual size_t wxDataObjectBase::GetFormatCount(wxDataObjectBase::Direction) const
+/usr/include/wx-2.8/wx/dataobj.h:138: note: 	virtual void wxDataObjectBase::GetAllFormats(wxDataFormat*, wxDataObjectBase::Direction) const
+/usr/include/wx-2.8/wx/dataobj.h:141: note: 	virtual size_t wxDataObjectBase::GetDataSize(const wxDataFormat&) const
+/usr/include/wx-2.8/wx/dataobj.h:145: note: 	virtual bool wxDataObjectBase::GetDataHere(const wxDataFormat&, void*) const
+make: *** [wxDataObject.o] Error 1

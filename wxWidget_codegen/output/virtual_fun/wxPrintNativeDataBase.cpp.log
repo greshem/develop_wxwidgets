@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxPrintNativeDataBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxPrintNativeDataBase.cpp
+wxPrintNativeDataBase.cpp: In function 'int main(int, char**)':
+wxPrintNativeDataBase.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxPrintNativeDataBase'
+/usr/include/wx-2.8/wx/prntbase.h:142: note:   because the following virtual functions are pure within 'wxPrintNativeDataBase':
+/usr/include/wx-2.8/wx/prntbase.h:147: note: 	virtual bool wxPrintNativeDataBase::TransferTo(wxPrintData&)
+/usr/include/wx-2.8/wx/prntbase.h:148: note: 	virtual bool wxPrintNativeDataBase::TransferFrom(const wxPrintData&)
+/usr/include/wx-2.8/wx/prntbase.h:151: note: 	virtual bool wxPrintNativeDataBase::IsOk() const
+make: *** [wxPrintNativeDataBase.o] Error 1

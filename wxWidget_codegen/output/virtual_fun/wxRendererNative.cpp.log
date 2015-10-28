@@ -1,0 +1,18 @@
+g++ -g  -Wall  -c -o wxRendererNative.o `wx-config  --cxxflags`    -Wno-write-strings   wxRendererNative.cpp
+wxRendererNative.cpp: In function 'int main(int, char**)':
+wxRendererNative.cpp:35: error: cannot declare variable 'a' to be of abstract type 'wxRendererNative'
+/usr/include/wx-2.8/wx/renderer.h:155: note:   because the following virtual functions are pure within 'wxRendererNative':
+/usr/include/wx-2.8/wx/renderer.h:167: note: 	virtual int wxRendererNative::DrawHeaderButton(wxWindow*, wxDC&, const wxRect&, int, wxHeaderSortIconType, wxHeaderButtonParams*)
+/usr/include/wx-2.8/wx/renderer.h:177: note: 	virtual int wxRendererNative::DrawHeaderButtonContents(wxWindow*, wxDC&, const wxRect&, int, wxHeaderSortIconType, wxHeaderButtonParams*)
+/usr/include/wx-2.8/wx/renderer.h:181: note: 	virtual int wxRendererNative::GetHeaderButtonHeight(wxWindow*)
+/usr/include/wx-2.8/wx/renderer.h:188: note: 	virtual void wxRendererNative::DrawTreeItemButton(wxWindow*, wxDC&, const wxRect&, int)
+/usr/include/wx-2.8/wx/renderer.h:195: note: 	virtual void wxRendererNative::DrawSplitterBorder(wxWindow*, wxDC&, const wxRect&, int)
+/usr/include/wx-2.8/wx/renderer.h:203: note: 	virtual void wxRendererNative::DrawSplitterSash(wxWindow*, wxDC&, const wxSize&, wxCoord, wxOrientation, int)
+/usr/include/wx-2.8/wx/renderer.h:211: note: 	virtual void wxRendererNative::DrawComboBoxDropButton(wxWindow*, wxDC&, const wxRect&, int)
+/usr/include/wx-2.8/wx/renderer.h:219: note: 	virtual void wxRendererNative::DrawDropArrow(wxWindow*, wxDC&, const wxRect&, int)
+/usr/include/wx-2.8/wx/renderer.h:227: note: 	virtual void wxRendererNative::DrawCheckBox(wxWindow*, wxDC&, const wxRect&, int)
+/usr/include/wx-2.8/wx/renderer.h:235: note: 	virtual void wxRendererNative::DrawPushButton(wxWindow*, wxDC&, const wxRect&, int)
+/usr/include/wx-2.8/wx/renderer.h:247: note: 	virtual void wxRendererNative::DrawItemSelectionRect(wxWindow*, wxDC&, const wxRect&, int)
+/usr/include/wx-2.8/wx/renderer.h:254: note: 	virtual wxSplitterRenderParams wxRendererNative::GetSplitterParams(const wxWindow*)
+/usr/include/wx-2.8/wx/renderer.h:292: note: 	virtual wxRendererVersion wxRendererNative::GetVersion() const
+make: *** [wxRendererNative.o] Error 1

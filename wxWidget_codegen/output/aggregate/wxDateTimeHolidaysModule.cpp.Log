@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDateTimeHolidaysModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxDateTimeHolidaysModule.cpp
+wxDateTimeHolidaysModule.cpp: In function 'int main(int, char**)':
+wxDateTimeHolidaysModule.cpp:29: error: aggregate 'wxDateTimeHolidaysModule a' has incomplete type and cannot be defined
+wxDateTimeHolidaysModule.cpp:29: warning: unused variable 'a'
+make: *** [wxDateTimeHolidaysModule.o] Error 1

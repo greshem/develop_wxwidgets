@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxInfoFrame.o `wx-config  --cxxflags`    -Wno-write-strings   wxInfoFrame.cpp
+wxInfoFrame.cpp: In function 'int main(int, char**)':
+wxInfoFrame.cpp:28: error: 'wxInfoFrame' was not declared in this scope
+wxInfoFrame.cpp:28: error: expected `;' before 'a'
+make: *** [wxInfoFrame.o] Error 1

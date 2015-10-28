@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGenericFontButton.o `wx-config  --cxxflags`    -Wno-write-strings   wxGenericFontButton.cpp
+wxGenericFontButton.cpp: In function 'int main(int, char**)':
+wxGenericFontButton.cpp:33: error: 'wxGenericFontButton' was not declared in this scope
+wxGenericFontButton.cpp:33: error: expected `;' before 'a'
+make: *** [wxGenericFontButton.o] Error 1

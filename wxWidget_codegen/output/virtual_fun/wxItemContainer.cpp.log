@@ -1,0 +1,18 @@
+g++ -g  -Wall  -c -o wxItemContainer.o `wx-config  --cxxflags`    -Wno-write-strings   wxItemContainer.cpp
+wxItemContainer.cpp: In function 'int main(int, char**)':
+wxItemContainer.cpp:36: error: cannot declare variable 'a' to be of abstract type 'wxItemContainer'
+/usr/include/wx-2.8/wx/ctrlsub.h:90: note:   because the following virtual functions are pure within 'wxItemContainer':
+/usr/include/wx-2.8/wx/ctrlsub.h:41: note: 	virtual unsigned int wxItemContainerImmutable::GetCount() const
+/usr/include/wx-2.8/wx/ctrlsub.h:44: note: 	virtual wxString wxItemContainerImmutable::GetString(unsigned int) const
+/usr/include/wx-2.8/wx/ctrlsub.h:46: note: 	virtual void wxItemContainerImmutable::SetString(unsigned int, const wxString&)
+/usr/include/wx-2.8/wx/ctrlsub.h:68: note: 	virtual void wxItemContainerImmutable::SetSelection(int)
+/usr/include/wx-2.8/wx/ctrlsub.h:69: note: 	virtual int wxItemContainerImmutable::GetSelection() const
+/usr/include/wx-2.8/wx/ctrlsub.h:120: note: 	virtual void wxItemContainer::Clear()
+/usr/include/wx-2.8/wx/ctrlsub.h:121: note: 	virtual void wxItemContainer::Delete(unsigned int)
+/usr/include/wx-2.8/wx/ctrlsub.h:139: note: 	virtual int wxItemContainer::DoAppend(const wxString&)
+/usr/include/wx-2.8/wx/ctrlsub.h:140: note: 	virtual int wxItemContainer::DoInsert(const wxString&, unsigned int)
+/usr/include/wx-2.8/wx/ctrlsub.h:142: note: 	virtual void wxItemContainer::DoSetItemClientData(unsigned int, void*)
+/usr/include/wx-2.8/wx/ctrlsub.h:143: note: 	virtual void* wxItemContainer::DoGetItemClientData(unsigned int) const
+/usr/include/wx-2.8/wx/ctrlsub.h:144: note: 	virtual void wxItemContainer::DoSetItemClientObject(unsigned int, wxClientData*)
+/usr/include/wx-2.8/wx/ctrlsub.h:145: note: 	virtual wxClientData* wxItemContainer::DoGetItemClientObject(unsigned int) const
+make: *** [wxItemContainer.o] Error 1

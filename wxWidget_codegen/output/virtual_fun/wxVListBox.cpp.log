@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxVListBox.o `wx-config  --cxxflags`    -Wno-write-strings   wxVListBox.cpp
+wxVListBox.cpp: In function 'int main(int, char**)':
+wxVListBox.cpp:56: error: cannot declare variable 'a' to be of abstract type 'wxVListBox'
+/usr/include/wx-2.8/wx/vlbox.h:36: note:   because the following virtual functions are pure within 'wxVListBox':
+/usr/include/wx-2.8/wx/vlbox.h:204: note: 	virtual void wxVListBox::OnDrawItem(wxDC&, const wxRect&, size_t) const
+/usr/include/wx-2.8/wx/vlbox.h:208: note: 	virtual wxCoord wxVListBox::OnMeasureItem(size_t) const
+make: *** [wxVListBox.o] Error 1

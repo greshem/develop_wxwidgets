@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxDocTemplate.o `wx-config  --cxxflags`    -Wno-write-strings   wxDocTemplate.cpp
+wxDocTemplate.cpp: In function 'int main(int, char**)':
+wxDocTemplate.cpp:37: error: no matching function for call to 'wxDocTemplate::wxDocTemplate()'
+/usr/include/wx-2.8/wx/docview.h:322: note: candidates are: wxDocTemplate::wxDocTemplate(const wxDocTemplate&)
+/usr/include/wx-2.8/wx/docview.h:263: note:                 wxDocTemplate::wxDocTemplate(wxDocManager*, const wxString&, const wxString&, const wxString&, const wxString&, const wxString&, const wxString&, wxClassInfo*, wxClassInfo*, long int)
+make: *** [wxDocTemplate.o] Error 1

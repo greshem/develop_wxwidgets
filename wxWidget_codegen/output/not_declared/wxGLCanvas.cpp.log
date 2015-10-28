@@ -1,0 +1,14 @@
+g++ -g  -Wall  -c -o wxGLCanvas.o `wx-config  --cxxflags`    -Wno-write-strings   wxGLCanvas.cpp
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:67: error: 'wxGLCanvasName' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:73: error: 'wxGLCanvasName' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:81: error: 'wxGLCanvasName' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:89: error: 'wxGLCanvasName' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:100: error: 'wxGLCanvasName' was not declared in this scope
+wxGLCanvas.cpp: In function 'int main(int, char**)':
+wxGLCanvas.cpp:48: error: no matching function for call to 'wxGLCanvas::wxGLCanvas()'
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:91: note: candidates are: wxGLCanvas::wxGLCanvas(wxWindow*, const wxGLCanvas*, wxWindowID, const wxPoint&, const wxSize&, long int, const wxString&, int*, const wxPalette&)
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:83: note:                 wxGLCanvas::wxGLCanvas(wxWindow*, const wxGLContext*, wxWindowID, const wxPoint&, const wxSize&, long int, const wxString&, int*, const wxPalette&)
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:75: note:                 wxGLCanvas::wxGLCanvas(wxWindow*, wxWindowID, const wxPoint&, const wxSize&, long int, const wxString&, int*, const wxPalette&)
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:68: note:                 wxGLCanvas::wxGLCanvas(wxWindow*, wxWindowID, int*, const wxPoint&, const wxSize&, long int, const wxString&, const wxPalette&)
+/usr/include/wx-2.8/wx/gtk/glcanvas.h:58: note:                 wxGLCanvas::wxGLCanvas(const wxGLCanvas&)
+make: *** [wxGLCanvas.o] Error 1

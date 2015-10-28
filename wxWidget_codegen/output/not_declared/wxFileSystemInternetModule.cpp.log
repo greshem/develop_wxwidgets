@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFileSystemInternetModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileSystemInternetModule.cpp
+wxFileSystemInternetModule.cpp: In function 'int main(int, char**)':
+wxFileSystemInternetModule.cpp:29: error: 'wxFileSystemInternetModule' was not declared in this scope
+wxFileSystemInternetModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxFileSystemInternetModule.o] Error 1

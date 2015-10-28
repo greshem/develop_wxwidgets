@@ -1,0 +1,180 @@
+#ifndef PROTOCOL_H
+#define PROTOCOL_H
+#include "struct_declaration.h"
+#include "log.h"
+/*
+
++--------------+
+| mark='|'     | 标记字符串 用于抓包分析的时候 便于 标识. 
++--------------+
+|  total size  |
++--------------+
+|   main_func  |
++--------------+
+|   sub_func   |
++--------------+
+|              |
+|all_data      |
+|最大数据为4096|
+|              |
++--------------+
+
+*/
+#ifdef WINDOWSCODE
+#define PACKED
+#pragma pack(1)
+#else
+#define PACKED __attribute__((packed))
+#endif
+/*
+****************************************
+	         Function 
+****************************************
+*/
+
+#define MAX_DATA				256
+#define SOCK_DAEMON				0x350
+
+
+
+//########################################################################
+//基础协议 主要用来处理 /etc/nwserv.conf, 里面的选项. 
+#define BASE_PROTOCOL							0
+#define MAIN_01_VOLUMES					(BASE_PROTOCOL+1)
+	#define SUB_01_MAIN_01_VOLUMENAME				1
+	#define SUB_02_MAIN_01_DIR						2
+	#define	SUB_03_MAIN_01_CASE_SENSITIVE			3
+	#define SUB_04_MAIN_01_INODE_NUMBER				4
+	#define SUB_05_MAIN_01_UNMASKDIR				5
+	#define SUB_06_MAIN_01_UNMASKFILE				6
+
+#define MAIN_02_SERVERNAME					(BASE_PROTOCOL+2)
+	#define	SUB_01_MAIN_02_SERVERNAME				1
+
+#define MAIN_03_INTERNAL_NETWORK			(BASE_PROTOCOL+3)
+	#define	SUB_01_MAIN_03_INTERNAL_NETWORK			1
+
+#define MAIN_04_IPX_DEVICES				(BASE_PROTOCOL+4)
+	#define SUB_01_MAIN_04_NET_NUMBER				1
+	#define SUB_02_MAIN_04_DEVICE					2
+	#define SUB_03_MAIN_04_FRAME					3
+	#define SUB_04_MAIN_04_TICKS					4
+	
+#define MAIN_05_SPECIAL_DEVICEC_FLAGS		(BASE_PROTOCOL+5)
+	#define SUB_01_MAIN_05_SPECIAL_DEVICEC_FLAGS	1
+
+#define MAIN_06_VERSION_SPOOFING			(BASE_PROTOCOL+6)
+	#define SUB_01_MAIN_06_VERSION_SPOOFING			1
+
+#define MAIN_07_PASSWORD_HANDLEING 		(BASE_PROTOCOL+7)
+	#define SUB_01_MAIN_07_PASSWORD_HANDLEING 		1
+
+#define MAIN_08_NOT_USING 					(BASE_PROTOCOL+8)
+
+#define MAIN_09_CREATE_MODE 				(BASE_PROTOCOL+9)
+	#define SUB_01_MAIN_09_CREATE_MODE_FILE 		1
+	#define SUB_02_MAIN_09_CREATE_MODE_DIR	 		2
+
+#define MAIN_10_UID_RIGHTS					(BASE_PROTOCOL+10)
+	#define SUB_01_MAIN_10_UID_RIGHTS				1
+
+#define MAIN_11_GID_RIGHTS					(BASE_PROTOCOL+11)
+	#define SUB_01_MAIN_11_GID_RIGHTS				1
+
+#define MAIN_12_SUPERVISOR_LOGIN 			(BASE_PROTOCOL+12)
+	#define SUB_01_MAIN_12_NW_LOGIN					1
+	#define SUB_02_MAIN_12_LINUX_LOGIN				2
+	#define SUB_03_MAIN_12_PASSWD					3
+
+#define MAIN_13_USER_LOGIN					(BASE_PROTOCOL+13)
+	#define SUB_01_MAIN_13_NW_LOGIN					1
+	#define SUB_02_MAIN_13_LINUX_LOGIN				2
+	#define SUB_03_MAIN_13_PASSWD					3
+	#define SUB_03_MAIN_13_FLAGS					4
+
+#define MAIN_14_NOT_USING_14		 		(BASE_PROTOCOL+14)
+
+#define MAIN_15_MAPPING_OF_LOGINS 			(BASE_PROTOCOL+15)
+	#define	SUB_01_MAIN_15_SUB_NO_SUMMARY				1
+	#define	SUB_02_MAIN_15_SUB_NO_SUMMARY				2
+	
+#define MAIN_16_TESTS_ON_STARTUP			(BASE_PROTOCOL+16)
+	#define SUB_01_MAIN_16_CHECKED					1
+
+
+
+#define MAIN_21_NO_SUMMARY_21				(BASE_PROTOCOL+21)
+#define MAIN_22_NO_SUMMARY_22				(BASE_PROTOCOL+22)
+#define MAIN_31_NO_SUMMARY_31				(BASE_PROTOCOL+31)
+#define MAIN_40_NO_SUMMARY_40				(BASE_PROTOCOL+40)
+#define MAIN_41_NO_SUMMARY_41				(BASE_PROTOCOL+41)
+#define MAIN_42_NO_SUMMARY_42				(BASE_PROTOCOL+42)
+#define MAIN_45_NO_SUMMARY_45				(BASE_PROTOCOL+45)
+#define MAIN_46_NO_SUMMARY_46				(BASE_PROTOCOL+46)
+#define MAIN_47_NO_SUMMARY_47				(BASE_PROTOCOL+47)
+
+#define MAIN_100_NO_SUMMARY_100				(BASE_PROTOCOL+100)
+#define MAIN_101_NO_SUMMARY_101				(BASE_PROTOCOL+101)
+#define MAIN_102_NO_SUMMARY_102				(BASE_PROTOCOL+102)
+#define MAIN_103_NO_SUMMARY_103				(BASE_PROTOCOL+103)
+#define MAIN_104_NO_SUMMARY_104				(BASE_PROTOCOL+104)
+#define MAIN_105_NO_SUMMARY_105				(BASE_PROTOCOL+105)
+#define MAIN_106_NO_SUMMARY_106				(BASE_PROTOCOL+106)
+
+
+#define MAIN_200_NO_SUMMARY_200				(BASE_PROTOCOL+200)
+#define MAIN_201_NO_SUMMARY_201				(BASE_PROTOCOL+201)
+
+#define MAIN_202_NO_SUMMARY_202				(BASE_PROTOCOL+202)
+#define MAIN_210_NO_SUMMARY_210				(BASE_PROTOCOL+210)
+#define MAIN_211_NO_SUMMARY_211				(BASE_PROTOCOL+211)
+
+#define MAIN_300_NO_SUMMARY_300				(BASE_PROTOCOL+300)
+#define MAIN_301_NO_SUMMARY_301					(BASE_PROTOCOL+301)
+#define MAIN_302_NO_SUMMARY_302				(BASE_PROTOCOL+302)
+
+#define MAIN_310_NO_SUMMARY_310				(BASE_PROTOCOL+310)
+
+#define MAIN_400_NO_SUMMARY_400				(BASE_PROTOCOL+400)
+#define MAIN_401_NO_SUMMARY_401				(BASE_PROTOCOL+401)
+#define MAIN_402_NO_SUMMARY_402				(BASE_PROTOCOL+402)
+
+
+#define GET_FRAME_TYPE			0x0f
+#define SET_FRAME_TYPE			0x10
+#define GET_SUPER_PASSWD		0x11
+#define SET_SUPER_PASSWD		0x12
+
+
+
+//########################################################################
+//用户自定义的， 根据实际的需求来添加协议.  
+#define USER_PROTOCOL				500
+#define MAIN_USER_501_GET_STATION_LIST		(USER_PROTOCOL+1)
+
+#define MAIN_USER_502_NOTIFY_STATION_LOGIN	 	(USER_PROTOCOL+2)
+#define MAIN_USER_503_NOTIFY_STATION_LOGOUT		(USER_PROTOCOL+3)
+#define MAIN_USER_504_NOTIFY_NWCONN_EXITING		(USER_PROTOCOL+4)	
+
+#define MAIN_USER_505_KILL_NWCONN			(USER_PROTOCOL+5)
+#define MAIN_USER_506_CURRENT_ACCESS_FILE (USER_PROTOCOL+6) 
+
+#define MAIN_USER_507_START_NWSERV		(USER_PROTOCOL+7)	
+#define MAIN_USER_508_STOP_NWSERV      	(USER_PROTOCOL+8)	
+#define MAIN_USER_509_RESTART_NWSERV		(USER_PROTOCOL+9)	
+#define MAIN_USER_510_REFRESH_ALL		(USER_PROTOCOL+10)	
+#define MAIN_USER_511_GET_LOG			(USER_PROTOCOL+11)	
+
+//add new
+#define MAIN_USER_512_WHO_USE_THIS_FILE			(USER_PROTOCOL+12)	
+#define MAIN_USER_513_GEN_CORE_DUMP			(USER_PROTOCOL+13)	
+
+
+
+
+
+
+
+#endif
+
+

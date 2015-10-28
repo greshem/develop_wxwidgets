@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridCellEditor.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridCellEditor.cpp
+wxGridCellEditor.cpp: In function 'int main(int, char**)':
+wxGridCellEditor.cpp:38: error: 'wxGridCellEditor' was not declared in this scope
+wxGridCellEditor.cpp:38: error: expected `;' before 'a'
+make: *** [wxGridCellEditor.o] Error 1

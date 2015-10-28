@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxView.o `wx-config  --cxxflags`    -Wno-write-strings   wxView.cpp
+wxView.cpp: In function 'int main(int, char**)':
+wxView.cpp:41: error: cannot declare variable 'a' to be of abstract type 'wxView'
+/usr/include/wx-2.8/wx/docview.h:187: note:   because the following virtual functions are pure within 'wxView':
+/usr/include/wx-2.8/wx/docview.h:203: note: 	virtual void wxView::OnDraw(wxDC*)
+make: *** [wxView.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPluralFormsNode.o `wx-config  --cxxflags`    -Wno-write-strings   wxPluralFormsNode.cpp
+wxPluralFormsNode.cpp: In function 'int main(int, char**)':
+wxPluralFormsNode.cpp:30: error: 'wxPluralFormsNode' was not declared in this scope
+wxPluralFormsNode.cpp:30: error: expected `;' before 'a'
+make: *** [wxPluralFormsNode.o] Error 1

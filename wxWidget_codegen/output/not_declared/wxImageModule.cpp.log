@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxImageModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxImageModule.cpp
+wxImageModule.cpp: In function 'int main(int, char**)':
+wxImageModule.cpp:29: error: 'wxImageModule' was not declared in this scope
+wxImageModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxImageModule.o] Error 1

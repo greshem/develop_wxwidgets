@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxPrintDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxPrintDialog.cpp
+wxPrintDialog.cpp: In function 'int main(int, char**)':
+wxPrintDialog.cpp:37: error: no matching function for call to 'wxPrintDialog::wxPrintDialog()'
+/usr/include/wx-2.8/wx/printdlg.h:71: note: candidates are: wxPrintDialog::wxPrintDialog(const wxPrintDialog&)
+/usr/include/wx-2.8/wx/printdlg.h:57: note:                 wxPrintDialog::wxPrintDialog(wxWindow*, wxPrintData*)
+/usr/include/wx-2.8/wx/printdlg.h:56: note:                 wxPrintDialog::wxPrintDialog(wxWindow*, wxPrintDialogData*)
+make: *** [wxPrintDialog.o] Error 1

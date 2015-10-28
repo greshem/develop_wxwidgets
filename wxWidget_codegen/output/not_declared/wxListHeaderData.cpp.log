@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxListHeaderData.o `wx-config  --cxxflags`    -Wno-write-strings   wxListHeaderData.cpp
+wxListHeaderData.cpp: In function 'int main(int, char**)':
+wxListHeaderData.cpp:43: error: 'wxListHeaderData' was not declared in this scope
+wxListHeaderData.cpp:43: error: expected `;' before 'a'
+make: *** [wxListHeaderData.o] Error 1

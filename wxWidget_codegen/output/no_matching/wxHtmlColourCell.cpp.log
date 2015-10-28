@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlColourCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlColourCell.cpp
+wxHtmlColourCell.cpp: In function 'int main(int, char**)':
+wxHtmlColourCell.cpp:31: error: no matching function for call to 'wxHtmlColourCell::wxHtmlColourCell()'
+/usr/include/wx-2.8/wx/html/htmlcell.h:549: note: candidates are: wxHtmlColourCell::wxHtmlColourCell(const wxHtmlColourCell&)
+/usr/include/wx-2.8/wx/html/htmlcell.h:538: note:                 wxHtmlColourCell::wxHtmlColourCell(const wxColour&, int)
+make: *** [wxHtmlColourCell.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxPreviewCanvas.o `wx-config  --cxxflags`    -Wno-write-strings   wxPreviewCanvas.cpp
+wxPreviewCanvas.cpp: In function 'int main(int, char**)':
+wxPreviewCanvas.cpp:37: error: no matching function for call to 'wxPreviewCanvas::wxPreviewCanvas()'
+/usr/include/wx-2.8/wx/prntbase.h:354: note: candidates are: wxPreviewCanvas::wxPreviewCanvas(const wxPreviewCanvas&)
+/usr/include/wx-2.8/wx/prntbase.h:337: note:                 wxPreviewCanvas::wxPreviewCanvas(wxPrintPreviewBase*, wxWindow*, const wxPoint&, const wxSize&, long int, const wxString&)
+make: *** [wxPreviewCanvas.o] Error 1

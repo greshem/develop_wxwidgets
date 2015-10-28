@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRichTextFontPage.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextFontPage.cpp
+wxRichTextFontPage.cpp: In function 'int main(int, char**)':
+wxRichTextFontPage.cpp:53: error: 'wxRichTextFontPage' was not declared in this scope
+wxRichTextFontPage.cpp:53: error: expected `;' before 'a'
+make: *** [wxRichTextFontPage.o] Error 1

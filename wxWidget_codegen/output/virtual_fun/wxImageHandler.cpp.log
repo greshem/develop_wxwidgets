@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxImageHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxImageHandler.cpp
+wxImageHandler.cpp: In function 'int main(int, char**)':
+wxImageHandler.cpp:34: error: cannot declare variable 'a' to be of abstract type 'wxImageHandler'
+/usr/include/wx-2.8/wx/image.h:82: note:   because the following virtual functions are pure within 'wxImageHandler':
+/usr/include/wx-2.8/wx/image.h:109: note: 	virtual bool wxImageHandler::DoCanRead(wxInputStream&)
+make: *** [wxImageHandler.o] Error 1

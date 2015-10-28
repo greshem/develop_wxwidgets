@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxTextOutputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxTextOutputStream.cpp
+wxTextOutputStream.cpp:19:41: error: wx/longlong.hWXDLLIMPEXP_BASE: No such file or directory
+wxTextOutputStream.cpp: In function 'int main(int, char**)':
+wxTextOutputStream.cpp:49: error: no matching function for call to 'wxTextOutputStream::wxTextOutputStream()'
+/usr/include/wx-2.8/wx/txtstrm.h:153: note: candidates are: wxTextOutputStream::wxTextOutputStream(const wxTextOutputStream&)
+/usr/include/wx-2.8/wx/txtstrm.h:113: note:                 wxTextOutputStream::wxTextOutputStream(wxOutputStream&, wxEOL, const wxMBConv&)
+make: *** [wxTextOutputStream.o] Error 1

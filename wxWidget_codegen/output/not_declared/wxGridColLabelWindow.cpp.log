@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridColLabelWindow.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridColLabelWindow.cpp
+wxGridColLabelWindow.cpp: In function 'int main(int, char**)':
+wxGridColLabelWindow.cpp:38: error: 'wxGridColLabelWindow' was not declared in this scope
+wxGridColLabelWindow.cpp:38: error: expected `;' before 'a'
+make: *** [wxGridColLabelWindow.o] Error 1

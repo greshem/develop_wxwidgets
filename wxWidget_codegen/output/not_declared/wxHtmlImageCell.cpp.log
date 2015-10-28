@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlImageCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlImageCell.cpp
+wxHtmlImageCell.cpp: In function 'int main(int, char**)':
+wxHtmlImageCell.cpp:34: error: 'wxHtmlImageCell' was not declared in this scope
+wxHtmlImageCell.cpp:34: error: expected `;' before 'a'
+make: *** [wxHtmlImageCell.o] Error 1

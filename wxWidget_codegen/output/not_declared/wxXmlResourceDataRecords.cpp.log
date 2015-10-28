@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxXmlResourceDataRecords.o `wx-config  --cxxflags`    -Wno-write-strings   wxXmlResourceDataRecords.cpp
+wxXmlResourceDataRecords.cpp: In function 'int main(int, char**)':
+wxXmlResourceDataRecords.cpp:36: error: 'wxXmlResourceDataRecords' was not declared in this scope
+wxXmlResourceDataRecords.cpp:36: error: expected `;' before 'a'
+make: *** [wxXmlResourceDataRecords.o] Error 1

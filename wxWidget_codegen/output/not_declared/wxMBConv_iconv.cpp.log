@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxMBConv_iconv.o `wx-config  --cxxflags`    -Wno-write-strings   wxMBConv_iconv.cpp
+wxMBConv_iconv.cpp: In function 'int main(int, char**)':
+wxMBConv_iconv.cpp:32: error: 'wxMBConv_iconv' was not declared in this scope
+wxMBConv_iconv.cpp:32: error: expected `;' before 'a'
+make: *** [wxMBConv_iconv.o] Error 1

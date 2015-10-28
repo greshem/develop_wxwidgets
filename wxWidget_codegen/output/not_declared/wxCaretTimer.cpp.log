@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxCaretTimer.o `wx-config  --cxxflags`    -Wno-write-strings   wxCaretTimer.cpp
+wxCaretTimer.cpp: In function 'int main(int, char**)':
+wxCaretTimer.cpp:29: error: 'wxCaretTimer' was not declared in this scope
+wxCaretTimer.cpp:29: error: expected `;' before 'a'
+make: *** [wxCaretTimer.o] Error 1

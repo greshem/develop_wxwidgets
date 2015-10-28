@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDumpOpenExternalDlg.o `wx-config  --cxxflags`    -Wno-write-strings   wxDumpOpenExternalDlg.cpp
+wxDumpOpenExternalDlg.cpp: In function 'int main(int, char**)':
+wxDumpOpenExternalDlg.cpp:31: error: 'wxDumpOpenExternalDlg' was not declared in this scope
+wxDumpOpenExternalDlg.cpp:31: error: expected `;' before 'a'
+make: *** [wxDumpOpenExternalDlg.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTML_ModuleLinks.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTML_ModuleLinks.cpp
+wxHTML_ModuleLinks.cpp: In function 'int main(int, char**)':
+wxHTML_ModuleLinks.cpp:29: error: 'wxHTML_ModuleLinks' was not declared in this scope
+wxHTML_ModuleLinks.cpp:29: error: expected `;' before 'a'
+make: *** [wxHTML_ModuleLinks.o] Error 1

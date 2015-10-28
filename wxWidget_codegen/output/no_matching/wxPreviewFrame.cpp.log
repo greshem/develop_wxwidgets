@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxPreviewFrame.o `wx-config  --cxxflags`    -Wno-write-strings   wxPreviewFrame.cpp
+wxPreviewFrame.cpp: In function 'int main(int, char**)':
+wxPreviewFrame.cpp:37: error: no matching function for call to 'wxPreviewFrame::wxPreviewFrame()'
+/usr/include/wx-2.8/wx/prntbase.h:393: note: candidates are: wxPreviewFrame::wxPreviewFrame(const wxPreviewFrame&)
+/usr/include/wx-2.8/wx/prntbase.h:374: note:                 wxPreviewFrame::wxPreviewFrame(wxPrintPreviewBase*, wxWindow*, const wxString&, const wxPoint&, const wxSize&, long int, const wxString&)
+make: *** [wxPreviewFrame.o] Error 1

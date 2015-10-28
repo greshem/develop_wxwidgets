@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxFileStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileStream.cpp
+wxFileStream.cpp: In function 'int main(int, char**)':
+wxFileStream.cpp:29: error: no matching function for call to 'wxFileStream::wxFileStream()'
+/usr/include/wx-2.8/wx/wfstream.h:121: note: candidates are: wxFileStream::wxFileStream(const wxFileStream&)
+/usr/include/wx-2.8/wx/wfstream.h:118: note:                 wxFileStream::wxFileStream(const wxString&)
+make: *** [wxFileStream.o] Error 1

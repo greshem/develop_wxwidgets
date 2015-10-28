@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPseudoTransparentFrame.o `wx-config  --cxxflags`    -Wno-write-strings   wxPseudoTransparentFrame.cpp
+wxPseudoTransparentFrame.cpp: In function 'int main(int, char**)':
+wxPseudoTransparentFrame.cpp:29: error: 'wxPseudoTransparentFrame' was not declared in this scope
+wxPseudoTransparentFrame.cpp:29: error: expected `;' before 'a'
+make: *** [wxPseudoTransparentFrame.o] Error 1

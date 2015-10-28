@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxANIFrameInfoArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxANIFrameInfoArray.cpp
+wxANIFrameInfoArray.cpp: In function 'int main(int, char**)':
+wxANIFrameInfoArray.cpp:36: error: 'wxANIFrameInfoArray' was not declared in this scope
+wxANIFrameInfoArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxANIFrameInfoArray.o] Error 1

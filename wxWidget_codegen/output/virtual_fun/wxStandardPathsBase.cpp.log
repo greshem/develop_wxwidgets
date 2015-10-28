@@ -1,0 +1,10 @@
+g++ -g  -Wall  -c -o wxStandardPathsBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxStandardPathsBase.cpp
+wxStandardPathsBase.cpp: In function 'int main(int, char**)':
+wxStandardPathsBase.cpp:38: error: cannot declare variable 'a' to be of abstract type 'wxStandardPathsBase'
+/usr/include/wx-2.8/wx/stdpaths.h:27: note:   because the following virtual functions are pure within 'wxStandardPathsBase':
+/usr/include/wx-2.8/wx/stdpaths.h:55: note: 	virtual wxString wxStandardPathsBase::GetConfigDir() const
+/usr/include/wx-2.8/wx/stdpaths.h:63: note: 	virtual wxString wxStandardPathsBase::GetUserConfigDir() const
+/usr/include/wx-2.8/wx/stdpaths.h:70: note: 	virtual wxString wxStandardPathsBase::GetDataDir() const
+/usr/include/wx-2.8/wx/stdpaths.h:82: note: 	virtual wxString wxStandardPathsBase::GetUserDataDir() const
+/usr/include/wx-2.8/wx/stdpaths.h:95: note: 	virtual wxString wxStandardPathsBase::GetPluginsDir() const
+make: *** [wxStandardPathsBase.o] Error 1

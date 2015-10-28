@@ -1,0 +1,15 @@
+g++ -g  -Wall  -c -o wxArchiveOutputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxArchiveOutputStream.cpp
+wxArchiveOutputStream.cpp: In function 'int main(int, char**)':
+wxArchiveOutputStream.cpp:30: error: no matching function for call to 'wxArchiveOutputStream::wxArchiveOutputStream()'
+/usr/include/wx-2.8/wx/archive.h:153: note: candidates are: wxArchiveOutputStream::wxArchiveOutputStream(wxOutputStream*, wxMBConv&)
+/usr/include/wx-2.8/wx/archive.h:152: note:                 wxArchiveOutputStream::wxArchiveOutputStream(wxOutputStream&, wxMBConv&)
+/usr/include/wx-2.8/wx/archive.h:131: note:                 wxArchiveOutputStream::wxArchiveOutputStream(const wxArchiveOutputStream&)
+wxArchiveOutputStream.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxArchiveOutputStream'
+/usr/include/wx-2.8/wx/archive.h:131: note:   because the following virtual functions are pure within 'wxArchiveOutputStream':
+/usr/include/wx-2.8/wx/archive.h:135: note: 	virtual bool wxArchiveOutputStream::PutNextEntry(wxArchiveEntry*)
+/usr/include/wx-2.8/wx/archive.h:139: note: 	virtual bool wxArchiveOutputStream::PutNextEntry(const wxString&, const wxDateTime&, wxFileOffset)
+/usr/include/wx-2.8/wx/archive.h:142: note: 	virtual bool wxArchiveOutputStream::PutNextDirEntry(const wxString&, const wxDateTime&)
+/usr/include/wx-2.8/wx/archive.h:145: note: 	virtual bool wxArchiveOutputStream::CopyEntry(wxArchiveEntry*, wxArchiveInputStream&)
+/usr/include/wx-2.8/wx/archive.h:147: note: 	virtual bool wxArchiveOutputStream::CopyArchiveMetaData(wxArchiveInputStream&)
+/usr/include/wx-2.8/wx/archive.h:149: note: 	virtual bool wxArchiveOutputStream::CloseEntry()
+make: *** [wxArchiveOutputStream.o] Error 1

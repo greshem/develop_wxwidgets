@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxThreadInternal.o `wx-config  --cxxflags`    -Wno-write-strings   wxThreadInternal.cpp
+wxThreadInternal.cpp: In function 'int main(int, char**)':
+wxThreadInternal.cpp:36: error: aggregate 'wxThreadInternal a' has incomplete type and cannot be defined
+wxThreadInternal.cpp:36: warning: unused variable 'a'
+make: *** [wxThreadInternal.o] Error 1

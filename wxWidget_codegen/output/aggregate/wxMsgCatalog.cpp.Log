@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxMsgCatalog.o `wx-config  --cxxflags`    -Wno-write-strings   wxMsgCatalog.cpp
+wxMsgCatalog.cpp: In function 'int main(int, char**)':
+wxMsgCatalog.cpp:30: error: aggregate 'wxMsgCatalog a' has incomplete type and cannot be defined
+wxMsgCatalog.cpp:30: warning: unused variable 'a'
+make: *** [wxMsgCatalog.o] Error 1

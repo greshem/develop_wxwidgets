@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPluralFormsScanner.o `wx-config  --cxxflags`    -Wno-write-strings   wxPluralFormsScanner.cpp
+wxPluralFormsScanner.cpp: In function 'int main(int, char**)':
+wxPluralFormsScanner.cpp:29: error: 'wxPluralFormsScanner' was not declared in this scope
+wxPluralFormsScanner.cpp:29: error: expected `;' before 'a'
+make: *** [wxPluralFormsScanner.o] Error 1

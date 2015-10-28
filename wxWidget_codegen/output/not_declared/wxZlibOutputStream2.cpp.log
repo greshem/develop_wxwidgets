@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxZlibOutputStream2.o `wx-config  --cxxflags`    -Wno-write-strings   wxZlibOutputStream2.cpp
+wxZlibOutputStream2.cpp: In function 'int main(int, char**)':
+wxZlibOutputStream2.cpp:28: error: 'wxZlibOutputStream2' was not declared in this scope
+wxZlibOutputStream2.cpp:28: error: expected `;' before 'a'
+make: *** [wxZlibOutputStream2.o] Error 1

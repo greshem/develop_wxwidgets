@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxCmdLineParserData.o `wx-config  --cxxflags`    -Wno-write-strings   wxCmdLineParserData.cpp
+wxCmdLineParserData.cpp: In function 'int main(int, char**)':
+wxCmdLineParserData.cpp:33: error: 'wxCmdLineParserData' was not declared in this scope
+wxCmdLineParserData.cpp:33: error: expected `;' before 'a'
+make: *** [wxCmdLineParserData.o] Error 1

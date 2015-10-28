@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxLogFrame.o `wx-config  --cxxflags`    -Wno-write-strings   wxLogFrame.cpp
+wxLogFrame.cpp: In function 'int main(int, char**)':
+wxLogFrame.cpp:36: error: aggregate 'wxLogFrame a' has incomplete type and cannot be defined
+wxLogFrame.cpp:36: warning: unused variable 'a'
+make: *** [wxLogFrame.o] Error 1

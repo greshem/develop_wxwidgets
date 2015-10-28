@@ -1,0 +1,22 @@
+g++ -g  -Wall  -c -o wxArchiveEntry.o `wx-config  --cxxflags`    -Wno-write-strings   wxArchiveEntry.cpp
+/usr/include/wx-2.8/wx/archive.h: In function 'int main(int, char**)':
+/usr/include/wx-2.8/wx/archive.h:65: error: 'wxArchiveEntry::wxArchiveEntry()' is protected
+wxArchiveEntry.cpp:31: error: within this context
+wxArchiveEntry.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxArchiveEntry'
+/usr/include/wx-2.8/wx/archive.h:39: note:   because the following virtual functions are pure within 'wxArchiveEntry':
+/usr/include/wx-2.8/wx/archive.h:43: note: 	virtual wxDateTime wxArchiveEntry::GetDateTime() const
+/usr/include/wx-2.8/wx/archive.h:44: note: 	virtual wxFileOffset wxArchiveEntry::GetSize() const
+/usr/include/wx-2.8/wx/archive.h:45: note: 	virtual wxFileOffset wxArchiveEntry::GetOffset() const
+/usr/include/wx-2.8/wx/archive.h:46: note: 	virtual bool wxArchiveEntry::IsDir() const
+/usr/include/wx-2.8/wx/archive.h:47: note: 	virtual bool wxArchiveEntry::IsReadOnly() const
+/usr/include/wx-2.8/wx/archive.h:48: note: 	virtual wxString wxArchiveEntry::GetInternalName() const
+/usr/include/wx-2.8/wx/archive.h:49: note: 	virtual wxPathFormat wxArchiveEntry::GetInternalFormat() const
+/usr/include/wx-2.8/wx/archive.h:50: note: 	virtual wxString wxArchiveEntry::GetName(wxPathFormat) const
+/usr/include/wx-2.8/wx/archive.h:52: note: 	virtual void wxArchiveEntry::SetDateTime(const wxDateTime&)
+/usr/include/wx-2.8/wx/archive.h:53: note: 	virtual void wxArchiveEntry::SetSize(wxFileOffset)
+/usr/include/wx-2.8/wx/archive.h:54: note: 	virtual void wxArchiveEntry::SetIsDir(bool)
+/usr/include/wx-2.8/wx/archive.h:55: note: 	virtual void wxArchiveEntry::SetIsReadOnly(bool)
+/usr/include/wx-2.8/wx/archive.h:57: note: 	virtual void wxArchiveEntry::SetName(const wxString&, wxPathFormat)
+/usr/include/wx-2.8/wx/archive.h:68: note: 	virtual void wxArchiveEntry::SetOffset(wxFileOffset)
+/usr/include/wx-2.8/wx/archive.h:69: note: 	virtual wxArchiveEntry* wxArchiveEntry::DoClone() const
+make: *** [wxArchiveEntry.o] Error 1

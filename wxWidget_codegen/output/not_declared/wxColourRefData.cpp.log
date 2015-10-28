@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxColourRefData.o `wx-config  --cxxflags`    -Wno-write-strings   wxColourRefData.cpp
+wxColourRefData.cpp: In function 'int main(int, char**)':
+wxColourRefData.cpp:29: error: 'wxColourRefData' was not declared in this scope
+wxColourRefData.cpp:29: error: expected `;' before 'a'
+make: *** [wxColourRefData.o] Error 1

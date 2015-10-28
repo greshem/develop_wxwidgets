@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxComboCtrlBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxComboCtrlBase.cpp
+wxComboCtrlBase.cpp: In function 'int main(int, char**)':
+wxComboCtrlBase.cpp:89: error: cannot declare variable 'a' to be of abstract type 'wxComboCtrlBase'
+/usr/include/wx-2.8/wx/combo.h:132: note:   because the following virtual functions are pure within 'wxComboCtrlBase':
+/usr/include/wx-2.8/wx/combo.h:350: note: 	virtual bool wxComboCtrlBase::IsKeyPopupToggle(const wxKeyEvent&) const
+/usr/include/wx-2.8/wx/combo.h:411: note: 	virtual void wxComboCtrlBase::OnResize()
+make: *** [wxComboCtrlBase.o] Error 1

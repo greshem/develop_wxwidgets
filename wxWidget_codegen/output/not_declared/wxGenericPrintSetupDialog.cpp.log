@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGenericPrintSetupDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxGenericPrintSetupDialog.cpp
+wxGenericPrintSetupDialog.cpp: In function 'int main(int, char**)':
+wxGenericPrintSetupDialog.cpp:37: error: 'wxGenericPrintSetupDialog' was not declared in this scope
+wxGenericPrintSetupDialog.cpp:37: error: expected `;' before 'a'
+make: *** [wxGenericPrintSetupDialog.o] Error 1

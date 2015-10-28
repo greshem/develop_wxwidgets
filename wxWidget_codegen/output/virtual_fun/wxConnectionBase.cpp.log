@@ -1,0 +1,13 @@
+g++ -g  -Wall  -c -o wxConnectionBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxConnectionBase.cpp
+wxConnectionBase.cpp: In function 'int main(int, char**)':
+wxConnectionBase.cpp:34: error: cannot declare variable 'a' to be of abstract type 'wxConnectionBase'
+/usr/include/wx-2.8/wx/ipcbase.h:45: note:   because the following virtual functions are pure within 'wxConnectionBase':
+/usr/include/wx-2.8/wx/ipcbase.h:58: note: 	virtual bool wxConnectionBase::Execute(const wxChar*, int, wxIPCFormat)
+/usr/include/wx-2.8/wx/ipcbase.h:60: note: 	virtual wxChar* wxConnectionBase::Request(const wxString&, int*, wxIPCFormat)
+/usr/include/wx-2.8/wx/ipcbase.h:61: note: 	virtual bool wxConnectionBase::Poke(const wxString&, wxChar*, int, wxIPCFormat)
+/usr/include/wx-2.8/wx/ipcbase.h:62: note: 	virtual bool wxConnectionBase::StartAdvise(const wxString&)
+/usr/include/wx-2.8/wx/ipcbase.h:63: note: 	virtual bool wxConnectionBase::StopAdvise(const wxString&)
+/usr/include/wx-2.8/wx/ipcbase.h:66: note: 	virtual bool wxConnectionBase::Advise(const wxString&, wxChar*, int, wxIPCFormat)
+/usr/include/wx-2.8/wx/ipcbase.h:69: note: 	virtual bool wxConnectionBase::Disconnect()
+/usr/include/wx-2.8/wx/ipcbase.h:109: note: 	virtual bool wxConnectionBase::OnDisconnect()
+make: *** [wxConnectionBase.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxNumberEntryDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxNumberEntryDialog.cpp
+wxNumberEntryDialog.cpp: In function 'int main(int, char**)':
+wxNumberEntryDialog.cpp:33: error: 'wxNumberEntryDialog' was not declared in this scope
+wxNumberEntryDialog.cpp:33: error: expected `;' before 'a'
+make: *** [wxNumberEntryDialog.o] Error 1

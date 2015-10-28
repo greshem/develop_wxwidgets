@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxSpinButton.o `wx-config  --cxxflags`    -Wno-write-strings   wxSpinButton.cpp
+/usr/include/wx-2.8/wx/gtk/spinbutt.h:19: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/gtk/spinbutt.h:19: warning: 'class wxSpinButton' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/gtk/spinbutt.h:27: error: 'wxSPIN_BUTTON_NAME' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/spinbutt.h:37: error: 'wxSPIN_BUTTON_NAME' was not declared in this scope
+make: *** [wxSpinButton.o] Error 1

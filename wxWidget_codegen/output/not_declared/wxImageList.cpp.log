@@ -1,0 +1,82 @@
+g++ -g  -Wall  -c -o wxImageList.o `wx-config  --cxxflags`    -Wno-write-strings   wxImageList.cpp
+In file included from wxImageList.cpp:20:
+/usr/include/wx-2.8/wx/gtk/treectrl.h:18:21: error: gtk/gtk.h: No such file or directory
+/usr/include/wx-2.8/wx/gtk/treectrl.h:95: error: expected `)' before '*' token
+/usr/include/wx-2.8/wx/gtk/treectrl.h:96: error: expected type-specifier before 'GtkTreeItem'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:97: error: 'GtkTreeItem' has not been declared
+/usr/include/wx-2.8/wx/gtk/treectrl.h:100: error: ISO C++ forbids declaration of 'GtkTreeItem' with no type
+/usr/include/wx-2.8/wx/gtk/treectrl.h:100: error: expected ';' before '*' token
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In constructor 'wxTreeItemId::wxTreeItemId()':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:82: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In member function 'bool wxTreeItemId::IsOk() const':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:88: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In member function 'void wxTreeItemId::operator=(int*)':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:97: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In member function 'void wxTreeItemData::SetId(const wxTreeItemId&)':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:126: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In member function 'const wxTreeItemId& wxTreeItemData::GetId() const':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:127: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: At global scope:
+/usr/include/wx-2.8/wx/gtk/treectrl.h:384: error: ISO C++ forbids declaration of 'GtkTree' with no type
+/usr/include/wx-2.8/wx/gtk/treectrl.h:384: error: expected ';' before '*' token
+/usr/include/wx-2.8/wx/gtk/treectrl.h:385: error: ISO C++ forbids declaration of 'GtkTreeItem' with no type
+/usr/include/wx-2.8/wx/gtk/treectrl.h:385: error: expected ';' before '*' token
+/usr/include/wx-2.8/wx/gtk/treectrl.h:398: error: 'GtkTreeItem' has not been declared
+/usr/include/wx-2.8/wx/gtk/treectrl.h:140: error: 'wxTR_HAS_BUTTONS' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h:140: error: 'wxTR_LINES_AT_ROOT' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h:142: error: default argument for parameter of type 'const wxString&' has type 'const char [11]'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:152: error: 'wxTR_HAS_BUTTONS' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h:152: error: 'wxTR_LINES_AT_ROOT' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h:154: error: default argument for parameter of type 'const wxString&' has type 'const char [11]'
+/usr/include/wx-2.8/wx/treebase.h:50: error: redefinition of 'class wxTreeItemId'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:79: error: previous definition of 'class wxTreeItemId'
+/usr/include/wx-2.8/wx/treebase.h: In function 'bool operator==(const wxTreeItemId&, const wxTreeItemId&)':
+/usr/include/wx-2.8/wx/treebase.h:86: error: 'const class wxTreeItemId' has no member named 'm_pItem'
+/usr/include/wx-2.8/wx/treebase.h:86: error: 'const class wxTreeItemId' has no member named 'm_pItem'
+/usr/include/wx-2.8/wx/treebase.h: In function 'bool operator!=(const wxTreeItemId&, const wxTreeItemId&)':
+/usr/include/wx-2.8/wx/treebase.h:91: error: 'const class wxTreeItemId' has no member named 'm_pItem'
+/usr/include/wx-2.8/wx/treebase.h:91: error: 'const class wxTreeItemId' has no member named 'm_pItem'
+/usr/include/wx-2.8/wx/treebase.h: At global scope:
+/usr/include/wx-2.8/wx/treebase.h:108: error: redefinition of 'class wxTreeItemData'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:116: error: previous definition of 'class wxTreeItemData'
+/usr/include/wx-2.8/wx/treebase.h: In member function 'void wxArrayTreeItemIds::Add(const wxTreeItemId&)':
+/usr/include/wx-2.8/wx/treebase.h:137: error: 'const class wxTreeItemId' has no member named 'm_pItem'
+/usr/include/wx-2.8/wx/treebase.h: In member function 'void wxArrayTreeItemIds::Insert(const wxTreeItemId&, size_t)':
+/usr/include/wx-2.8/wx/treebase.h:139: error: 'const class wxTreeItemId' has no member named 'm_pItem'
+/usr/include/wx-2.8/wx/treebase.h: In member function 'wxTreeItemId wxArrayTreeItemIds::Item(size_t) const':
+/usr/include/wx-2.8/wx/treebase.h:141: error: no matching function for call to 'wxTreeItemId::wxTreeItemId(void*&)'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:82: note: candidates are: wxTreeItemId::wxTreeItemId()
+/usr/include/wx-2.8/wx/gtk/treectrl.h:79: note:                 wxTreeItemId::wxTreeItemId(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treebase.h: At global scope:
+/usr/include/wx-2.8/wx/treebase.h:196: error: redefinition of 'const int wxTREE_HITTEST_ABOVE'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:40: error: 'const int wxTREE_HITTEST_ABOVE' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:197: error: redefinition of 'const int wxTREE_HITTEST_BELOW'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:42: error: 'const int wxTREE_HITTEST_BELOW' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:198: error: redefinition of 'const int wxTREE_HITTEST_NOWHERE'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:44: error: 'const int wxTREE_HITTEST_NOWHERE' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:200: error: redefinition of 'const int wxTREE_HITTEST_ONITEMBUTTON'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:46: error: 'const int wxTREE_HITTEST_ONITEMBUTTON' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:202: error: redefinition of 'const int wxTREE_HITTEST_ONITEMICON'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:48: error: 'const int wxTREE_HITTEST_ONITEMICON' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:204: error: redefinition of 'const int wxTREE_HITTEST_ONITEMINDENT'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:50: error: 'const int wxTREE_HITTEST_ONITEMINDENT' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:206: error: redefinition of 'const int wxTREE_HITTEST_ONITEMLABEL'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:52: error: 'const int wxTREE_HITTEST_ONITEMLABEL' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:208: error: redefinition of 'const int wxTREE_HITTEST_ONITEMRIGHT'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:54: error: 'const int wxTREE_HITTEST_ONITEMRIGHT' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:210: error: redefinition of 'const int wxTREE_HITTEST_ONITEMSTATEICON'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:56: error: 'const int wxTREE_HITTEST_ONITEMSTATEICON' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:212: error: redefinition of 'const int wxTREE_HITTEST_TOLEFT'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:58: error: 'const int wxTREE_HITTEST_TOLEFT' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:214: error: redefinition of 'const int wxTREE_HITTEST_TORIGHT'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:60: error: 'const int wxTREE_HITTEST_TORIGHT' previously defined here
+/usr/include/wx-2.8/wx/treebase.h:221: error: redefinition of 'const int wxTREE_HITTEST_ONITEM'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:62: error: 'const int wxTREE_HITTEST_ONITEM' previously defined here
+/usr/include/wx-2.8/wx/generic/treectlg.h: In member function 'virtual wxTreeItemId wxGenericTreeCtrl::GetRootItem() const':
+/usr/include/wx-2.8/wx/generic/treectlg.h:114: error: conversion from 'wxGenericTreeItem* const' to non-scalar type 'wxTreeItemId' requested
+/usr/include/wx-2.8/wx/generic/treectlg.h: In member function 'virtual wxTreeItemId wxGenericTreeCtrl::GetSelection() const':
+/usr/include/wx-2.8/wx/generic/treectlg.h:115: error: conversion from 'wxGenericTreeItem* const' to non-scalar type 'wxTreeItemId' requested
+/usr/include/wx-2.8/wx/generic/treectlg.h: At global scope:
+/usr/include/wx-2.8/wx/generic/treectlg.h:362: error: redefinition of 'class wxTreeCtrl'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:131: error: previous definition of 'class wxTreeCtrl'
+make: *** [wxImageList.o] Error 1

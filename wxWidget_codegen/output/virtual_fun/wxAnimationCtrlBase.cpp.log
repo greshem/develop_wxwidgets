@@ -1,0 +1,12 @@
+g++ -g  -Wall  -c -o wxAnimationCtrlBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxAnimationCtrlBase.cpp
+wxAnimationCtrlBase.cpp: In function 'int main(int, char**)':
+wxAnimationCtrlBase.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxAnimationCtrlBase'
+/usr/include/wx-2.8/wx/animate.h:71: note:   because the following virtual functions are pure within 'wxAnimationCtrlBase':
+/usr/include/wx-2.8/wx/animate.h:77: note: 	virtual bool wxAnimationCtrlBase::LoadFile(const wxString&, wxAnimationType)
+/usr/include/wx-2.8/wx/animate.h:79: note: 	virtual void wxAnimationCtrlBase::SetAnimation(const wxAnimation&)
+/usr/include/wx-2.8/wx/animate.h:80: note: 	virtual wxAnimation wxAnimationCtrlBase::GetAnimation() const
+/usr/include/wx-2.8/wx/animate.h:82: note: 	virtual bool wxAnimationCtrlBase::Play()
+/usr/include/wx-2.8/wx/animate.h:83: note: 	virtual void wxAnimationCtrlBase::Stop()
+/usr/include/wx-2.8/wx/animate.h:85: note: 	virtual bool wxAnimationCtrlBase::IsPlaying() const
+/usr/include/wx-2.8/wx/animate.h:105: note: 	virtual void wxAnimationCtrlBase::DisplayStaticImage()
+make: *** [wxAnimationCtrlBase.o] Error 1

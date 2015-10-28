@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxSocketOutputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxSocketOutputStream.cpp
+wxSocketOutputStream.cpp: In function 'int main(int, char**)':
+wxSocketOutputStream.cpp:31: error: no matching function for call to 'wxSocketOutputStream::wxSocketOutputStream()'
+/usr/include/wx-2.8/wx/sckstrm.h:36: note: candidates are: wxSocketOutputStream::wxSocketOutputStream(const wxSocketOutputStream&)
+/usr/include/wx-2.8/wx/sckstrm.h:23: note:                 wxSocketOutputStream::wxSocketOutputStream(wxSocketBase&)
+make: *** [wxSocketOutputStream.o] Error 1

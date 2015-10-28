@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlBookRecord.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlBookRecord.cpp
+wxHtmlBookRecord.cpp: In function 'int main(int, char**)':
+wxHtmlBookRecord.cpp:29: error: no matching function for call to 'wxHtmlBookRecord::wxHtmlBookRecord()'
+/usr/include/wx-2.8/wx/html/helpdata.h:35: note: candidates are: wxHtmlBookRecord::wxHtmlBookRecord(const wxString&, const wxString&, const wxString&, const wxString&)
+/usr/include/wx-2.8/wx/html/helpdata.h:32: note:                 wxHtmlBookRecord::wxHtmlBookRecord(const wxHtmlBookRecord&)
+make: *** [wxHtmlBookRecord.o] Error 1

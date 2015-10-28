@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxTempFileOutputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxTempFileOutputStream.cpp
+wxTempFileOutputStream.cpp: In function 'int main(int, char**)':
+wxTempFileOutputStream.cpp:31: error: no matching function for call to 'wxTempFileOutputStream::wxTempFileOutputStream()'
+/usr/include/wx-2.8/wx/wfstream.h:111: note: candidates are: wxTempFileOutputStream::wxTempFileOutputStream(const wxTempFileOutputStream&)
+/usr/include/wx-2.8/wx/wfstream.h:92: note:                 wxTempFileOutputStream::wxTempFileOutputStream(const wxString&)
+make: *** [wxTempFileOutputStream.o] Error 1

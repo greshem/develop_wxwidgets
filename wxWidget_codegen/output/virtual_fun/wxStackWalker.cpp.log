@@ -1,0 +1,15 @@
+g++ -g  -Wall  -c -o wxStackWalker.o `wx-config  --cxxflags`    -Wno-write-strings   wxStackWalker.cpp
+/usr/include/wx-2.8/wx/unix/stackwalk.h:20: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/unix/stackwalk.h:20: warning: 'class wxStackFrame' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/unix/stackwalk.h: In constructor 'wxStackFrame::wxStackFrame(size_t, void*, const char*)':
+/usr/include/wx-2.8/wx/unix/stackwalk.h:30: error: class 'wxStackFrame' does not have any field named 'wxStackFrameBase'
+/usr/include/wx-2.8/wx/unix/stackwalk.h: In member function 'void wxStackFrame::Set(const wxString&, const wxString&, const char*, size_t, size_t, void*)':
+/usr/include/wx-2.8/wx/unix/stackwalk.h:42: error: 'm_level' was not declared in this scope
+/usr/include/wx-2.8/wx/unix/stackwalk.h:43: error: 'm_name' was not declared in this scope
+/usr/include/wx-2.8/wx/unix/stackwalk.h:44: error: 'm_filename' was not declared in this scope
+/usr/include/wx-2.8/wx/unix/stackwalk.h:47: error: 'm_line' was not declared in this scope
+/usr/include/wx-2.8/wx/unix/stackwalk.h:48: error: 'm_address' was not declared in this scope
+/usr/include/wx-2.8/wx/unix/stackwalk.h: At global scope:
+/usr/include/wx-2.8/wx/unix/stackwalk.h:60: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/unix/stackwalk.h:60: warning: 'class wxStackWalker' has virtual functions but non-virtual destructor
+make: *** [wxStackWalker.o] Error 1

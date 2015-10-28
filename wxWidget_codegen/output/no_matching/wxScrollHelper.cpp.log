@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxScrollHelper.o `wx-config  --cxxflags`    -Wno-write-strings   wxScrollHelper.cpp
+wxScrollHelper.cpp: In function 'int main(int, char**)':
+wxScrollHelper.cpp:62: error: no matching function for call to 'wxScrollHelper::wxScrollHelper()'
+/usr/include/wx-2.8/wx/scrolwin.h:236: note: candidates are: wxScrollHelper::wxScrollHelper(const wxScrollHelper&)
+/usr/include/wx-2.8/wx/scrolwin.h:55: note:                 wxScrollHelper::wxScrollHelper(wxWindow*)
+make: *** [wxScrollHelper.o] Error 1

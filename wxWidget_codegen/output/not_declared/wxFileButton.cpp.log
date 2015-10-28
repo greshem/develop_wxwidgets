@@ -1,0 +1,46 @@
+g++ -g  -Wall  -c -o wxFileButton.o `wx-config  --cxxflags`    -Wno-write-strings   wxFileButton.cpp
+/usr/include/wx-2.8/wx/generic/filepickerg.h:30: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/generic/filepickerg.h:35: error: 'wxFilePickerWidgetLabel' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:43: error: 'wxFilePickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:65: error: 'wxFilePickerWidgetLabel' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:73: error: 'wxFilePickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:95: error: 'wxFilePickerWidgetLabel' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:101: error: 'wxFLP_OPEN' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:103: error: 'wxFilePickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h: In member function 'virtual long int wxGenericFileButton::GetDialogStyle() const':
+/usr/include/wx-2.8/wx/generic/filepickerg.h:115: error: 'wxFLP_OPEN' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:117: error: 'wxFLP_SAVE' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:119: error: 'wxFLP_OVERWRITE_PROMPT' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:121: error: 'wxFLP_FILE_MUST_EXIST' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:123: error: 'wxFLP_CHANGE_DIR' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h: In member function 'virtual wxDialog* wxGenericFileButton::CreateDialog()':
+/usr/include/wx-2.8/wx/generic/filepickerg.h:136: error: 'm_path' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h: In member function 'void wxGenericFileButton::UpdateDialogPath(wxDialog*)':
+/usr/include/wx-2.8/wx/generic/filepickerg.h:145: error: 'm_path' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h: In member function 'void wxGenericFileButton::UpdatePathFromDialog(wxDialog*)':
+/usr/include/wx-2.8/wx/generic/filepickerg.h:147: error: 'm_path' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h: At global scope:
+/usr/include/wx-2.8/wx/generic/filepickerg.h:166: error: 'wxDirPickerWidgetLabel' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:173: error: 'wxDirPickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h: In member function 'virtual long int wxGenericDirButton::GetDialogStyle() const':
+/usr/include/wx-2.8/wx/generic/filepickerg.h:185: error: 'wxDIRP_DIR_MUST_EXIST' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h:187: error: 'wxDIRP_CHANGE_DIR' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h: In member function 'virtual wxDialog* wxGenericDirButton::CreateDialog()':
+/usr/include/wx-2.8/wx/generic/filepickerg.h:195: error: 'm_path' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h: In member function 'void wxGenericDirButton::UpdateDialogPath(wxDialog*)':
+/usr/include/wx-2.8/wx/generic/filepickerg.h:204: error: 'm_path' was not declared in this scope
+/usr/include/wx-2.8/wx/generic/filepickerg.h: In member function 'void wxGenericDirButton::UpdatePathFromDialog(wxDialog*)':
+/usr/include/wx-2.8/wx/generic/filepickerg.h:206: error: 'm_path' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h: At global scope:
+/usr/include/wx-2.8/wx/gtk/filepicker.h:66: error: 'wxFilePickerWidgetLabel' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h:72: error: 'wxFLP_OPEN' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h:74: error: 'wxFilePickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h:88: error: 'wxFilePickerWidgetLabel' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h:96: error: 'wxFilePickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h:132: error: 'wxFilePickerWidgetLabel' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h:139: error: 'wxFilePickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h:154: error: 'wxFilePickerWidgetLabel' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h:162: error: 'wxFilePickerWidgetNameStr' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/filepicker.h: In member function 'void wxDirButton::UpdatePath(const char*)':
+/usr/include/wx-2.8/wx/gtk/filepicker.h:192: error: 'm_path' was not declared in this scope
+make: *** [wxFileButton.o] Error 1

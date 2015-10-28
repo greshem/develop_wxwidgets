@@ -1,0 +1,20 @@
+g++ -g  -Wall  -c -o wxPrintFactory.o `wx-config  --cxxflags`    -Wno-write-strings   wxPrintFactory.cpp
+wxPrintFactory.cpp: In function 'int main(int, char**)':
+wxPrintFactory.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxPrintFactory'
+/usr/include/wx-2.8/wx/prntbase.h:58: note:   because the following virtual functions are pure within 'wxPrintFactory':
+/usr/include/wx-2.8/wx/prntbase.h:63: note: 	virtual wxPrinterBase* wxPrintFactory::CreatePrinter(wxPrintDialogData*)
+/usr/include/wx-2.8/wx/prntbase.h:67: note: 	virtual wxPrintPreviewBase* wxPrintFactory::CreatePrintPreview(wxPrintout*, wxPrintout*, wxPrintDialogData*)
+/usr/include/wx-2.8/wx/prntbase.h:70: note: 	virtual wxPrintPreviewBase* wxPrintFactory::CreatePrintPreview(wxPrintout*, wxPrintout*, wxPrintData*)
+/usr/include/wx-2.8/wx/prntbase.h:73: note: 	virtual wxPrintDialogBase* wxPrintFactory::CreatePrintDialog(wxWindow*, wxPrintDialogData*)
+/usr/include/wx-2.8/wx/prntbase.h:75: note: 	virtual wxPrintDialogBase* wxPrintFactory::CreatePrintDialog(wxWindow*, wxPrintData*)
+/usr/include/wx-2.8/wx/prntbase.h:78: note: 	virtual wxPageSetupDialogBase* wxPrintFactory::CreatePageSetupDialog(wxWindow*, wxPageSetupDialogData*)
+/usr/include/wx-2.8/wx/prntbase.h:80: note: 	virtual wxDC* wxPrintFactory::CreatePrinterDC(const wxPrintData&)
+/usr/include/wx-2.8/wx/prntbase.h:84: note: 	virtual bool wxPrintFactory::HasPrintSetupDialog()
+/usr/include/wx-2.8/wx/prntbase.h:85: note: 	virtual wxDialog* wxPrintFactory::CreatePrintSetupDialog(wxWindow*, wxPrintData*)
+/usr/include/wx-2.8/wx/prntbase.h:87: note: 	virtual bool wxPrintFactory::HasOwnPrintToFile()
+/usr/include/wx-2.8/wx/prntbase.h:89: note: 	virtual bool wxPrintFactory::HasPrinterLine()
+/usr/include/wx-2.8/wx/prntbase.h:90: note: 	virtual wxString wxPrintFactory::CreatePrinterLine()
+/usr/include/wx-2.8/wx/prntbase.h:92: note: 	virtual bool wxPrintFactory::HasStatusLine()
+/usr/include/wx-2.8/wx/prntbase.h:93: note: 	virtual wxString wxPrintFactory::CreateStatusLine()
+/usr/include/wx-2.8/wx/prntbase.h:96: note: 	virtual wxPrintNativeDataBase* wxPrintFactory::CreatePrintNativeData()
+make: *** [wxPrintFactory.o] Error 1

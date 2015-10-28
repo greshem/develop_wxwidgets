@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlImageMapAreaCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlImageMapAreaCell.cpp
+wxHtmlImageMapAreaCell.cpp: In function 'int main(int, char**)':
+wxHtmlImageMapAreaCell.cpp:29: error: 'wxHtmlImageMapAreaCell' was not declared in this scope
+wxHtmlImageMapAreaCell.cpp:29: error: expected `;' before 'a'
+make: *** [wxHtmlImageMapAreaCell.o] Error 1

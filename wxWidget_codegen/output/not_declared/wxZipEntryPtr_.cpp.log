@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxZipEntryPtr_.o `wx-config  --cxxflags`    -Wno-write-strings   wxZipEntryPtr_.cpp
+wxZipEntryPtr_.cpp: In function 'int main(int, char**)':
+wxZipEntryPtr_.cpp:28: error: 'wxZipEntryPtr_' was not declared in this scope
+wxZipEntryPtr_.cpp:28: error: expected `;' before 'a'
+make: *** [wxZipEntryPtr_.o] Error 1

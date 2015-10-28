@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRichTextIndentsSpacingPage.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextIndentsSpacingPage.cpp
+wxRichTextIndentsSpacingPage.cpp: In function 'int main(int, char**)':
+wxRichTextIndentsSpacingPage.cpp:55: error: 'wxRichTextIndentsSpacingPage' was not declared in this scope
+wxRichTextIndentsSpacingPage.cpp:55: error: expected `;' before 'a'
+make: *** [wxRichTextIndentsSpacingPage.o] Error 1

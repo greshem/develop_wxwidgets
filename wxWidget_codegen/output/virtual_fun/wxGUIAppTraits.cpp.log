@@ -1,0 +1,14 @@
+g++ -g  -Wall  -c -o wxGUIAppTraits.o `wx-config  --cxxflags`    -Wno-write-strings   wxGUIAppTraits.cpp
+/usr/include/wx-2.8/wx/unix/apptrait.h:20: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/unix/apptrait.h:22: error: 'wxExecuteData' has not been declared
+/usr/include/wx-2.8/wx/unix/apptrait.h:23: error: 'wxExecuteData' has not been declared
+/usr/include/wx-2.8/wx/unix/apptrait.h:24: error: 'wxExecuteData' has not been declared
+/usr/include/wx-2.8/wx/unix/apptrait.h:25: error: 'wxExecuteData' has not been declared
+/usr/include/wx-2.8/wx/unix/apptrait.h:20: warning: 'class wxConsoleAppTraits' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/unix/apptrait.h:31: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/unix/apptrait.h:33: error: 'wxExecuteData' has not been declared
+/usr/include/wx-2.8/wx/unix/apptrait.h:34: error: 'wxExecuteData' has not been declared
+/usr/include/wx-2.8/wx/unix/apptrait.h:35: error: 'wxExecuteData' has not been declared
+/usr/include/wx-2.8/wx/unix/apptrait.h:36: error: 'wxExecuteData' has not been declared
+/usr/include/wx-2.8/wx/unix/apptrait.h:31: warning: 'class wxGUIAppTraits' has virtual functions but non-virtual destructor
+make: *** [wxGUIAppTraits.o] Error 1

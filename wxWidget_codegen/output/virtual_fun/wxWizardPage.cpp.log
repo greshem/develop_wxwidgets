@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxWizardPage.o `wx-config  --cxxflags`    -Wno-write-strings   wxWizardPage.cpp
+wxWizardPage.cpp: In function 'int main(int, char**)':
+wxWizardPage.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxWizardPage'
+/usr/include/wx-2.8/wx/wizard.h:48: note:   because the following virtual functions are pure within 'wxWizardPage':
+/usr/include/wx-2.8/wx/wizard.h:66: note: 	virtual wxWizardPage* wxWizardPage::GetPrev() const
+/usr/include/wx-2.8/wx/wizard.h:67: note: 	virtual wxWizardPage* wxWizardPage::GetNext() const
+make: *** [wxWizardPage.o] Error 1

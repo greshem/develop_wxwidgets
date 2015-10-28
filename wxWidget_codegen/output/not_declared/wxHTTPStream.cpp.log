@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHTTPStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxHTTPStream.cpp
+wxHTTPStream.cpp: In function 'int main(int, char**)':
+wxHTTPStream.cpp:28: error: 'wxHTTPStream' was not declared in this scope
+wxHTTPStream.cpp:28: error: expected `;' before 'a'
+make: *** [wxHTTPStream.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlWinAutoScrollTimer.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlWinAutoScrollTimer.cpp
+wxHtmlWinAutoScrollTimer.cpp: In function 'int main(int, char**)':
+wxHtmlWinAutoScrollTimer.cpp:29: error: aggregate 'wxHtmlWinAutoScrollTimer a' has incomplete type and cannot be defined
+wxHtmlWinAutoScrollTimer.cpp:29: warning: unused variable 'a'
+make: *** [wxHtmlWinAutoScrollTimer.o] Error 1

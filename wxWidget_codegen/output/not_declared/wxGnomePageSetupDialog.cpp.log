@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGnomePageSetupDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxGnomePageSetupDialog.cpp
+wxGnomePageSetupDialog.cpp: In function 'int main(int, char**)':
+wxGnomePageSetupDialog.cpp:35: error: 'wxGnomePageSetupDialog' was not declared in this scope
+wxGnomePageSetupDialog.cpp:35: error: expected `;' before 'a'
+make: *** [wxGnomePageSetupDialog.o] Error 1

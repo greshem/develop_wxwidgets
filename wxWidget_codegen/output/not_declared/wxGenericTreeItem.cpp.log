@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGenericTreeItem.o `wx-config  --cxxflags`    -Wno-write-strings   wxGenericTreeItem.cpp
+wxGenericTreeItem.cpp: In function 'int main(int, char**)':
+wxGenericTreeItem.cpp:35: error: 'wxGenericTreeItem' was not declared in this scope
+wxGenericTreeItem.cpp:35: error: expected `;' before 'a'
+make: *** [wxGenericTreeItem.o] Error 1

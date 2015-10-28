@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridCellRenderer.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridCellRenderer.cpp
+wxGridCellRenderer.cpp: In function 'int main(int, char**)':
+wxGridCellRenderer.cpp:28: error: 'wxGridCellRenderer' was not declared in this scope
+wxGridCellRenderer.cpp:28: error: expected `;' before 'a'
+make: *** [wxGridCellRenderer.o] Error 1

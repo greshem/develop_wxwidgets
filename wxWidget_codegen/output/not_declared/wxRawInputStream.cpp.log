@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRawInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxRawInputStream.cpp
+wxRawInputStream.cpp: In function 'int main(int, char**)':
+wxRawInputStream.cpp:30: error: 'wxRawInputStream' was not declared in this scope
+wxRawInputStream.cpp:30: error: expected `;' before 'a'
+make: *** [wxRawInputStream.o] Error 1

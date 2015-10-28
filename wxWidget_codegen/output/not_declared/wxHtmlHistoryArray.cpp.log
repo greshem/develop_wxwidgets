@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlHistoryArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlHistoryArray.cpp
+wxHtmlHistoryArray.cpp: In function 'int main(int, char**)':
+wxHtmlHistoryArray.cpp:36: error: 'wxHtmlHistoryArray' was not declared in this scope
+wxHtmlHistoryArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxHtmlHistoryArray.o] Error 1

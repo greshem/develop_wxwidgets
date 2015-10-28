@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlTerminalCellsInterator.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlTerminalCellsInterator.cpp
+wxHtmlTerminalCellsInterator.cpp: In function 'int main(int, char**)':
+wxHtmlTerminalCellsInterator.cpp:29: error: no matching function for call to 'wxHtmlTerminalCellsInterator::wxHtmlTerminalCellsInterator()'
+/usr/include/wx-2.8/wx/html/htmlcell.h:656: note: candidates are: wxHtmlTerminalCellsInterator::wxHtmlTerminalCellsInterator(const wxHtmlCell*, const wxHtmlCell*)
+/usr/include/wx-2.8/wx/html/htmlcell.h:654: note:                 wxHtmlTerminalCellsInterator::wxHtmlTerminalCellsInterator(const wxHtmlTerminalCellsInterator&)
+make: *** [wxHtmlTerminalCellsInterator.o] Error 1

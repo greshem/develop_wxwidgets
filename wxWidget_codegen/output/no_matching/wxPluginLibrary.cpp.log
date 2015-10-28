@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxPluginLibrary.o `wx-config  --cxxflags`    -Wno-write-strings   wxPluginLibrary.cpp
+wxPluginLibrary.cpp: In function 'int main(int, char**)':
+wxPluginLibrary.cpp:36: error: no matching function for call to 'wxPluginLibrary::wxPluginLibrary()'
+/usr/include/wx-2.8/wx/dynload.h:97: note: candidates are: wxPluginLibrary::wxPluginLibrary(const wxPluginLibrary&)
+/usr/include/wx-2.8/wx/dynload.h:53: note:                 wxPluginLibrary::wxPluginLibrary(const wxString&, int)
+make: *** [wxPluginLibrary.o] Error 1

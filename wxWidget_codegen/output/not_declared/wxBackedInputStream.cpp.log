@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxBackedInputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxBackedInputStream.cpp
+wxBackedInputStream.cpp: In function 'int main(int, char**)':
+wxBackedInputStream.cpp:33: error: 'wxBackedInputStream' was not declared in this scope
+wxBackedInputStream.cpp:33: error: expected `;' before 'a'
+make: *** [wxBackedInputStream.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxConditionInternal.o `wx-config  --cxxflags`    -Wno-write-strings   wxConditionInternal.cpp
+wxConditionInternal.cpp: In function 'int main(int, char**)':
+wxConditionInternal.cpp:34: error: aggregate 'wxConditionInternal a' has incomplete type and cannot be defined
+wxConditionInternal.cpp:34: warning: unused variable 'a'
+make: *** [wxConditionInternal.o] Error 1

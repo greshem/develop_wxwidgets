@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTipDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxTipDialog.cpp
+wxTipDialog.cpp: In function 'int main(int, char**)':
+wxTipDialog.cpp:30: error: 'wxTipDialog' was not declared in this scope
+wxTipDialog.cpp:30: error: expected `;' before 'a'
+make: *** [wxTipDialog.o] Error 1

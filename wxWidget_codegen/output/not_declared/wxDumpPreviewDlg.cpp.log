@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDumpPreviewDlg.o `wx-config  --cxxflags`    -Wno-write-strings   wxDumpPreviewDlg.cpp
+wxDumpPreviewDlg.cpp: In function 'int main(int, char**)':
+wxDumpPreviewDlg.cpp:28: error: 'wxDumpPreviewDlg' was not declared in this scope
+wxDumpPreviewDlg.cpp:28: error: expected `;' before 'a'
+make: *** [wxDumpPreviewDlg.o] Error 1

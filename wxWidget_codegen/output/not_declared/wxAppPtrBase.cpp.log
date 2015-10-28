@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxAppPtrBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxAppPtrBase.cpp
+wxAppPtrBase.cpp: In function 'int main(int, char**)':
+wxAppPtrBase.cpp:28: error: 'wxAppPtrBase' was not declared in this scope
+wxAppPtrBase.cpp:28: error: expected `;' before 'a'
+make: *** [wxAppPtrBase.o] Error 1

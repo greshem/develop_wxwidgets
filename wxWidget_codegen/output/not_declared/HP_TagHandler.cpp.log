@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o HP_TagHandler.o `wx-config  --cxxflags`    -Wno-write-strings   HP_TagHandler.cpp
+HP_TagHandler.cpp: In function 'int main(int, char**)':
+HP_TagHandler.cpp:28: error: 'HP_TagHandler' was not declared in this scope
+HP_TagHandler.cpp:28: error: expected `;' before 'a'
+make: *** [HP_TagHandler.o] Error 1

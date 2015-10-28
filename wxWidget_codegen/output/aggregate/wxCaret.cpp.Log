@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxCaret.o `wx-config  --cxxflags`    -Wno-write-strings   wxCaret.cpp
+wxCaret.cpp: In function 'int main(int, char**)':
+wxCaret.cpp:40: error: aggregate 'wxCaret a' has incomplete type and cannot be defined
+wxCaret.cpp:40: warning: unused variable 'a'
+make: *** [wxCaret.o] Error 1

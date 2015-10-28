@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxAppConsole.o `wx-config  --cxxflags`    -Wno-write-strings   wxAppConsole.cpp
+wxAppConsole.cpp: In function 'int main(int, char**)':
+wxAppConsole.cpp:47: error: cannot declare variable 'a' to be of abstract type 'wxAppConsole'
+/usr/include/wx-2.8/wx/app.h:58: note:   because the following virtual functions are pure within 'wxAppConsole':
+/usr/include/wx-2.8/wx/app.h:89: note: 	virtual int wxAppConsole::OnRun()
+make: *** [wxAppConsole.o] Error 1

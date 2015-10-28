@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxZlibOutputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxZlibOutputStream.cpp
+wxZlibOutputStream.cpp: In function 'int main(int, char**)':
+wxZlibOutputStream.cpp:35: error: no matching function for call to 'wxZlibOutputStream::wxZlibOutputStream()'
+/usr/include/wx-2.8/wx/zstream.h:96: note: candidates are: wxZlibOutputStream::wxZlibOutputStream(const wxZlibOutputStream&)
+/usr/include/wx-2.8/wx/zstream.h:72: note:                 wxZlibOutputStream::wxZlibOutputStream(wxOutputStream*, int, int)
+/usr/include/wx-2.8/wx/zstream.h:71: note:                 wxZlibOutputStream::wxZlibOutputStream(wxOutputStream&, int, int)
+make: *** [wxZlibOutputStream.o] Error 1

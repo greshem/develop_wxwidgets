@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxComboFrameEventHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxComboFrameEventHandler.cpp
+wxComboFrameEventHandler.cpp: In function 'int main(int, char**)':
+wxComboFrameEventHandler.cpp:39: error: 'wxComboFrameEventHandler' was not declared in this scope
+wxComboFrameEventHandler.cpp:39: error: expected `;' before 'a'
+make: *** [wxComboFrameEventHandler.o] Error 1

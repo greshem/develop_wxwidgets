@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxSizer.o `wx-config  --cxxflags`    -Wno-write-strings   wxSizer.cpp
+wxSizer.cpp: In function 'int main(int, char**)':
+wxSizer.cpp:72: error: cannot declare variable 'a' to be of abstract type 'wxSizer'
+/usr/include/wx-2.8/wx/sizer.h:408: note:   because the following virtual functions are pure within 'wxSizer':
+/usr/include/wx-2.8/wx/sizer.h:546: note: 	virtual void wxSizer::RecalcSizes()
+/usr/include/wx-2.8/wx/sizer.h:547: note: 	virtual wxSize wxSizer::CalcMin()
+make: *** [wxSizer.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDynamicLibraryDetailsArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxDynamicLibraryDetailsArray.cpp
+wxDynamicLibraryDetailsArray.cpp: In function 'int main(int, char**)':
+wxDynamicLibraryDetailsArray.cpp:36: error: 'wxDynamicLibraryDetailsArray' was not declared in this scope
+wxDynamicLibraryDetailsArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxDynamicLibraryDetailsArray.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGenericCollapsiblePane.o `wx-config  --cxxflags`    -Wno-write-strings   wxGenericCollapsiblePane.cpp
+wxGenericCollapsiblePane.cpp: In function 'int main(int, char**)':
+wxGenericCollapsiblePane.cpp:42: error: 'wxGenericCollapsiblePane' was not declared in this scope
+wxGenericCollapsiblePane.cpp:42: error: expected `;' before 'a'
+make: *** [wxGenericCollapsiblePane.o] Error 1

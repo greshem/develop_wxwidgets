@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGenericColourButton.o `wx-config  --cxxflags`    -Wno-write-strings   wxGenericColourButton.cpp
+wxGenericColourButton.cpp: In function 'int main(int, char**)':
+wxGenericColourButton.cpp:34: error: 'wxGenericColourButton' was not declared in this scope
+wxGenericColourButton.cpp:34: error: expected `;' before 'a'
+make: *** [wxGenericColourButton.o] Error 1

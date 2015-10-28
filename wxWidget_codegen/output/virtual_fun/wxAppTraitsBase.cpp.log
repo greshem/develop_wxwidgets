@@ -1,0 +1,16 @@
+g++ -g  -Wall  -c -o wxAppTraitsBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxAppTraitsBase.cpp
+wxAppTraitsBase.cpp: In function 'int main(int, char**)':
+wxAppTraitsBase.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxAppTraitsBase'
+/usr/include/wx-2.8/wx/apptrait.h:38: note:   because the following virtual functions are pure within 'wxAppTraitsBase':
+/usr/include/wx-2.8/wx/apptrait.h:48: note: 	virtual wxLog* wxAppTraitsBase::CreateLogTarget()
+/usr/include/wx-2.8/wx/apptrait.h:52: note: 	virtual wxMessageOutput* wxAppTraitsBase::CreateMessageOutput()
+/usr/include/wx-2.8/wx/apptrait.h:56: note: 	virtual wxFontMapper* wxAppTraitsBase::CreateFontMapper()
+/usr/include/wx-2.8/wx/apptrait.h:64: note: 	virtual wxRendererNative* wxAppTraitsBase::CreateRenderer()
+/usr/include/wx-2.8/wx/apptrait.h:83: note: 	virtual bool wxAppTraitsBase::ShowAssertDialog(const wxString&)
+/usr/include/wx-2.8/wx/apptrait.h:87: note: 	virtual bool wxAppTraitsBase::HasStderr()
+/usr/include/wx-2.8/wx/apptrait.h:97: note: 	virtual void wxAppTraitsBase::ScheduleForDestroy(wxObject*)
+/usr/include/wx-2.8/wx/apptrait.h:101: note: 	virtual void wxAppTraitsBase::RemoveFromPendingDelete(wxObject*)
+/usr/include/wx-2.8/wx/apptrait.h:110: note: 	virtual GSocketGUIFunctionsTable* wxAppTraitsBase::GetSocketGUIFunctionsTable()
+/usr/include/wx-2.8/wx/apptrait.h:117: note: 	virtual wxPortId wxAppTraitsBase::GetToolkitVersion(int*, int*) const
+/usr/include/wx-2.8/wx/apptrait.h:120: note: 	virtual bool wxAppTraitsBase::IsUsingUniversalWidgets() const
+make: *** [wxAppTraitsBase.o] Error 1

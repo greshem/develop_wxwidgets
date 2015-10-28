@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridCellWorker.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridCellWorker.cpp
+wxGridCellWorker.cpp: In function 'int main(int, char**)':
+wxGridCellWorker.cpp:29: error: 'wxGridCellWorker' was not declared in this scope
+wxGridCellWorker.cpp:29: error: expected `;' before 'a'
+make: *** [wxGridCellWorker.o] Error 1

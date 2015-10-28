@@ -1,0 +1,16 @@
+g++ -g  -Wall  -c -o wxNotebookBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxNotebookBase.cpp
+wxNotebookBase.cpp: In function 'int main(int, char**)':
+wxNotebookBase.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxNotebookBase'
+/usr/include/wx-2.8/wx/notebook.h:68: note:   because the following virtual functions are pure within 'wxNotebookBase':
+/usr/include/wx-2.8/wx/bookctrl.h:110: note: 	virtual int wxBookCtrlBase::GetSelection() const
+/usr/include/wx-2.8/wx/bookctrl.h:113: note: 	virtual bool wxBookCtrlBase::SetPageText(size_t, const wxString&)
+/usr/include/wx-2.8/wx/bookctrl.h:114: note: 	virtual wxString wxBookCtrlBase::GetPageText(size_t) const
+/usr/include/wx-2.8/wx/bookctrl.h:131: note: 	virtual int wxBookCtrlBase::GetPageImage(size_t) const
+/usr/include/wx-2.8/wx/bookctrl.h:132: note: 	virtual bool wxBookCtrlBase::SetPageImage(size_t, int)
+/usr/include/wx-2.8/wx/bookctrl.h:198: note: 	virtual bool wxBookCtrlBase::InsertPage(size_t, wxWindow*, const wxString&, bool, int)
+/usr/include/wx-2.8/wx/bookctrl.h:204: note: 	virtual int wxBookCtrlBase::SetSelection(size_t)
+/usr/include/wx-2.8/wx/bookctrl.h:207: note: 	virtual int wxBookCtrlBase::ChangeSelection(size_t)
+/usr/include/wx-2.8/wx/bookctrl.h:272: note: 	virtual wxWindow* wxBookCtrlBase::DoRemovePage(size_t)
+/usr/include/wx-2.8/wx/notebook.h:90: note: 	virtual void wxNotebookBase::SetPadding(const wxSize&)
+/usr/include/wx-2.8/wx/notebook.h:93: note: 	virtual void wxNotebookBase::SetTabSize(const wxSize&)
+make: *** [wxNotebookBase.o] Error 1

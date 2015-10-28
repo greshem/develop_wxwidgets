@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxArtProvider.o `wx-config  --cxxflags`    -Wno-write-strings   wxArtProvider.cpp
+wxArtProvider.cpp: In function 'int main(int, char**)':
+wxArtProvider.cpp:46: error: cannot declare variable 'a' to be of abstract type 'wxArtProvider'
+/usr/include/wx-2.8/wx/artprov.h:113: note:   because the following virtual functions are pure within 'wxArtProvider':
+/usr/include/wx-2.8/wx/artprov.h:185: note: 	virtual wxBitmap wxArtProvider::CreateBitmap(const wxArtID&, const wxArtClient&, const wxSize&)
+make: *** [wxArtProvider.o] Error 1

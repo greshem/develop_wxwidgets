@@ -1,0 +1,21 @@
+g++ -g  -Wall  -c -o wxBitmapBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxBitmapBase.cpp
+wxBitmapBase.cpp: In function 'int main(int, char**)':
+wxBitmapBase.cpp:36: error: cannot declare variable 'a' to be of abstract type 'wxBitmapBase'
+/usr/include/wx-2.8/wx/bitmap.h:119: note:   because the following virtual functions are pure within 'wxBitmapBase':
+/usr/include/wx-2.8/wx/bitmap.h:137: note: 	virtual bool wxBitmapBase::IsOk() const
+/usr/include/wx-2.8/wx/bitmap.h:139: note: 	virtual int wxBitmapBase::GetHeight() const
+/usr/include/wx-2.8/wx/bitmap.h:140: note: 	virtual int wxBitmapBase::GetWidth() const
+/usr/include/wx-2.8/wx/bitmap.h:141: note: 	virtual int wxBitmapBase::GetDepth() const
+/usr/include/wx-2.8/wx/bitmap.h:143: note: 	virtual wxImage wxBitmapBase::ConvertToImage() const
+/usr/include/wx-2.8/wx/bitmap.h:145: note: 	virtual wxMask* wxBitmapBase::GetMask() const
+/usr/include/wx-2.8/wx/bitmap.h:146: note: 	virtual void wxBitmapBase::SetMask(wxMask*)
+/usr/include/wx-2.8/wx/bitmap.h:148: note: 	virtual wxBitmap wxBitmapBase::GetSubBitmap(const wxRect&) const
+/usr/include/wx-2.8/wx/bitmap.h:151: note: 	virtual bool wxBitmapBase::SaveFile(const wxString&, wxBitmapType, const wxPalette*) const
+/usr/include/wx-2.8/wx/bitmap.h:152: note: 	virtual bool wxBitmapBase::LoadFile(const wxString&, wxBitmapType)
+/usr/include/wx-2.8/wx/bitmap.h:163: note: 	virtual wxPalette* wxBitmapBase::GetPalette() const
+/usr/include/wx-2.8/wx/bitmap.h:164: note: 	virtual void wxBitmapBase::SetPalette(const wxPalette&)
+/usr/include/wx-2.8/wx/bitmap.h:168: note: 	virtual bool wxBitmapBase::CopyFromIcon(const wxIcon&)
+/usr/include/wx-2.8/wx/bitmap.h:171: note: 	virtual void wxBitmapBase::SetHeight(int)
+/usr/include/wx-2.8/wx/bitmap.h:172: note: 	virtual void wxBitmapBase::SetWidth(int)
+/usr/include/wx-2.8/wx/bitmap.h:173: note: 	virtual void wxBitmapBase::SetDepth(int)
+make: *** [wxBitmapBase.o] Error 1

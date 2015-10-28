@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxConfigPathChanger.o `wx-config  --cxxflags`    -Wno-write-strings   wxConfigPathChanger.cpp
+wxConfigPathChanger.cpp: In function 'int main(int, char**)':
+wxConfigPathChanger.cpp:31: error: no matching function for call to 'wxConfigPathChanger::wxConfigPathChanger()'
+/usr/include/wx-2.8/wx/confbase.h:325: note: candidates are: wxConfigPathChanger::wxConfigPathChanger(const wxConfigPathChanger&)
+/usr/include/wx-2.8/wx/confbase.h:305: note:                 wxConfigPathChanger::wxConfigPathChanger(const wxConfigBase*, const wxString&)
+make: *** [wxConfigPathChanger.o] Error 1

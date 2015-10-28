@@ -1,0 +1,14 @@
+g++ -g  -Wall  -c -o wxArchiveClassFactory.o `wx-config  --cxxflags`    -Wno-write-strings   wxArchiveClassFactory.cpp
+/usr/include/wx-2.8/wx/archive.h: In function 'int main(int, char**)':
+/usr/include/wx-2.8/wx/archive.h:367: error: 'wxArchiveClassFactory::wxArchiveClassFactory()' is protected
+wxArchiveClassFactory.cpp:32: error: within this context
+wxArchiveClassFactory.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxArchiveClassFactory'
+/usr/include/wx-2.8/wx/archive.h:316: note:   because the following virtual functions are pure within 'wxArchiveClassFactory':
+/usr/include/wx-2.8/wx/stream.h:349: note: 	virtual const wxChar* const* wxFilterClassFactoryBase::GetProtocols(wxStreamProtocolType) const
+/usr/include/wx-2.8/wx/archive.h:342: note: 	virtual wxString wxArchiveClassFactory::GetInternalName(const wxString&, wxPathFormat) const
+/usr/include/wx-2.8/wx/archive.h:361: note: 	virtual wxArchiveEntry* wxArchiveClassFactory::DoNewEntry() const
+/usr/include/wx-2.8/wx/archive.h:362: note: 	virtual wxArchiveInputStream* wxArchiveClassFactory::DoNewStream(wxInputStream&) const
+/usr/include/wx-2.8/wx/archive.h:363: note: 	virtual wxArchiveOutputStream* wxArchiveClassFactory::DoNewStream(wxOutputStream&) const
+/usr/include/wx-2.8/wx/archive.h:364: note: 	virtual wxArchiveInputStream* wxArchiveClassFactory::DoNewStream(wxInputStream*) const
+/usr/include/wx-2.8/wx/archive.h:365: note: 	virtual wxArchiveOutputStream* wxArchiveClassFactory::DoNewStream(wxOutputStream*) const
+make: *** [wxArchiveClassFactory.o] Error 1

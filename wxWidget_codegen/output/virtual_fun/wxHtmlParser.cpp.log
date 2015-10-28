@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxHtmlParser.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlParser.cpp
+wxHtmlParser.cpp: In function 'int main(int, char**)':
+wxHtmlParser.cpp:49: error: cannot declare variable 'a' to be of abstract type 'wxHtmlParser'
+/usr/include/wx-2.8/wx/html/htmlpars.h:42: note:   because the following virtual functions are pure within 'wxHtmlParser':
+/usr/include/wx-2.8/wx/html/htmlpars.h:86: note: 	virtual wxObject* wxHtmlParser::GetProduct()
+/usr/include/wx-2.8/wx/html/htmlpars.h:144: note: 	virtual void wxHtmlParser::AddText(const wxChar*)
+make: *** [wxHtmlParser.o] Error 1

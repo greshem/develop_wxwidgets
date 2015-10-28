@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlTableCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlTableCell.cpp
+wxHtmlTableCell.cpp: In function 'int main(int, char**)':
+wxHtmlTableCell.cpp:36: error: 'wxHtmlTableCell' was not declared in this scope
+wxHtmlTableCell.cpp:36: error: expected `;' before 'a'
+make: *** [wxHtmlTableCell.o] Error 1

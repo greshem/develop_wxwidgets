@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlFilterHTML.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlFilterHTML.cpp
+wxHtmlFilterHTML.cpp: In function 'int main(int, char**)':
+wxHtmlFilterHTML.cpp:31: error: 'wxHtmlFilterHTML' was not declared in this scope
+wxHtmlFilterHTML.cpp:31: error: expected `;' before 'a'
+make: *** [wxHtmlFilterHTML.o] Error 1

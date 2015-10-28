@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxScrollHelperNative.o `wx-config  --cxxflags`    -Wno-write-strings   wxScrollHelperNative.cpp
+wxScrollHelperNative.cpp: In function 'int main(int, char**)':
+wxScrollHelperNative.cpp:33: error: no matching function for call to 'wxScrollHelperNative::wxScrollHelperNative()'
+/usr/include/wx-2.8/wx/gtk/scrolwin.h:69: note: candidates are: wxScrollHelperNative::wxScrollHelperNative(const wxScrollHelperNative&)
+/usr/include/wx-2.8/wx/gtk/scrolwin.h:23: note:                 wxScrollHelperNative::wxScrollHelperNative(wxWindow*)
+make: *** [wxScrollHelperNative.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxPrintAbortDialog.o `wx-config  --cxxflags`    -Wno-write-strings   wxPrintAbortDialog.cpp
+wxPrintAbortDialog.cpp: In function 'int main(int, char**)':
+wxPrintAbortDialog.cpp:31: error: no matching function for call to 'wxPrintAbortDialog::wxPrintAbortDialog()'
+/usr/include/wx-2.8/wx/prntbase.h:655: note: candidates are: wxPrintAbortDialog::wxPrintAbortDialog(const wxPrintAbortDialog&)
+/usr/include/wx-2.8/wx/prntbase.h:646: note:                 wxPrintAbortDialog::wxPrintAbortDialog(wxWindow*, const wxString&, const wxPoint&, const wxSize&, long int, const wxString&)
+make: *** [wxPrintAbortDialog.o] Error 1

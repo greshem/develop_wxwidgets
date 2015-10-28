@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxEventLoopPtr.o `wx-config  --cxxflags`    -Wno-write-strings   wxEventLoopPtr.cpp
+wxEventLoopPtr.cpp: In function 'int main(int, char**)':
+wxEventLoopPtr.cpp:28: error: 'wxEventLoopPtr' was not declared in this scope
+wxEventLoopPtr.cpp:28: error: expected `;' before 'a'
+make: *** [wxEventLoopPtr.o] Error 1

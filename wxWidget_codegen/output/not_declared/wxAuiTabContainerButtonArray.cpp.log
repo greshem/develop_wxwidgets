@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxAuiTabContainerButtonArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxAuiTabContainerButtonArray.cpp
+wxAuiTabContainerButtonArray.cpp: In function 'int main(int, char**)':
+wxAuiTabContainerButtonArray.cpp:36: error: 'wxAuiTabContainerButtonArray' was not declared in this scope
+wxAuiTabContainerButtonArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxAuiTabContainerButtonArray.o] Error 1

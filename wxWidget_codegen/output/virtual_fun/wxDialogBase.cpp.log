@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxDialogBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxDialogBase.cpp
+wxDialogBase.cpp: In function 'int main(int, char**)':
+wxDialogBase.cpp:52: error: cannot declare variable 'a' to be of abstract type 'wxDialogBase'
+/usr/include/wx-2.8/wx/dialog.h:33: note:   because the following virtual functions are pure within 'wxDialogBase':
+/usr/include/wx-2.8/wx/dialog.h:45: note: 	virtual int wxDialogBase::ShowModal()
+/usr/include/wx-2.8/wx/dialog.h:46: note: 	virtual void wxDialogBase::EndModal(int)
+/usr/include/wx-2.8/wx/dialog.h:47: note: 	virtual bool wxDialogBase::IsModal() const
+make: *** [wxDialogBase.o] Error 1

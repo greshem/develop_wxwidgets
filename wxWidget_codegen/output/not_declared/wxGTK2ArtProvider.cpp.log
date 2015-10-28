@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGTK2ArtProvider.o `wx-config  --cxxflags`    -Wno-write-strings   wxGTK2ArtProvider.cpp
+wxGTK2ArtProvider.cpp: In function 'int main(int, char**)':
+wxGTK2ArtProvider.cpp:28: error: 'wxGTK2ArtProvider' was not declared in this scope
+wxGTK2ArtProvider.cpp:28: error: expected `;' before 'a'
+make: *** [wxGTK2ArtProvider.o] Error 1

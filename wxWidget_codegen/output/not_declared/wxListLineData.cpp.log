@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxListLineData.o `wx-config  --cxxflags`    -Wno-write-strings   wxListLineData.cpp
+wxListLineData.cpp: In function 'int main(int, char**)':
+wxListLineData.cpp:45: error: 'wxListLineData' was not declared in this scope
+wxListLineData.cpp:45: error: expected `;' before 'a'
+make: *** [wxListLineData.o] Error 1

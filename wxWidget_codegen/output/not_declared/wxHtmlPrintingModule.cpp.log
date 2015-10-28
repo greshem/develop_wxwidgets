@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlPrintingModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlPrintingModule.cpp
+wxHtmlPrintingModule.cpp: In function 'int main(int, char**)':
+wxHtmlPrintingModule.cpp:29: error: 'wxHtmlPrintingModule' was not declared in this scope
+wxHtmlPrintingModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxHtmlPrintingModule.o] Error 1

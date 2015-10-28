@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxDirTraverser.o `wx-config  --cxxflags`    -Wno-write-strings   wxDirTraverser.cpp
+wxDirTraverser.cpp: In function 'int main(int, char**)':
+wxDirTraverser.cpp:29: error: cannot declare variable 'a' to be of abstract type 'wxDirTraverser'
+/usr/include/wx-2.8/wx/dir.h:50: note:   because the following virtual functions are pure within 'wxDirTraverser':
+/usr/include/wx-2.8/wx/dir.h:58: note: 	virtual wxDirTraverseResult wxDirTraverser::OnFile(const wxString&)
+/usr/include/wx-2.8/wx/dir.h:63: note: 	virtual wxDirTraverseResult wxDirTraverser::OnDir(const wxString&)
+make: *** [wxDirTraverser.o] Error 1

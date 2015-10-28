@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxRichTextCommand.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextCommand.cpp
+wxRichTextCommand.cpp: In function 'int main(int, char**)':
+wxRichTextCommand.cpp:35: error: no matching function for call to 'wxRichTextCommand::wxRichTextCommand()'
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:2010: note: candidates are: wxRichTextCommand::wxRichTextCommand(const wxString&)
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:2007: note:                 wxRichTextCommand::wxRichTextCommand(const wxString&, wxRichTextCommandId, wxRichTextBuffer*, wxRichTextCtrl*, bool)
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:2003: note:                 wxRichTextCommand::wxRichTextCommand(const wxRichTextCommand&)
+make: *** [wxRichTextCommand.o] Error 1

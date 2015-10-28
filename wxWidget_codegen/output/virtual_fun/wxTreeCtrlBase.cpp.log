@@ -1,0 +1,64 @@
+g++ -g  -Wall  -c -o wxTreeCtrlBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxTreeCtrlBase.cpp
+wxTreeCtrlBase.cpp: In function 'int main(int, char**)':
+wxTreeCtrlBase.cpp:36: error: cannot declare variable 'a' to be of abstract type 'wxTreeCtrlBase'
+/usr/include/wx-2.8/wx/treectrl.h:34: note:   because the following virtual functions are pure within 'wxTreeCtrlBase':
+/usr/include/wx-2.8/wx/treectrl.h:56: note: 	virtual unsigned int wxTreeCtrlBase::GetCount() const
+/usr/include/wx-2.8/wx/treectrl.h:61: note: 	virtual unsigned int wxTreeCtrlBase::GetIndent() const
+/usr/include/wx-2.8/wx/treectrl.h:62: note: 	virtual void wxTreeCtrlBase::SetIndent(unsigned int)
+/usr/include/wx-2.8/wx/treectrl.h:82: note: 	virtual void wxTreeCtrlBase::SetImageList(wxImageList*)
+/usr/include/wx-2.8/wx/treectrl.h:83: note: 	virtual void wxTreeCtrlBase::SetStateImageList(wxImageList*)
+/usr/include/wx-2.8/wx/treectrl.h:105: note: 	virtual wxString wxTreeCtrlBase::GetItemText(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:108: note: 	virtual int wxTreeCtrlBase::GetItemImage(const wxTreeItemId&, wxTreeItemIcon) const
+/usr/include/wx-2.8/wx/treectrl.h:110: note: 	virtual wxTreeItemData* wxTreeCtrlBase::GetItemData(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:113: note: 	virtual wxColour wxTreeCtrlBase::GetItemTextColour(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:116: note: 	virtual wxColour wxTreeCtrlBase::GetItemBackgroundColour(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:119: note: 	virtual wxFont wxTreeCtrlBase::GetItemFont(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:125: note: 	virtual void wxTreeCtrlBase::SetItemText(const wxTreeItemId&, const wxString&)
+/usr/include/wx-2.8/wx/treectrl.h:129: note: 	virtual void wxTreeCtrlBase::SetItemImage(const wxTreeItemId&, int, wxTreeItemIcon)
+/usr/include/wx-2.8/wx/treectrl.h:131: note: 	virtual void wxTreeCtrlBase::SetItemData(const wxTreeItemId&, wxTreeItemData*)
+/usr/include/wx-2.8/wx/treectrl.h:138: note: 	virtual void wxTreeCtrlBase::SetItemHasChildren(const wxTreeItemId&, bool)
+/usr/include/wx-2.8/wx/treectrl.h:141: note: 	virtual void wxTreeCtrlBase::SetItemBold(const wxTreeItemId&, bool)
+/usr/include/wx-2.8/wx/treectrl.h:145: note: 	virtual void wxTreeCtrlBase::SetItemDropHighlight(const wxTreeItemId&, bool)
+/usr/include/wx-2.8/wx/treectrl.h:149: note: 	virtual void wxTreeCtrlBase::SetItemTextColour(const wxTreeItemId&, const wxColour&)
+/usr/include/wx-2.8/wx/treectrl.h:153: note: 	virtual void wxTreeCtrlBase::SetItemBackgroundColour(const wxTreeItemId&, const wxColour&)
+/usr/include/wx-2.8/wx/treectrl.h:157: note: 	virtual void wxTreeCtrlBase::SetItemFont(const wxTreeItemId&, const wxFont&)
+/usr/include/wx-2.8/wx/treectrl.h:163: note: 	virtual bool wxTreeCtrlBase::IsVisible(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:165: note: 	virtual bool wxTreeCtrlBase::ItemHasChildren(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:170: note: 	virtual bool wxTreeCtrlBase::IsExpanded(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:172: note: 	virtual bool wxTreeCtrlBase::IsSelected(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:174: note: 	virtual bool wxTreeCtrlBase::IsBold(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:187: note: 	virtual size_t wxTreeCtrlBase::GetChildrenCount(const wxTreeItemId&, bool) const
+/usr/include/wx-2.8/wx/treectrl.h:195: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetRootItem() const
+/usr/include/wx-2.8/wx/treectrl.h:198: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetSelection() const
+/usr/include/wx-2.8/wx/treectrl.h:204: note: 	virtual size_t wxTreeCtrlBase::GetSelections(wxArrayTreeItemIds&) const
+/usr/include/wx-2.8/wx/treectrl.h:207: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetItemParent(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:218: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetFirstChild(const wxTreeItemId&, void*&) const
+/usr/include/wx-2.8/wx/treectrl.h:221: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetNextChild(const wxTreeItemId&, void*&) const
+/usr/include/wx-2.8/wx/treectrl.h:223: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetLastChild(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:226: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetNextSibling(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:228: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetPrevSibling(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:231: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetFirstVisibleItem() const
+/usr/include/wx-2.8/wx/treectrl.h:234: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetNextVisible(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:236: note: 	virtual wxTreeItemId wxTreeCtrlBase::GetPrevVisible(const wxTreeItemId&) const
+/usr/include/wx-2.8/wx/treectrl.h:244: note: 	virtual wxTreeItemId wxTreeCtrlBase::AddRoot(const wxString&, int, int, wxTreeItemData*)
+/usr/include/wx-2.8/wx/treectrl.h:285: note: 	virtual void wxTreeCtrlBase::Delete(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treectrl.h:288: note: 	virtual void wxTreeCtrlBase::DeleteChildren(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treectrl.h:291: note: 	virtual void wxTreeCtrlBase::DeleteAllItems()
+/usr/include/wx-2.8/wx/treectrl.h:294: note: 	virtual void wxTreeCtrlBase::Expand(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treectrl.h:300: note: 	virtual void wxTreeCtrlBase::Collapse(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treectrl.h:308: note: 	virtual void wxTreeCtrlBase::CollapseAndReset(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treectrl.h:310: note: 	virtual void wxTreeCtrlBase::Toggle(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treectrl.h:313: note: 	virtual void wxTreeCtrlBase::Unselect()
+/usr/include/wx-2.8/wx/treectrl.h:315: note: 	virtual void wxTreeCtrlBase::UnselectAll()
+/usr/include/wx-2.8/wx/treectrl.h:317: note: 	virtual void wxTreeCtrlBase::SelectItem(const wxTreeItemId&, bool)
+/usr/include/wx-2.8/wx/treectrl.h:328: note: 	virtual void wxTreeCtrlBase::EnsureVisible(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treectrl.h:330: note: 	virtual void wxTreeCtrlBase::ScrollTo(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treectrl.h:337: note: 	virtual wxTextCtrl* wxTreeCtrlBase::EditLabel(const wxTreeItemId&, wxClassInfo*)
+/usr/include/wx-2.8/wx/treectrl.h:341: note: 	virtual wxTextCtrl* wxTreeCtrlBase::GetEditControl() const
+/usr/include/wx-2.8/wx/treectrl.h:344: note: 	virtual void wxTreeCtrlBase::EndEditLabel(const wxTreeItemId&, bool)
+/usr/include/wx-2.8/wx/treectrl.h:362: note: 	virtual void wxTreeCtrlBase::SortChildren(const wxTreeItemId&)
+/usr/include/wx-2.8/wx/treectrl.h:379: note: 	virtual bool wxTreeCtrlBase::GetBoundingRect(const wxTreeItemId&, wxRect&, bool) const
+/usr/include/wx-2.8/wx/treectrl.h:402: note: 	virtual wxTreeItemId wxTreeCtrlBase::DoInsertItem(const wxTreeItemId&, size_t, const wxString&, int, int, wxTreeItemData*)
+/usr/include/wx-2.8/wx/treectrl.h:411: note: 	virtual wxTreeItemId wxTreeCtrlBase::DoInsertAfter(const wxTreeItemId&, const wxTreeItemId&, const wxString&, int, int, wxTreeItemData*)
+/usr/include/wx-2.8/wx/treectrl.h:417: note: 	virtual wxTreeItemId wxTreeCtrlBase::DoTreeHitTest(const wxPoint&, int&) const
+make: *** [wxTreeCtrlBase.o] Error 1

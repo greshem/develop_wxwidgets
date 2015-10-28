@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPluginLibraryModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxPluginLibraryModule.cpp
+wxPluginLibraryModule.cpp: In function 'int main(int, char**)':
+wxPluginLibraryModule.cpp:29: error: 'wxPluginLibraryModule' was not declared in this scope
+wxPluginLibraryModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxPluginLibraryModule.o] Error 1

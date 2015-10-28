@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTaskBarIconAreaBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxTaskBarIconAreaBase.cpp
+wxTaskBarIconAreaBase.cpp: In function 'int main(int, char**)':
+wxTaskBarIconAreaBase.cpp:30: error: 'wxTaskBarIconAreaBase' was not declared in this scope
+wxTaskBarIconAreaBase.cpp:30: error: expected `;' before 'a'
+make: *** [wxTaskBarIconAreaBase.o] Error 1

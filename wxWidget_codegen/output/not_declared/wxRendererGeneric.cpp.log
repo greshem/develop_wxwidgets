@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRendererGeneric.o `wx-config  --cxxflags`    -Wno-write-strings   wxRendererGeneric.cpp
+wxRendererGeneric.cpp: In function 'int main(int, char**)':
+wxRendererGeneric.cpp:43: error: 'wxRendererGeneric' was not declared in this scope
+wxRendererGeneric.cpp:43: error: expected `;' before 'a'
+make: *** [wxRendererGeneric.o] Error 1

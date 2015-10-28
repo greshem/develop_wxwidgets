@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxJoystickThread.o `wx-config  --cxxflags`    -Wno-write-strings   wxJoystickThread.cpp
+wxJoystickThread.cpp: In function 'int main(int, char**)':
+wxJoystickThread.cpp:30: error: aggregate 'wxJoystickThread a' has incomplete type and cannot be defined
+wxJoystickThread.cpp:30: warning: unused variable 'a'
+make: *** [wxJoystickThread.o] Error 1

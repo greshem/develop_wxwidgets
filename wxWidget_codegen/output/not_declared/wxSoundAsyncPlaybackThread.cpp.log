@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSoundAsyncPlaybackThread.o `wx-config  --cxxflags`    -Wno-write-strings   wxSoundAsyncPlaybackThread.cpp
+wxSoundAsyncPlaybackThread.cpp: In function 'int main(int, char**)':
+wxSoundAsyncPlaybackThread.cpp:28: error: 'wxSoundAsyncPlaybackThread' was not declared in this scope
+wxSoundAsyncPlaybackThread.cpp:28: error: expected `;' before 'a'
+make: *** [wxSoundAsyncPlaybackThread.o] Error 1

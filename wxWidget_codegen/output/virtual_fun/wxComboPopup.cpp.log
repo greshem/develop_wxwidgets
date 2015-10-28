@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxComboPopup.o `wx-config  --cxxflags`    -Wno-write-strings   wxComboPopup.cpp
+wxComboPopup.cpp: In function 'int main(int, char**)':
+wxComboPopup.cpp:39: error: cannot declare variable 'a' to be of abstract type 'wxComboPopup'
+/usr/include/wx-2.8/wx/combo.h:637: note:   because the following virtual functions are pure within 'wxComboPopup':
+/usr/include/wx-2.8/wx/combo.h:656: note: 	virtual bool wxComboPopup::Create(wxWindow*)
+/usr/include/wx-2.8/wx/combo.h:659: note: 	virtual wxWindow* wxComboPopup::GetControl()
+/usr/include/wx-2.8/wx/combo.h:672: note: 	virtual wxString wxComboPopup::GetStringValue() const
+make: *** [wxComboPopup.o] Error 1

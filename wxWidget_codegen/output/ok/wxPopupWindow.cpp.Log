@@ -1,0 +1,3 @@
+g++ -g  -Wall  -c -o wxPopupWindow.o `wx-config  --cxxflags`    -Wno-write-strings   wxPopupWindow.cpp
+/usr/include/wx-2.8/wx/gtk/popupwin.h:19: error: expected class-name before '{' token
+make: *** [wxPopupWindow.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxDebugReportUpload.o `wx-config  --cxxflags`    -Wno-write-strings   wxDebugReportUpload.cpp
+wxDebugReportUpload.cpp: In function 'int main(int, char**)':
+wxDebugReportUpload.cpp:30: error: no matching function for call to 'wxDebugReportUpload::wxDebugReportUpload()'
+/usr/include/wx-2.8/wx/debugrpt.h:164: note: candidates are: wxDebugReportUpload::wxDebugReportUpload(const wxString&, const wxString&, const wxString&, const wxString&)
+/usr/include/wx-2.8/wx/debugrpt.h:153: note:                 wxDebugReportUpload::wxDebugReportUpload(const wxDebugReportUpload&)
+make: *** [wxDebugReportUpload.o] Error 1

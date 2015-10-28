@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxBitmapBaseModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxBitmapBaseModule.cpp
+wxBitmapBaseModule.cpp: In function 'int main(int, char**)':
+wxBitmapBaseModule.cpp:29: error: 'wxBitmapBaseModule' was not declared in this scope
+wxBitmapBaseModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxBitmapBaseModule.o] Error 1

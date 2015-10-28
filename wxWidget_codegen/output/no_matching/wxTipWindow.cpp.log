@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxTipWindow.o `wx-config  --cxxflags`    -Wno-write-strings   wxTipWindow.cpp
+wxTipWindow.cpp: In function 'int main(int, char**)':
+wxTipWindow.cpp:36: error: no matching function for call to 'wxTipWindow::wxTipWindow()'
+/usr/include/wx-2.8/wx/tipwin.h:93: note: candidates are: wxTipWindow::wxTipWindow(const wxTipWindow&)
+/usr/include/wx-2.8/wx/tipwin.h:50: note:                 wxTipWindow::wxTipWindow(wxWindow*, const wxString&, wxCoord, wxTipWindow**, wxRect*)
+make: *** [wxTipWindow.o] Error 1

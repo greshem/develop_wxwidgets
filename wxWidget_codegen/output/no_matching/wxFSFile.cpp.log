@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxFSFile.o `wx-config  --cxxflags`    -Wno-write-strings   wxFSFile.cpp
+wxFSFile.cpp: In function 'int main(int, char**)':
+wxFSFile.cpp:29: error: no matching function for call to 'wxFSFile::wxFSFile()'
+/usr/include/wx-2.8/wx/filesys.h:102: note: candidates are: wxFSFile::wxFSFile(const wxFSFile&)
+/usr/include/wx-2.8/wx/filesys.h:49: note:                 wxFSFile::wxFSFile(wxInputStream*, const wxString&, const wxString&, const wxString&, wxDateTime)
+make: *** [wxFSFile.o] Error 1

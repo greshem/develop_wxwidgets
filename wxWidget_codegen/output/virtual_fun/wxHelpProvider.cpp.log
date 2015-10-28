@@ -1,0 +1,8 @@
+g++ -g  -Wall  -c -o wxHelpProvider.o `wx-config  --cxxflags`    -Wno-write-strings   wxHelpProvider.cpp
+/usr/include/wx-2.8/wx/cshelp.h: In function 'int main(int, char**)':
+/usr/include/wx-2.8/wx/cshelp.h:165: error: 'wxHelpProvider::wxHelpProvider()' is protected
+wxHelpProvider.cpp:33: error: within this context
+wxHelpProvider.cpp:33: error: cannot declare variable 'a' to be of abstract type 'wxHelpProvider'
+/usr/include/wx-2.8/wx/cshelp.h:110: note:   because the following virtual functions are pure within 'wxHelpProvider':
+/usr/include/wx-2.8/wx/cshelp.h:128: note: 	virtual wxString wxHelpProvider::GetHelp(const wxWindowBase*)
+make: *** [wxHelpProvider.o] Error 1

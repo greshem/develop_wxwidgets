@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxLanguageInfoArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxLanguageInfoArray.cpp
+wxLanguageInfoArray.cpp: In function 'int main(int, char**)':
+wxLanguageInfoArray.cpp:37: error: aggregate 'wxLanguageInfoArray a' has incomplete type and cannot be defined
+wxLanguageInfoArray.cpp:37: warning: unused variable 'a'
+make: *** [wxLanguageInfoArray.o] Error 1

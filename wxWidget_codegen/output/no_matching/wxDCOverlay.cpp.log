@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxDCOverlay.o `wx-config  --cxxflags`    -Wno-write-strings   wxDCOverlay.cpp
+wxDCOverlay.cpp: In function 'int main(int, char**)':
+wxDCOverlay.cpp:33: error: no matching function for call to 'wxDCOverlay::wxDCOverlay()'
+/usr/include/wx-2.8/wx/overlay.h:94: note: candidates are: wxDCOverlay::wxDCOverlay(const wxDCOverlay&)
+/usr/include/wx-2.8/wx/overlay.h:78: note:                 wxDCOverlay::wxDCOverlay(wxOverlay&, wxWindowDC*)
+/usr/include/wx-2.8/wx/overlay.h:75: note:                 wxDCOverlay::wxDCOverlay(wxOverlay&, wxWindowDC*, int, int, int, int)
+make: *** [wxDCOverlay.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxArrayFileTypeInfo.o `wx-config  --cxxflags`    -Wno-write-strings   wxArrayFileTypeInfo.cpp
+wxArrayFileTypeInfo.cpp: In function 'int main(int, char**)':
+wxArrayFileTypeInfo.cpp:36: error: 'wxArrayFileTypeInfo' was not declared in this scope
+wxArrayFileTypeInfo.cpp:36: error: expected `;' before 'a'
+make: *** [wxArrayFileTypeInfo.o] Error 1

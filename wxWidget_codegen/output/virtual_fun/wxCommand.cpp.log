@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxCommand.o `wx-config  --cxxflags`    -Wno-write-strings   wxCommand.cpp
+wxCommand.cpp: In function 'int main(int, char**)':
+wxCommand.cpp:30: error: cannot declare variable 'a' to be of abstract type 'wxCommand'
+/usr/include/wx-2.8/wx/cmdproc.h:26: note:   because the following virtual functions are pure within 'wxCommand':
+/usr/include/wx-2.8/wx/cmdproc.h:32: note: 	virtual bool wxCommand::Do()
+/usr/include/wx-2.8/wx/cmdproc.h:35: note: 	virtual bool wxCommand::Undo()
+make: *** [wxCommand.o] Error 1

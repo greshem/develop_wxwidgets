@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxScrollHelperEvtHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxScrollHelperEvtHandler.cpp
+wxScrollHelperEvtHandler.cpp: In function 'int main(int, char**)':
+wxScrollHelperEvtHandler.cpp:29: error: aggregate 'wxScrollHelperEvtHandler a' has incomplete type and cannot be defined
+wxScrollHelperEvtHandler.cpp:29: warning: unused variable 'a'
+make: *** [wxScrollHelperEvtHandler.o] Error 1

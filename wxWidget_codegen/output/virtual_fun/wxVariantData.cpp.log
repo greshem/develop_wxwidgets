@@ -1,0 +1,9 @@
+g++ -g  -Wall  -c -o wxVariantData.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantData.cpp
+wxVariantData.cpp: In function 'int main(int, char**)':
+wxVariantData.cpp:29: error: cannot declare variable 'a' to be of abstract type 'wxVariantData'
+/usr/include/wx-2.8/wx/variant.h:63: note:   because the following virtual functions are pure within 'wxVariantData':
+/usr/include/wx-2.8/wx/variant.h:71: note: 	virtual bool wxVariantData::Eq(wxVariantData&) const
+/usr/include/wx-2.8/wx/variant.h:82: note: 	virtual wxString wxVariantData::GetType() const
+/usr/include/wx-2.8/wx/variant.h:99: error: 'virtual wxVariantData::~wxVariantData()' is protected
+wxVariantData.cpp:29: error: within this context
+make: *** [wxVariantData.o] Error 1

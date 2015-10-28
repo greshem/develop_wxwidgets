@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGnomePrintPreview.o `wx-config  --cxxflags`    -Wno-write-strings   wxGnomePrintPreview.cpp
+wxGnomePrintPreview.cpp: In function 'int main(int, char**)':
+wxGnomePrintPreview.cpp:34: error: 'wxGnomePrintPreview' was not declared in this scope
+wxGnomePrintPreview.cpp:34: error: expected `;' before 'a'
+make: *** [wxGnomePrintPreview.o] Error 1

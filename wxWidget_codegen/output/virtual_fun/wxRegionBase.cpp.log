@@ -1,0 +1,17 @@
+g++ -g  -Wall  -c -o wxRegionBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxRegionBase.cpp
+wxRegionBase.cpp: In function 'int main(int, char**)':
+wxRegionBase.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxRegionBase'
+/usr/include/wx-2.8/wx/region.h:59: note:   because the following virtual functions are pure within 'wxRegionBase':
+/usr/include/wx-2.8/wx/region.h:89: note: 	virtual bool wxRegionBase::IsEmpty() const
+/usr/include/wx-2.8/wx/region.h:118: note: 	virtual void wxRegionBase::Clear()
+/usr/include/wx-2.8/wx/region.h:169: note: 	virtual bool wxRegionBase::DoIsEqual(const wxRegion&) const
+/usr/include/wx-2.8/wx/region.h:170: note: 	virtual bool wxRegionBase::DoGetBox(wxCoord&, wxCoord&, wxCoord&, wxCoord&) const
+/usr/include/wx-2.8/wx/region.h:171: note: 	virtual wxRegionContain wxRegionBase::DoContainsPoint(wxCoord, wxCoord) const
+/usr/include/wx-2.8/wx/region.h:172: note: 	virtual wxRegionContain wxRegionBase::DoContainsRect(const wxRect&) const
+/usr/include/wx-2.8/wx/region.h:174: note: 	virtual bool wxRegionBase::DoOffset(wxCoord, wxCoord)
+/usr/include/wx-2.8/wx/region.h:176: note: 	virtual bool wxRegionBase::DoUnionWithRect(const wxRect&)
+/usr/include/wx-2.8/wx/region.h:177: note: 	virtual bool wxRegionBase::DoUnionWithRegion(const wxRegion&)
+/usr/include/wx-2.8/wx/region.h:179: note: 	virtual bool wxRegionBase::DoIntersect(const wxRegion&)
+/usr/include/wx-2.8/wx/region.h:180: note: 	virtual bool wxRegionBase::DoSubtract(const wxRegion&)
+/usr/include/wx-2.8/wx/region.h:181: note: 	virtual bool wxRegionBase::DoXor(const wxRegion&)
+make: *** [wxRegionBase.o] Error 1

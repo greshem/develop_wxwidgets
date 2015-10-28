@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlFontCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlFontCell.cpp
+wxHtmlFontCell.cpp: In function 'int main(int, char**)':
+wxHtmlFontCell.cpp:31: error: no matching function for call to 'wxHtmlFontCell::wxHtmlFontCell()'
+/usr/include/wx-2.8/wx/html/htmlcell.h:573: note: candidates are: wxHtmlFontCell::wxHtmlFontCell(const wxHtmlFontCell&)
+/usr/include/wx-2.8/wx/html/htmlcell.h:563: note:                 wxHtmlFontCell::wxHtmlFontCell(wxFont*)
+make: *** [wxHtmlFontCell.o] Error 1

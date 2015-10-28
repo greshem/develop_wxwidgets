@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxInputStreamPtr.o `wx-config  --cxxflags`    -Wno-write-strings   wxInputStreamPtr.cpp
+wxInputStreamPtr.cpp: In function 'int main(int, char**)':
+wxInputStreamPtr.cpp:28: error: 'wxInputStreamPtr' was not declared in this scope
+wxInputStreamPtr.cpp:28: error: expected `;' before 'a'
+make: *** [wxInputStreamPtr.o] Error 1

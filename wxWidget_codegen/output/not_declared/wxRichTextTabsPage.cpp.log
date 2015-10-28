@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRichTextTabsPage.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextTabsPage.cpp
+wxRichTextTabsPage.cpp: In function 'int main(int, char**)':
+wxRichTextTabsPage.cpp:50: error: 'wxRichTextTabsPage' was not declared in this scope
+wxRichTextTabsPage.cpp:50: error: expected `;' before 'a'
+make: *** [wxRichTextTabsPage.o] Error 1

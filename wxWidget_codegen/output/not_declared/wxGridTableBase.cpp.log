@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridTableBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridTableBase.cpp
+wxGridTableBase.cpp: In function 'int main(int, char**)':
+wxGridTableBase.cpp:55: error: 'wxGridTableBase' was not declared in this scope
+wxGridTableBase.cpp:55: error: expected `;' before 'a'
+make: *** [wxGridTableBase.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlFilterModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlFilterModule.cpp
+wxHtmlFilterModule.cpp: In function 'int main(int, char**)':
+wxHtmlFilterModule.cpp:29: error: 'wxHtmlFilterModule' was not declared in this scope
+wxHtmlFilterModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxHtmlFilterModule.o] Error 1

@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxBoxSizer.o `wx-config  --cxxflags`    -Wno-write-strings   wxBoxSizer.cpp
+wxBoxSizer.cpp: In function 'int main(int, char**)':
+wxBoxSizer.cpp:32: error: no matching function for call to 'wxBoxSizer::wxBoxSizer()'
+/usr/include/wx-2.8/wx/sizer.h:740: note: candidates are: wxBoxSizer::wxBoxSizer(int)
+/usr/include/wx-2.8/wx/sizer.h:738: note:                 wxBoxSizer::wxBoxSizer(const wxBoxSizer&)
+make: *** [wxBoxSizer.o] Error 1

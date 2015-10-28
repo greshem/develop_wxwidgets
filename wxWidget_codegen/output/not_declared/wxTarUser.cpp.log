@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTarUser.o `wx-config  --cxxflags`    -Wno-write-strings   wxTarUser.cpp
+wxTarUser.cpp: In function 'int main(int, char**)':
+wxTarUser.cpp:28: error: 'wxTarUser' was not declared in this scope
+wxTarUser.cpp:28: error: expected `;' before 'a'
+make: *** [wxTarUser.o] Error 1

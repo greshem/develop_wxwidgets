@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridStringArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridStringArray.cpp
+wxGridStringArray.cpp: In function 'int main(int, char**)':
+wxGridStringArray.cpp:36: error: 'wxGridStringArray' was not declared in this scope
+wxGridStringArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxGridStringArray.o] Error 1

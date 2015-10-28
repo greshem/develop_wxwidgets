@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxRichTextFileHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextFileHandler.cpp
+wxRichTextFileHandler.cpp: In function 'int main(int, char**)':
+wxRichTextFileHandler.cpp:32: error: cannot declare variable 'a' to be of abstract type 'wxRichTextFileHandler'
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:2120: note:   because the following virtual functions are pure within 'wxRichTextFileHandler':
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:2173: note: 	virtual bool wxRichTextFileHandler::DoLoadFile(wxRichTextBuffer*, wxInputStream&)
+/usr/include/wx-2.8/wx/richtext/richtextbuffer.h:2174: note: 	virtual bool wxRichTextFileHandler::DoSaveFile(wxRichTextBuffer*, wxOutputStream&)
+make: *** [wxRichTextFileHandler.o] Error 1

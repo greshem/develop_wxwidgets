@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o GSocketGUIFunctionsTableConcrete.o `wx-config  --cxxflags`    -Wno-write-strings   GSocketGUIFunctionsTableConcrete.cpp
+GSocketGUIFunctionsTableConcrete.cpp: In function 'int main(int, char**)':
+GSocketGUIFunctionsTableConcrete.cpp:36: error: 'GSocketGUIFunctionsTableConcrete' was not declared in this scope
+GSocketGUIFunctionsTableConcrete.cpp:36: error: expected `;' before 'a'
+make: *** [GSocketGUIFunctionsTableConcrete.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlHelpMergedIndex.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlHelpMergedIndex.cpp
+wxHtmlHelpMergedIndex.cpp: In function 'int main(int, char**)':
+wxHtmlHelpMergedIndex.cpp:36: error: 'wxHtmlHelpMergedIndex' was not declared in this scope
+wxHtmlHelpMergedIndex.cpp:36: error: expected `;' before 'a'
+make: *** [wxHtmlHelpMergedIndex.o] Error 1

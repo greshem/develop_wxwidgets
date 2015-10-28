@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxLogTextCtrl.o `wx-config  --cxxflags`    -Wno-write-strings   wxLogTextCtrl.cpp
+wxLogTextCtrl.cpp: In function 'int main(int, char**)':
+wxLogTextCtrl.cpp:29: error: no matching function for call to 'wxLogTextCtrl::wxLogTextCtrl()'
+/usr/include/wx-2.8/wx/generic/logg.h:39: note: candidates are: wxLogTextCtrl::wxLogTextCtrl(const wxLogTextCtrl&)
+/usr/include/wx-2.8/wx/generic/logg.h:29: note:                 wxLogTextCtrl::wxLogTextCtrl(wxTextCtrl*)
+make: *** [wxLogTextCtrl.o] Error 1

@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxFSFilePtr.o `wx-config  --cxxflags`    -Wno-write-strings   wxFSFilePtr.cpp
+wxFSFilePtr.cpp: In function 'int main(int, char**)':
+wxFSFilePtr.cpp:28: error: 'wxFSFilePtr' was not declared in this scope
+wxFSFilePtr.cpp:28: error: expected `;' before 'a'
+make: *** [wxFSFilePtr.o] Error 1

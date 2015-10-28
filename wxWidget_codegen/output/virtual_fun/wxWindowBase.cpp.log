@@ -1,0 +1,35 @@
+g++ -g  -Wall  -c -o wxWindowBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxWindowBase.cpp
+wxWindowBase.cpp: In function 'int main(int, char**)':
+wxWindowBase.cpp:145: error: cannot declare variable 'a' to be of abstract type 'wxWindowBase'
+/usr/include/wx-2.8/wx/window.h:132: note:   because the following virtual functions are pure within 'wxWindowBase':
+/usr/include/wx-2.8/wx/window.h:177: note: 	virtual void wxWindowBase::SetLabel(const wxString&)
+/usr/include/wx-2.8/wx/window.h:178: note: 	virtual wxString wxWindowBase::GetLabel() const
+/usr/include/wx-2.8/wx/window.h:245: note: 	virtual void wxWindowBase::Raise()
+/usr/include/wx-2.8/wx/window.h:246: note: 	virtual void wxWindowBase::Lower()
+/usr/include/wx-2.8/wx/window.h:537: note: 	virtual void wxWindowBase::SetFocus()
+/usr/include/wx-2.8/wx/window.h:695: note: 	virtual void wxWindowBase::WarpPointer(int, int)
+/usr/include/wx-2.8/wx/window.h:717: note: 	virtual void wxWindowBase::Refresh(bool, const wxRect*)
+/usr/include/wx-2.8/wx/window.h:826: note: 	virtual bool wxWindowBase::SetFont(const wxFont&)
+/usr/include/wx-2.8/wx/window.h:847: note: 	virtual int wxWindowBase::GetCharHeight() const
+/usr/include/wx-2.8/wx/window.h:848: note: 	virtual int wxWindowBase::GetCharWidth() const
+/usr/include/wx-2.8/wx/window.h:857: note: 	virtual void wxWindowBase::GetTextExtent(const wxString&, int*, int*, int*, int*, const wxFont*) const
+/usr/include/wx-2.8/wx/window.h:935: note: 	virtual void wxWindowBase::SetScrollbar(int, int, int, int, bool)
+/usr/include/wx-2.8/wx/window.h:936: note: 	virtual void wxWindowBase::SetScrollPos(int, int, bool)
+/usr/include/wx-2.8/wx/window.h:937: note: 	virtual int wxWindowBase::GetScrollPos(int) const
+/usr/include/wx-2.8/wx/window.h:938: note: 	virtual int wxWindowBase::GetScrollThumb(int) const
+/usr/include/wx-2.8/wx/window.h:939: note: 	virtual int wxWindowBase::GetScrollRange(int) const
+/usr/include/wx-2.8/wx/window.h:943: note: 	virtual void wxWindowBase::ScrollWindow(int, int, const wxRect*)
+/usr/include/wx-2.8/wx/window.h:1008: note: 	virtual void wxWindowBase::SetDropTarget(wxDropTarget*)
+/usr/include/wx-2.8/wx/window.h:1105: note: 	virtual GtkWidget* wxWindowBase::GetHandle() const
+/usr/include/wx-2.8/wx/window.h:1311: note: 	virtual void wxWindowBase::DoClientToScreen(int*, int*) const
+/usr/include/wx-2.8/wx/window.h:1312: note: 	virtual void wxWindowBase::DoScreenToClient(int*, int*) const
+/usr/include/wx-2.8/wx/window.h:1317: note: 	virtual void wxWindowBase::DoCaptureMouse()
+/usr/include/wx-2.8/wx/window.h:1318: note: 	virtual void wxWindowBase::DoReleaseMouse()
+/usr/include/wx-2.8/wx/window.h:1321: note: 	virtual void wxWindowBase::DoGetPosition(int*, int*) const
+/usr/include/wx-2.8/wx/window.h:1323: note: 	virtual void wxWindowBase::DoGetSize(int*, int*) const
+/usr/include/wx-2.8/wx/window.h:1324: note: 	virtual void wxWindowBase::DoGetClientSize(int*, int*) const
+/usr/include/wx-2.8/wx/window.h:1344: note: 	virtual void wxWindowBase::DoSetSize(int, int, int, int, int)
+/usr/include/wx-2.8/wx/window.h:1347: note: 	virtual void wxWindowBase::DoSetClientSize(int, int)
+/usr/include/wx-2.8/wx/window.h:1357: note: 	virtual void wxWindowBase::DoMoveWindow(int, int, int, int)
+/usr/include/wx-2.8/wx/window.h:1369: note: 	virtual bool wxWindowBase::DoPopupMenu(wxMenu*, int, int)
+make: *** [wxWindowBase.o] Error 1

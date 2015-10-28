@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRendererPtrBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxRendererPtrBase.cpp
+wxRendererPtrBase.cpp: In function 'int main(int, char**)':
+wxRendererPtrBase.cpp:28: error: 'wxRendererPtrBase' was not declared in this scope
+wxRendererPtrBase.cpp:28: error: expected `;' before 'a'
+make: *** [wxRendererPtrBase.o] Error 1

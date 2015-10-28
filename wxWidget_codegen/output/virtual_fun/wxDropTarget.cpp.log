@@ -1,0 +1,9 @@
+g++ -g  -Wall  -c -o wxDropTarget.o `wx-config  --cxxflags`    -Wno-write-strings   wxDropTarget.cpp
+/usr/include/wx-2.8/wx/gtk/dnd.h:30: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/gtk/dnd.h:34: error: 'wxDragResult' does not name a type
+/usr/include/wx-2.8/wx/gtk/dnd.h:36: error: 'wxDragResult' does not name a type
+/usr/include/wx-2.8/wx/gtk/dnd.h:30: warning: 'class wxDropTarget' has virtual functions but non-virtual destructor
+/usr/include/wx-2.8/wx/gtk/dnd.h:63: error: expected class-name before '{' token
+/usr/include/wx-2.8/wx/gtk/dnd.h:81: error: 'wxDragResult' does not name a type
+/usr/include/wx-2.8/wx/gtk/dnd.h:94: error: 'wxDragResult' does not name a type
+make: *** [wxDropTarget.o] Error 1

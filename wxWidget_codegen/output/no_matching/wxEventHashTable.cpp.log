@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxEventHashTable.o `wx-config  --cxxflags`    -Wno-write-strings   wxEventHashTable.cpp
+wxEventHashTable.cpp: In function 'int main(int, char**)':
+wxEventHashTable.cpp:38: error: no matching function for call to 'wxEventHashTable::wxEventHashTable()'
+/usr/include/wx-2.8/wx/event.h:2375: note: candidates are: wxEventHashTable::wxEventHashTable(const wxEventHashTable&)
+/usr/include/wx-2.8/wx/event.h:2337: note:                 wxEventHashTable::wxEventHashTable(const wxEventTable&)
+make: *** [wxEventHashTable.o] Error 1

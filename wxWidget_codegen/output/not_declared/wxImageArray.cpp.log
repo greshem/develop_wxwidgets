@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxImageArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxImageArray.cpp
+wxImageArray.cpp: In function 'int main(int, char**)':
+wxImageArray.cpp:36: error: 'wxImageArray' was not declared in this scope
+wxImageArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxImageArray.o] Error 1

@@ -1,0 +1,22 @@
+g++ -g  -Wall  -c -o wxListBoxBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxListBoxBase.cpp
+wxListBoxBase.cpp: In function 'int main(int, char**)':
+wxListBoxBase.cpp:37: error: cannot declare variable 'a' to be of abstract type 'wxListBoxBase'
+/usr/include/wx-2.8/wx/listbox.h:40: note:   because the following virtual functions are pure within 'wxListBoxBase':
+/usr/include/wx-2.8/wx/ctrlsub.h:41: note: 	virtual unsigned int wxItemContainerImmutable::GetCount() const
+/usr/include/wx-2.8/wx/ctrlsub.h:44: note: 	virtual wxString wxItemContainerImmutable::GetString(unsigned int) const
+/usr/include/wx-2.8/wx/ctrlsub.h:46: note: 	virtual void wxItemContainerImmutable::SetString(unsigned int, const wxString&)
+/usr/include/wx-2.8/wx/ctrlsub.h:69: note: 	virtual int wxItemContainerImmutable::GetSelection() const
+/usr/include/wx-2.8/wx/ctrlsub.h:120: note: 	virtual void wxItemContainer::Clear()
+/usr/include/wx-2.8/wx/ctrlsub.h:121: note: 	virtual void wxItemContainer::Delete(unsigned int)
+/usr/include/wx-2.8/wx/ctrlsub.h:139: note: 	virtual int wxItemContainer::DoAppend(const wxString&)
+/usr/include/wx-2.8/wx/ctrlsub.h:142: note: 	virtual void wxItemContainer::DoSetItemClientData(unsigned int, void*)
+/usr/include/wx-2.8/wx/ctrlsub.h:143: note: 	virtual void* wxItemContainer::DoGetItemClientData(unsigned int) const
+/usr/include/wx-2.8/wx/ctrlsub.h:144: note: 	virtual void wxItemContainer::DoSetItemClientObject(unsigned int, wxClientData*)
+/usr/include/wx-2.8/wx/ctrlsub.h:145: note: 	virtual wxClientData* wxItemContainer::DoGetItemClientObject(unsigned int) const
+/usr/include/wx-2.8/wx/listbox.h:63: note: 	virtual bool wxListBoxBase::IsSelected(int) const
+/usr/include/wx-2.8/wx/listbox.h:77: note: 	virtual int wxListBoxBase::GetSelections(wxArrayInt&) const
+/usr/include/wx-2.8/wx/listbox.h:122: note: 	virtual void wxListBoxBase::DoInsertItems(const wxArrayString&, unsigned int)
+/usr/include/wx-2.8/wx/listbox.h:123: note: 	virtual void wxListBoxBase::DoSetItems(const wxArrayString&, void**)
+/usr/include/wx-2.8/wx/listbox.h:125: note: 	virtual void wxListBoxBase::DoSetFirstItem(int)
+/usr/include/wx-2.8/wx/listbox.h:127: note: 	virtual void wxListBoxBase::DoSetSelection(int, bool)
+make: *** [wxListBoxBase.o] Error 1

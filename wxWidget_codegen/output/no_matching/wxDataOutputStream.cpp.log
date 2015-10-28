@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxDataOutputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxDataOutputStream.cpp
+wxDataOutputStream.cpp: In function 'int main(int, char**)':
+wxDataOutputStream.cpp:65: error: no matching function for call to 'wxDataOutputStream::wxDataOutputStream()'
+/usr/include/wx-2.8/wx/datstrm.h:163: note: candidates are: wxDataOutputStream::wxDataOutputStream(const wxDataOutputStream&)
+/usr/include/wx-2.8/wx/datstrm.h:96: note:                 wxDataOutputStream::wxDataOutputStream(wxOutputStream&, const wxMBConv&)
+make: *** [wxDataOutputStream.o] Error 1

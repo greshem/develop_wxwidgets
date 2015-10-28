@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxGridTypeRegistry.o `wx-config  --cxxflags`    -Wno-write-strings   wxGridTypeRegistry.cpp
+wxGridTypeRegistry.cpp: In function 'int main(int, char**)':
+wxGridTypeRegistry.cpp:34: error: 'wxGridTypeRegistry' was not declared in this scope
+wxGridTypeRegistry.cpp:34: error: expected `;' before 'a'
+make: *** [wxGridTypeRegistry.o] Error 1

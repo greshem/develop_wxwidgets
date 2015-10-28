@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxMetaTagHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxMetaTagHandler.cpp
+wxMetaTagHandler.cpp: In function 'int main(int, char**)':
+wxMetaTagHandler.cpp:28: error: 'wxMetaTagHandler' was not declared in this scope
+wxMetaTagHandler.cpp:28: error: expected `;' before 'a'
+make: *** [wxMetaTagHandler.o] Error 1

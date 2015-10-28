@@ -1,0 +1,31 @@
+g++ -g  -Wall  -c -o wxTreeCtrl.o `wx-config  --cxxflags`    -Wno-write-strings   wxTreeCtrl.cpp
+In file included from wxTreeCtrl.cpp:19:
+/usr/include/wx-2.8/wx/gtk/treectrl.h:18:21: error: gtk/gtk.h: No such file or directory
+/usr/include/wx-2.8/wx/gtk/treectrl.h:95: error: expected `)' before '*' token
+/usr/include/wx-2.8/wx/gtk/treectrl.h:96: error: expected type-specifier before 'GtkTreeItem'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:97: error: 'GtkTreeItem' has not been declared
+/usr/include/wx-2.8/wx/gtk/treectrl.h:100: error: ISO C++ forbids declaration of 'GtkTreeItem' with no type
+/usr/include/wx-2.8/wx/gtk/treectrl.h:100: error: expected ';' before '*' token
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In constructor 'wxTreeItemId::wxTreeItemId()':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:82: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In member function 'bool wxTreeItemId::IsOk() const':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:88: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In member function 'void wxTreeItemId::operator=(int*)':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:97: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In member function 'void wxTreeItemData::SetId(const wxTreeItemId&)':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:126: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: In member function 'const wxTreeItemId& wxTreeItemData::GetId() const':
+/usr/include/wx-2.8/wx/gtk/treectrl.h:127: error: 'm_itemId' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h: At global scope:
+/usr/include/wx-2.8/wx/gtk/treectrl.h:384: error: ISO C++ forbids declaration of 'GtkTree' with no type
+/usr/include/wx-2.8/wx/gtk/treectrl.h:384: error: expected ';' before '*' token
+/usr/include/wx-2.8/wx/gtk/treectrl.h:385: error: ISO C++ forbids declaration of 'GtkTreeItem' with no type
+/usr/include/wx-2.8/wx/gtk/treectrl.h:385: error: expected ';' before '*' token
+/usr/include/wx-2.8/wx/gtk/treectrl.h:398: error: 'GtkTreeItem' has not been declared
+/usr/include/wx-2.8/wx/gtk/treectrl.h:140: error: 'wxTR_HAS_BUTTONS' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h:140: error: 'wxTR_LINES_AT_ROOT' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h:142: error: default argument for parameter of type 'const wxString&' has type 'const char [11]'
+/usr/include/wx-2.8/wx/gtk/treectrl.h:152: error: 'wxTR_HAS_BUTTONS' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h:152: error: 'wxTR_LINES_AT_ROOT' was not declared in this scope
+/usr/include/wx-2.8/wx/gtk/treectrl.h:154: error: default argument for parameter of type 'const wxString&' has type 'const char [11]'
+make: *** [wxTreeCtrl.o] Error 1

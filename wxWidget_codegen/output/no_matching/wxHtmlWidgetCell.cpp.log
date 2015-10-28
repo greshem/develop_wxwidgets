@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxHtmlWidgetCell.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlWidgetCell.cpp
+wxHtmlWidgetCell.cpp: In function 'int main(int, char**)':
+wxHtmlWidgetCell.cpp:33: error: no matching function for call to 'wxHtmlWidgetCell::wxHtmlWidgetCell()'
+/usr/include/wx-2.8/wx/html/htmlcell.h:609: note: candidates are: wxHtmlWidgetCell::wxHtmlWidgetCell(const wxHtmlWidgetCell&)
+/usr/include/wx-2.8/wx/html/htmlcell.h:595: note:                 wxHtmlWidgetCell::wxHtmlWidgetCell(wxWindow*, int)
+make: *** [wxHtmlWidgetCell.o] Error 1

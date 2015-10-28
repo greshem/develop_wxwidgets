@@ -1,0 +1,7 @@
+g++ -g  -Wall  -c -o wxTarOutputStream.o `wx-config  --cxxflags`    -Wno-write-strings   wxTarOutputStream.cpp
+wxTarOutputStream.cpp: In function 'int main(int, char**)':
+wxTarOutputStream.cpp:51: error: no matching function for call to 'wxTarOutputStream::wxTarOutputStream()'
+/usr/include/wx-2.8/wx/tarstrm.h:284: note: candidates are: wxTarOutputStream::wxTarOutputStream(const wxTarOutputStream&)
+/usr/include/wx-2.8/wx/tarstrm.h:217: note:                 wxTarOutputStream::wxTarOutputStream(wxOutputStream*, wxTarFormat, wxMBConv&)
+/usr/include/wx-2.8/wx/tarstrm.h:214: note:                 wxTarOutputStream::wxTarOutputStream(wxOutputStream&, wxTarFormat, wxMBConv&)
+make: *** [wxTarOutputStream.o] Error 1

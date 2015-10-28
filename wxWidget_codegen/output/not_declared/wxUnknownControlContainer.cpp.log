@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxUnknownControlContainer.o `wx-config  --cxxflags`    -Wno-write-strings   wxUnknownControlContainer.cpp
+wxUnknownControlContainer.cpp: In function 'int main(int, char**)':
+wxUnknownControlContainer.cpp:29: error: 'wxUnknownControlContainer' was not declared in this scope
+wxUnknownControlContainer.cpp:29: error: expected `;' before 'a'
+make: *** [wxUnknownControlContainer.o] Error 1

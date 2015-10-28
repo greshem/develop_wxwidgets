@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxThreadModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxThreadModule.cpp
+wxThreadModule.cpp: In function 'int main(int, char**)':
+wxThreadModule.cpp:31: error: 'wxThreadModule' was not declared in this scope
+wxThreadModule.cpp:31: error: expected `;' before 'a'
+make: *** [wxThreadModule.o] Error 1

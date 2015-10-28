@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxVScrolledWindow.o `wx-config  --cxxflags`    -Wno-write-strings   wxVScrolledWindow.cpp
+wxVScrolledWindow.cpp: In function 'int main(int, char**)':
+wxVScrolledWindow.cpp:49: error: cannot declare variable 'a' to be of abstract type 'wxVScrolledWindow'
+/usr/include/wx-2.8/wx/vscroll.h:36: note:   because the following virtual functions are pure within 'wxVScrolledWindow':
+/usr/include/wx-2.8/wx/vscroll.h:144: note: 	virtual wxCoord wxVScrolledWindow::OnGetLineHeight(size_t) const
+make: *** [wxVScrolledWindow.o] Error 1

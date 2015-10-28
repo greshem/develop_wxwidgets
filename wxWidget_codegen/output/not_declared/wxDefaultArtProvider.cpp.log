@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDefaultArtProvider.o `wx-config  --cxxflags`    -Wno-write-strings   wxDefaultArtProvider.cpp
+wxDefaultArtProvider.cpp: In function 'int main(int, char**)':
+wxDefaultArtProvider.cpp:28: error: 'wxDefaultArtProvider' was not declared in this scope
+wxDefaultArtProvider.cpp:28: error: expected `;' before 'a'
+make: *** [wxDefaultArtProvider.o] Error 1

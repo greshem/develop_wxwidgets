@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxAuiPaneInfoArray.o `wx-config  --cxxflags`    -Wno-write-strings   wxAuiPaneInfoArray.cpp
+wxAuiPaneInfoArray.cpp: In function 'int main(int, char**)':
+wxAuiPaneInfoArray.cpp:36: error: 'wxAuiPaneInfoArray' was not declared in this scope
+wxAuiPaneInfoArray.cpp:36: error: expected `;' before 'a'
+make: *** [wxAuiPaneInfoArray.o] Error 1

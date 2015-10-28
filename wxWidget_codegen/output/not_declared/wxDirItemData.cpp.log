@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxDirItemData.o `wx-config  --cxxflags`    -Wno-write-strings   wxDirItemData.cpp
+wxDirItemData.cpp: In function 'int main(int, char**)':
+wxDirItemData.cpp:31: error: 'wxDirItemData' was not declared in this scope
+wxDirItemData.cpp:31: error: expected `;' before 'a'
+make: *** [wxDirItemData.o] Error 1

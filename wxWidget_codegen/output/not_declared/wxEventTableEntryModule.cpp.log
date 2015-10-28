@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxEventTableEntryModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxEventTableEntryModule.cpp
+wxEventTableEntryModule.cpp: In function 'int main(int, char**)':
+wxEventTableEntryModule.cpp:29: error: 'wxEventTableEntryModule' was not declared in this scope
+wxEventTableEntryModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxEventTableEntryModule.o] Error 1

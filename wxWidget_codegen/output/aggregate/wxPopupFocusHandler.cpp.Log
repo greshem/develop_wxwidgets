@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxPopupFocusHandler.o `wx-config  --cxxflags`    -Wno-write-strings   wxPopupFocusHandler.cpp
+wxPopupFocusHandler.cpp: In function 'int main(int, char**)':
+wxPopupFocusHandler.cpp:32: error: aggregate 'wxPopupFocusHandler a' has incomplete type and cannot be defined
+wxPopupFocusHandler.cpp:32: warning: unused variable 'a'
+make: *** [wxPopupFocusHandler.o] Error 1

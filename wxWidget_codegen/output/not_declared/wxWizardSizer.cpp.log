@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxWizardSizer.o `wx-config  --cxxflags`    -Wno-write-strings   wxWizardSizer.cpp
+wxWizardSizer.cpp: In function 'int main(int, char**)':
+wxWizardSizer.cpp:35: error: 'wxWizardSizer' was not declared in this scope
+wxWizardSizer.cpp:35: error: expected `;' before 'a'
+make: *** [wxWizardSizer.o] Error 1

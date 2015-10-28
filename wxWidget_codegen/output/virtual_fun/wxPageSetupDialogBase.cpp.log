@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxPageSetupDialogBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxPageSetupDialogBase.cpp
+wxPageSetupDialogBase.cpp: In function 'int main(int, char**)':
+wxPageSetupDialogBase.cpp:31: error: cannot declare variable 'a' to be of abstract type 'wxPageSetupDialogBase'
+/usr/include/wx-2.8/wx/printdlg.h:79: note:   because the following virtual functions are pure within 'wxPageSetupDialogBase':
+/usr/include/wx-2.8/wx/printdlg.h:89: note: 	virtual wxPageSetupDialogData& wxPageSetupDialogBase::GetPageSetupDialogData()
+make: *** [wxPageSetupDialogBase.o] Error 1

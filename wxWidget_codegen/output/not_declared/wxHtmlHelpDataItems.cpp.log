@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlHelpDataItems.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlHelpDataItems.cpp
+wxHtmlHelpDataItems.cpp: In function 'int main(int, char**)':
+wxHtmlHelpDataItems.cpp:36: error: 'wxHtmlHelpDataItems' was not declared in this scope
+wxHtmlHelpDataItems.cpp:36: error: expected `;' before 'a'
+make: *** [wxHtmlHelpDataItems.o] Error 1

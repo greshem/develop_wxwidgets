@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxTarHeaderBlockPtr.o `wx-config  --cxxflags`    -Wno-write-strings   wxTarHeaderBlockPtr.cpp
+wxTarHeaderBlockPtr.cpp: In function 'int main(int, char**)':
+wxTarHeaderBlockPtr.cpp:28: error: 'wxTarHeaderBlockPtr' was not declared in this scope
+wxTarHeaderBlockPtr.cpp:28: error: expected `;' before 'a'
+make: *** [wxTarHeaderBlockPtr.o] Error 1

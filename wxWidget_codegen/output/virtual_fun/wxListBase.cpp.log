@@ -1,0 +1,6 @@
+g++ -g  -Wall  -c -o wxListBase.o `wx-config  --cxxflags`    -Wno-write-strings   wxListBase.cpp
+wxListBase.cpp: In function 'int main(int, char**)':
+wxListBase.cpp:52: error: cannot declare variable 'a' to be of abstract type 'wxListBase'
+/usr/include/wx-2.8/wx/list.h:505: note:   because the following virtual functions are pure within 'wxListBase':
+/usr/include/wx-2.8/wx/list.h:561: note: 	virtual wxNodeBase* wxListBase::CreateNode(wxNodeBase*, wxNodeBase*, void*, const wxListKey&)
+make: *** [wxListBase.o] Error 1

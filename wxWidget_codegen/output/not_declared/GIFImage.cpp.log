@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o GIFImage.o `wx-config  --cxxflags`    -Wno-write-strings   GIFImage.cpp
+GIFImage.cpp: In function 'int main(int, char**)':
+GIFImage.cpp:28: error: 'GIFImage' was not declared in this scope
+GIFImage.cpp:28: error: expected `;' before 'a'
+make: *** [GIFImage.o] Error 1

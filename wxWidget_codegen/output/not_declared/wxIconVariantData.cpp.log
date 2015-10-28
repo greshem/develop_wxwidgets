@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxIconVariantData.o `wx-config  --cxxflags`    -Wno-write-strings   wxIconVariantData.cpp
+wxIconVariantData.cpp: In function 'int main(int, char**)':
+wxIconVariantData.cpp:31: error: 'wxIconVariantData' was not declared in this scope
+wxIconVariantData.cpp:31: error: expected `;' before 'a'
+make: *** [wxIconVariantData.o] Error 1

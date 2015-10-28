@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxCursorRefData.o `wx-config  --cxxflags`    -Wno-write-strings   wxCursorRefData.cpp
+wxCursorRefData.cpp: In function 'int main(int, char**)':
+wxCursorRefData.cpp:29: error: 'wxCursorRefData' was not declared in this scope
+wxCursorRefData.cpp:29: error: expected `;' before 'a'
+make: *** [wxCursorRefData.o] Error 1

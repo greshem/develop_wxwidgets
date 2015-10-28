@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxVariantDataArrayString.o `wx-config  --cxxflags`    -Wno-write-strings   wxVariantDataArrayString.cpp
+wxVariantDataArrayString.cpp: In function 'int main(int, char**)':
+wxVariantDataArrayString.cpp:34: error: 'wxVariantDataArrayString' was not declared in this scope
+wxVariantDataArrayString.cpp:34: error: expected `;' before 'a'
+make: *** [wxVariantDataArrayString.o] Error 1

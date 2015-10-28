@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxHtmlTextPieces.o `wx-config  --cxxflags`    -Wno-write-strings   wxHtmlTextPieces.cpp
+wxHtmlTextPieces.cpp: In function 'int main(int, char**)':
+wxHtmlTextPieces.cpp:36: error: 'wxHtmlTextPieces' was not declared in this scope
+wxHtmlTextPieces.cpp:36: error: expected `;' before 'a'
+make: *** [wxHtmlTextPieces.o] Error 1

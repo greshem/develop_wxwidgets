@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxSplashScreenWindow.o `wx-config  --cxxflags`    -Wno-write-strings   wxSplashScreenWindow.cpp
+wxSplashScreenWindow.cpp: In function 'int main(int, char**)':
+wxSplashScreenWindow.cpp:34: error: 'wxSplashScreenWindow' was not declared in this scope
+wxSplashScreenWindow.cpp:34: error: expected `;' before 'a'
+make: *** [wxSplashScreenWindow.o] Error 1

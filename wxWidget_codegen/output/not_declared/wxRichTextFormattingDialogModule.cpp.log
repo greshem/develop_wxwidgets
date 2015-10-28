@@ -1,0 +1,5 @@
+g++ -g  -Wall  -c -o wxRichTextFormattingDialogModule.o `wx-config  --cxxflags`    -Wno-write-strings   wxRichTextFormattingDialogModule.cpp
+wxRichTextFormattingDialogModule.cpp: In function 'int main(int, char**)':
+wxRichTextFormattingDialogModule.cpp:29: error: 'wxRichTextFormattingDialogModule' was not declared in this scope
+wxRichTextFormattingDialogModule.cpp:29: error: expected `;' before 'a'
+make: *** [wxRichTextFormattingDialogModule.o] Error 1
